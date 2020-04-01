@@ -1,0 +1,1 @@
+# List-of-inventors-killed-by-their-own-inventions

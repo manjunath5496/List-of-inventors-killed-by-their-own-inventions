@@ -307,5 +307,137 @@
 </tr>
 </tbody>
 </table>
+</br>
 
+<table class="tablewidth75" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">TOPICS</th>
+<th scope="col">PROBLEMS</th>
+<th scope="col">SOLUTIONS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td colspan="3"><strong>Problems for quiz 1</strong></td>
+</tr>
+<tr class="alt-row">
+<td>Basics of information</td>
+<td>(<a href="MIT6_004s09_tutor01.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_tutor01_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>The digital abstraction</td>
+<td>(<a href="MIT6_004s09_tutor02.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_tutor02_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>CMOS technology</td>
+<td>(<a href="MIT6_004s09_tutor03.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_tutor03_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Gates and Boolean logic</td>
+<td>(<a href="MIT6_004s09_tutor04.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_tutor04_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Synthesis of combinational logic</td>
+<td>(<a href="MIT6004s09tutor05.pdf">PDF</a>)</td>
+<td>(<a href="MIT6004s09tutor05sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td colspan="3"><strong>Problems for quiz 2</strong></td>
+</tr>
+<tr class="alt-row">
+<td>Sequential logic</td>
+<td>(<a href="MIT6004s09tutor06.pdf">PDF</a>)</td>
+<td>(<a href="MIT6004s09tutor06sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Finite state machines</td>
+<td>(<a href="MIT6004s09tutor07.pdf">PDF</a>)</td>
+<td>(<a href="MIT6004s09tutor07sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Synchronization and metastability</td>
+<td>(<a href="MIT6004s09tutor08.pdf">PDF</a>)</td>
+<td>(<a href="MIT6004s09tutor08sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Pipelining</td>
+<td>(<a href="MIT6004s09tutor09.pdf">PDF</a>)</td>
+<td>(<a href="MIT6004s09tutor09sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td colspan="3"><strong>Problems for quiz 3</strong></td>
+</tr>
+<tr class="row">
+<td>Models of computation</td>
+<td>(<a href="MIT6_004s09_tutor10.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_tutor10_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Programmable machines</td>
+<td>(<a href="MIT6_004s09_tutor11.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_tutor11_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Machine language</td>
+<td>(<a href="MIT6_004s09_tutor12.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_tutor12_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Stacks and procedures</td>
+<td>(<a href="MIT6_004s09_tutor13.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_tutor13_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Building the Beta</td>
+<td>(<a href="MIT6_004s09_tutor14.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_tutor14_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td colspan="3"><strong>Problems for quiz 4</strong></td>
+</tr>
+<tr class="row">
+<td>Memory hierarchy</td>
+<td>(<a href="MIT6_004s09_tutor15.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_tutor15_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Caches</td>
+<td>(<a href="MIT6_004s09_tutor16.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_tutor16_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Virtual memory</td>
+<td>(<a href="MIT6_004s09_tutor17.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_tutor17_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Operating system issues</td>
+<td>(<a href="MIT6_004s09_tutor18.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_tutor18_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Interrupts and real time</td>
+<td>(<a href="MIT6_004s09_tutor19.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_tutor19_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td colspan="3"><strong>Problems for quiz 5</strong></td>
+</tr>
+<tr class="row">
+<td>Semaphores</td>
+<td>(<a href="MIT6_004s09_tutor20.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_tutor20_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Pipelined Beta</td>
+<td>(<a href="MIT6_004s09_tutor21.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_tutor21_sol.pdf">PDF</a>)</td>
+</tr>
+</tbody>
+</table>
 

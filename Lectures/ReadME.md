@@ -1,7 +1,7 @@
 <ul>
 <li><a href="#course1">Structure and Interpretation of Computer Programs</a></li>
 <li><a href="#course2">Introduction to Computational Thinking and Data Science</a></li>
-<li><a href="#course3">Crystal Structure Refinement</a></li>
+<li><a href="#course3">Computation Structures</a></li>
 <li><a href="#course4">Crystal Structure Analysis</a></li>
 <li><a href="#course5">Physical Chemistry</a></li>
 <li><a href="#course6">Physical Chemistry II</a></li>
@@ -194,3 +194,7 @@
 </tr>
 </tbody>
 </table>
+</br>
+<h2 id="course3">Computation Structures</h2>
+
+

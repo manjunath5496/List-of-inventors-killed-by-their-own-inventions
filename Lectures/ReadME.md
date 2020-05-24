@@ -197,4 +197,115 @@
 </br>
 <h2 id="course3">Computation Structures</h2>
 
+<table class="tablewidth75" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">TOPICS</th>
+<th scope="col">LECTURE&nbsp;NOTES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>Course overview and mechanics, basics of information</td>
+<td>(<a href="MIT6_004s09_lec01.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Digital abstraction, combinational logic, voltage-based encoding</td>
+<td>(<a href="MIT6_004s09_lec02.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>CMOS technology, gate design, timing</td>
+<td>(<a href="MIT6_004s09_lec03.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Canonical forms; synthesis, simplification</td>
+<td>(<a href="MIT6_004s09_lec04.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Sequential logic</td>
+<td>(<a href="MIT6_004s09_lec05.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Storage elements, finite state machines</td>
+<td>(<a href="MIT6_004s09_lec06.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Synchronization, metastability</td>
+<td>(<a href="MIT6_004s09_lec07.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Pipelining; throughput and latency</td>
+<td>(<a href="MIT6_004s09_lec08.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Case study: multipliers</td>
+<td>(<a href="MIT6_004s09_lec09.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Beta instruction set architecture, compilation</td>
+<td>(<a href="MIT6_004s09_lec10.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Machine language programming issues</td>
+<td>(<a href="MIT6_004s09_lec11.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Models of computation, programmable architectures</td>
+<td>(<a href="MIT6_004s09_lec12.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Stacks and procedures</td>
+<td>(<a href="MIT6_004s09_lec13.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Non-pipelined Beta implementation</td>
+<td>(<a href="MIT6_004s09_lec14.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Multilevel memories; locality, performance, caches</td>
+<td>(<a href="MIT6_004s09_lec15.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Cache design issues</td>
+<td>(<a href="MIT6_004s09_lec16.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Virtual memory: mapping, protection, contexts</td>
+<td>(<a href="MIT6_004s09_lec17.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Virtual machines: timesharing, OS kernels, supervisor calls</td>
+<td>(<a href="MIT6_004s09_lec18.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Devices and interrupt handlers, preemptive interrupts, real-time issues</td>
+<td>(<a href="MIT6_004s09_lec19.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Communication issues: busses, networks, protocols</td>
+<td>(<a href="MIT6_004s09_lec20.pdf">PDF - 1.0MB</a>)</td>
+</tr>
+<tr class="row">
+<td>Communicating processes: semaphores, synchronization, atomicity, deadlock</td>
+<td>(<a href="MIT6_004s09_lec21.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Pipelined Beta implementation, bypassing</td>
+<td>(<a href="MIT6_004s09_lec22.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Pipeline issues: delay slots, annulment, exceptions</td>
+<td>(<a href="MIT6_004s09_lec23.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Parallel processing, shared memory, cache coherence, consistency criteria</td>
+<td>(<a href="MIT6_004s09_lec24.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Wrapup lecture</td>
+<td>(<a href="MIT6_004s09_lec25.pdf">PDF</a>)</td>
+</tr>
+</tbody>
+</table>
+
 

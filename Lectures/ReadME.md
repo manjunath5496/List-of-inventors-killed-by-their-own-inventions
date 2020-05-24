@@ -124,3 +124,73 @@
 </table>
 </br>
 <h2 id="course2">Introduction to Computational Thinking and Data Science</h2>
+<table class="tablewidth100" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">LECTURE SLIDES</th>
+<th scope="col">CODE AND ADDITIONAL FILES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td><a href="MIT6_0002F16_lec1.pdf">Lecture 1: Introduction and Optimization Problems (PDF)</a></td>
+<td><a href="Lecture1.zip">Additional Files for Lecture 1 (ZIP)</a>&nbsp;(This ZIP file contains: 1 .txt file and 1 .py file)</td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_0002F16_lec2.pdf">Lecture 2: Optimization Problems (PDF - 6.9MB)</a></td>
+<td><a href="Lecture2.zip">Additional Files for Lecture 2 (ZIP)</a>&nbsp;(This ZIP file contains: 1 .txt file and 1 .py file)</td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_0002F16_lec3.pdf">Lecture 3: Graph-theoretic Models&nbsp;<span class="nobr">(PDF)</span></a></td>
+<td><a href="lectureGraphs.py">Code File for Lecture 3 (PY)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_0002F16_lec4.pdf">Lecture 4: Stochastic Thinking (PDF)</a></td>
+<td><a href="lecture4.py">Code File for Lecture 4 (PY)</a></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_0002F16_lec5.pdf">Lecture 5: Random Walks (PDF)</a></td>
+<td><a href="lect5.py">Code File for Lecture 5 (PY)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_0002F16_lec6.pdf">Lecture 6: Monte Carlo Simulation&nbsp;<span class="nobr">(PDF - 1.2MB)</span></a></td>
+<td><a href="lect6.py">Code File for Lecture 6 (PY)</a></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_0002F16_lec7.pdf">Lecture 7: Confidence Intervals (PDF)</a></td>
+<td><a href="lect7.py">Code File for Lecture 7 (PY)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_0002F16_lec8.pdf">Lecture 8: Sampling and Standard Error&nbsp;<span class="nobr">(PDF - 1.3MB)</span></a></td>
+<td><a href="Lecture8.zip">Additional Files for Lecture 8 (ZIP - 1.6MB)</a>&nbsp;(This ZIP file contains: 1 .csv file and 1 .py file)</td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_0002F16_lec9.pdf">Lecture 9: Understanding Experimental Data (PDF)</a></td>
+<td><a href="Lecture9.zip">Additional Files for Lecture 9 (ZIP)</a>&nbsp;(This ZIP file contains: 4 .txt files and 1 .py file)</td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_0002F16_lec10.pdf">Lecture 10: Understanding Experimental Data (cont.) (PDF - 1.3MB)</a></td>
+<td><a href="Lecture10.zip">Additional Files for Lecture 10 (ZIP - 1.7MB)</a>&nbsp;(This ZIP file contains: 1 .csv file, 7 .txt files, and 2 .py files)</td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_0002F16_lec11.pdf">Lecture 11: Introduction to Machine Learning (PDF - 1.1MB)</a></td>
+<td><a href="lectureCode.py">Code File for Lecture 11 (PY)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_0002F16_lec12.pdf">Lecture 12: Clustering (PDF)</a></td>
+<td><a href="Lecture12.zip">Additional Files for Lecture 12 (ZIP)</a>&nbsp;(This ZIP file contains: 1 .txt file and 2 .py files)</td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_0002F16_lec13.pdf">Lecture 13: Classification (PDF)</a></td>
+<td><a href="Lecture13.zip">Additional Files for Lecture 13 (ZIP)</a>&nbsp;(This ZIP file contains: 1 .txt file and 1 .py file)</td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_0002F16_lec14.pdf">Lecture 14: Classification and Statistical Sins (PDF)</a></td>
+<td><a href="Lecture14.zip">Additional Files for Lecture 14 (ZIP)</a>&nbsp;(This ZIP file contains: 1 .txt file and 1 .py file)</td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_0002F16_lec15.pdf">Lecture 15: Statistical Sins and Wrap Up&nbsp;<span class="nobr">(PDF - 1.1MB)</span></a></td>
+<td><a href="lect15.py">Code File for Lecture 15 (PY)</a></td>
+</tr>
+</tbody>
+</table>

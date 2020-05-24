@@ -2,7 +2,7 @@
 <li><a href="#course1">Structure and Interpretation of Computer Programs</a></li>
 <li><a href="#course2">Introduction to Computational Thinking and Data Science</a></li>
 <li><a href="#course3">Computation Structures</a></li>
-<li><a href="#course4">Introduction to C and C++</a></li>
+<li><a href="#course4">Effective Programming in C and C++</a></li>
 <li><a href="#course5">Physical Chemistry</a></li>
 <li><a href="#course6">Physical Chemistry II</a></li>
 <li><a href="#course7">Computational Quantum Mechanics of Molecular and Extended Systems</a></li>
@@ -472,19 +472,61 @@
 </tbody>
 </table>
 </br>
-<h2 id="course4">Introduction to C and C++</h2>
+<h2 id="course4">Effective Programming in C and C++</h2>
 
-<p><a href="compilation-pipeline">Lecture 1: Compilation Pipeline</a></p>
-<p><a href="core-c-control-structures-variables-scope-and-uninitialized-memory">Lecture 2: Control Structures, Variables, Scope, and Uninitialized Memory</a></p>
-<p><a href="c-memory-management">Lecture 3: C Memory Management</a></p>
-<p><a href="data-structures-debugging">Lecture 4: Data Structures, Debugging</a></p>
-<p><a href="c-introduction-classes-and-templates">Lecture 5: C++ Introduction, Classes, and Templates</a></p>
-<p><a href="c-inheritance">Lecture 6: C++ Inheritance</a></p>
-<p><a href="MIT6_S096_IAP13_lec7.pdf">Lecture 7: Parent Destructors, C++ Casts, References, Namespaces, Operator Overloading, Streams (PDF)</a></p>
-<p><a href="MIT6_S096_IAP13_lec8.pdf">Lecture 8: Standard Template Library, Exceptions, Function Pointers, C++11 (PDF - 1.4 MB)</a></p>
+<table class="tablewidth100" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">LECTURE&nbsp;TOPICS</th>
+<th scope="col">SUPPORTING FILES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td><a href="MIT6_S096IAP14_Lecture1.pdf">Introduction to C: Welcome to the Memory Jungle (PDF)</a></td>
+<td><a href="lecture01-examples.zip">Lecture 1 Examples (ZIP)</a>&nbsp;(This Zip folder contains: 7 .c files and 1 file): diagnostic, hello, loop1, loop2, pointer, prime, printstr</td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_S096IAP14_Lecture2.pdf">Subtleties of C: Data Structures and Floating-Point Arithmetic (PDF)</a></td>
+<td><a href="lecture02-examples.zip">Lecture 2 Examples (ZIP)</a>&nbsp;(This Zip folder contains: 7 .c files): align, alloc, badsize, limited, sizeof, struct, tree</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="MIT6_S096IAP14_Lecture3A.pdf">Assembly (PDF)</a></p>
+<p><em>Courtesy of Daniel Kang. Used with permission</em>.</p>
+<p><a href="MIT6_S096IAP14_Lecture3S.pdf">Secure Programming in C (PDF - 1.2MB)</a></p>
+<p><em>Courtesy of Lef Ioannidis. Used with permission</em>.</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_S096IAP14_Lecture4.pdf">Style and Structure: Transition from C to C++ (PDF)</a></td>
+<td><a href="lecture04-examples.zip">Lecture 4 Examples (ZIP)</a>&nbsp;(This Zip folder contains: 1 .cpp and 1 file): vector</td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_S096IAP14_Lecture5.pdf">Object-Oriented C++: Abstraction, Inheritance, STL (PDF)</a></td>
+<td><a href="lecture05-examples.zip">Lecture 5 Examples (ZIP)</a>&nbsp;(This Zip folder contains 6: .cpp and 1 file): badswitch, isa, shape, stlqueue, stlvector, vector</td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_S096IAP14_Lecture6.pdf">Design Patterns: Higher-Level Program Design (PDF)</a></td>
+<td><a href="lecture06-examples.zip">Lecture 6 Examples (ZIP)</a>&nbsp;(This Zip folder contains 6: .cpp, 1 .h and 1 file): composite, ptrs, shared_resources, strategy, vector, vector_unique</td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_S096IAP14_Lecture7.pdf">Introduction to Projects: Unit Testing, Third-Party Libraries, Code Review (PDF)</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_S096IAP14_Lecture8.pdf">Project Environments: Iterators, N-Body Problem, Setup (PDF)</a></td>
+<td><a href="Vector3.h">Vector Math Header (H)</a></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_S096IAP14_Lecture9.pdf">Visualization: OpenGL, Makefiles, Large Projects (PDF)</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_S096IAP14_Lecture10.pdf">Course Recap, Interviews, Advanced Topics: Grab Bag &amp; Perspective (PDF)</a></td>
+</tr>
+</tbody>
+</table>
 </br>
-
-
-
-
 

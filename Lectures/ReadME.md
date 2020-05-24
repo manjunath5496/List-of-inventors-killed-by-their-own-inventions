@@ -440,4 +440,35 @@
 </tr>
 </tbody>
 </table>
+</br>
+<table class="tablewidth50" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">QUIZZES</th>
+<th scope="col">SOLUTIONS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>Quiz 1 (<a href="MIT6_004s09_quiz01.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_quiz01_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Quiz 2 (<a href="MIT6_004s09_quiz02.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_quiz02_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Quiz 3 (<a href="MIT6_004s09_quiz03.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_quiz03_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Quiz 4</td>
+<td>(<a href="MIT6_004s09_quiz04_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Quiz 5 (<a href="MIT6_004s09_quiz05.pdf">PDF</a>)</td>
+<td>(<a href="MIT6_004s09_quiz05_sol.pdf">PDF</a>)</td>
+</tr>
+</tbody>
+</table>
 

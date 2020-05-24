@@ -2,7 +2,7 @@
 <li><a href="#course1">Structure and Interpretation of Computer Programs</a></li>
 <li><a href="#course2">Introduction to Computational Thinking and Data Science</a></li>
 <li><a href="#course3">Computation Structures</a></li>
-<li><a href="#course4">Crystal Structure Analysis</a></li>
+<li><a href="#course4">Introduction to C and C++</a></li>
 <li><a href="#course5">Physical Chemistry</a></li>
 <li><a href="#course6">Physical Chemistry II</a></li>
 <li><a href="#course7">Computational Quantum Mechanics of Molecular and Extended Systems</a></li>
@@ -471,4 +471,20 @@
 </tr>
 </tbody>
 </table>
+</br>
+<h2 id="course4">Introduction to C and C++</h2>
+
+<p><a href="compilation-pipeline">Lecture 1: Compilation Pipeline</a></p>
+<p><a href="core-c-control-structures-variables-scope-and-uninitialized-memory">Lecture 2: Control Structures, Variables, Scope, and Uninitialized Memory</a></p>
+<p><a href="c-memory-management">Lecture 3: C Memory Management</a></p>
+<p><a href="data-structures-debugging">Lecture 4: Data Structures, Debugging</a></p>
+<p><a href="c-introduction-classes-and-templates">Lecture 5: C++ Introduction, Classes, and Templates</a></p>
+<p><a href="c-inheritance">Lecture 6: C++ Inheritance</a></p>
+<p><a href="MIT6_S096_IAP13_lec7.pdf">Lecture 7: Parent Destructors, C++ Casts, References, Namespaces, Operator Overloading, Streams (PDF)</a></p>
+<p><a href="MIT6_S096_IAP13_lec8.pdf">Lecture 8: Standard Template Library, Exceptions, Function Pointers, C++11 (PDF - 1.4 MB)</a></p>
+</br>
+
+
+
+
 

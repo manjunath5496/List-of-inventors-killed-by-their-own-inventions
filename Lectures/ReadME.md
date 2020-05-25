@@ -10,7 +10,7 @@
 <li><a href="#course9">Introduction to Algorithms</a></li>
 <li><a href="#course10">Artificial Intelligence</a></li>
 <li><a href="#course11">Computer Language Engineering</a></li>
-<li><a href="#course12">Small-Molecule Spectroscopy and Dynamics</a></li>
+<li><a href="#course12">Probabilistic Systems Analysis and Applied Probability</a></li>
 <li><a href="#course13">Chemistry of Biomolecules I</a></li>
 <li><a href="#course14">Synthetic Organic Chemistry II</a></li>
 <li><a href="#course15">Organic Structure Determination</a></li>
@@ -1426,3 +1426,87 @@
 </tbody>
 </table>
 </br>
+<h2 id="course12">Probabilistic Systems Analysis and Applied Probability</h2>
+<table class="tablewidth75" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">TOPICS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>Probability Models and Axioms (<a href="lec01.pdf">PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td>Conditioning and Bayes' Rule (<a href="lec02.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Independence (<a href="lec03.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Counting Sections (<a href="lec04.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Discrete Random Variables; Probability Mass Functions; Expectations (<a href="lec05.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Conditional Expectation; Examples (<a href="lec06.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Multiple Discrete Random Variables (<a href="lec07.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Continuous Random Variables - I (<a href="lec08.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Continuous Random Variables - II (<a href="lec09.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Continuous Random Variables and Derived Distributions (<a href="lec10.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>More on Continuous Random Variables, Derived Distributions, Convolution (<a href="lec11.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Transforms (<a href="lec12.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Iterated Expectations (<a href="lec13.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Sum of a Random Number of Random Variables (<a href="lec13a.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Prediction; Covariance and Correlation (<a href="lec14.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Weak Law of Large Numbers (<a href="lec15.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Bernoulli Process (<a href="lec16.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Poisson Process (<a href="lec17.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Poisson Process Examples (<a href="lec18.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Markov Chains - I (<a href="lec19.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Markov Chains - II (<a href="lec20.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Markov Chains - III (<a href="lec21.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Central Limit Theorem (<a href="lec22.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Central Limit Theorem (cont.), Strong Law of Large Numbers (<a href="lec23.pdf">PDF</a>)</td>
+</tr>
+</tbody>
+</table>
+
+

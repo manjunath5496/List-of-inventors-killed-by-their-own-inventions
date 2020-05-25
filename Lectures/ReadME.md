@@ -1508,5 +1508,63 @@
 </tr>
 </tbody>
 </table>
-
+</br>
+<table class="tablewidth50" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">ASSIGNMENTS</th>
+<th scope="col">SOLUTIONS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>Problem Set 1 (<a href="1/ps01.pdf">PDF</a>)</td>
+<td>(<a href="1/ps01_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Problem Set 2 (<a href="1/ps02.pdf">PDF</a>)</td>
+<td>(<img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="1/ps02_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Problem Set 3 (<a href="1/ps03.pdf">PDF</a>)</td>
+<td>(<a href="1/ps03_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Problem Set 4 (<a href="1/ps04.pdf">PDF</a>)</td>
+<td>(<img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="1/ps04_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Problem Set 5 (<img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="1/ps05.pdf">PDF</a>)</td>
+<td>(<a href="1/ps05_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Problem Set 6 (<img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="1/ps06.pdf">PDF</a>)</td>
+<td>(<img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="1/ps06_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Problem Set 7 (<img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="1/ps07.pdf">PDF</a>)</td>
+<td>(<img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="1/ps07_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Problem Set 8 (<img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="1/ps08.pdf">PDF</a>)</td>
+<td>(<a href="1/ps08_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Problem Set 9 (<a href="1/ps09.pdf">PDF</a>)</td>
+<td>(<a href="1/ps09_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Problem Set 10 (<a href="1/ps10.pdf">PDF</a>)</td>
+<td>(<a href="1/ps10_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Problem Set 11 (<a href="1/ps11.pdf">PDF</a>)</td>
+<td>(<img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="1/ps11_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Problem Set 12 (<a href="1/ps12.pdf">PDF</a>)</td>
+<td>(<a href="1/ps12_sol.pdf">PDF</a>)</td>
+</tr>
+</tbody>
+</table>
 

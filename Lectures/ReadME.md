@@ -6,7 +6,7 @@
 <li><a href="#course5">Software Construction</a></li>
 <li><a href="#course6">Elements of Software Construction</a></li>
 <li><a href="#course7">Introduction to Computer Science and Programming in Python</a></li>
-<li><a href="#course8">Kinetics of Chemical Reactions</a></li>
+<li><a href="#course8">Introduction to Computer Science and Programming</a></li>
 <li><a href="#course9">Non-Equilibrium Statistical Mechanics</a></li>
 <li><a href="#course10">Introductory Quantum Mechanics I</a></li>
 <li><a href="#course11">Introductory Quantum Mechanics II</a></li>
@@ -980,3 +980,14 @@
 <p><a href="ps4.zip">Problem Set 4 (ZIP)</a>&nbsp;(This file contains: 1 .pdf file, 3 .py files and&nbsp; 2 .txt files.)</p>
 <p><a href="pset5.zip">Problem Set 5 (ZIP - 1.1MB)</a>&nbsp;(This file contains: 5 .py files, 1 .pdf file and 1 .txt file.)</p>
 </br>
+<h2 id="course8">Introduction to Computer Science and Programming</h2>
+
+<ul class="arrow">
+<li><a href="MIT6_00SCS11_lec02.pdf">Lecture code handout (PDF)</a></li>
+<li><a href="lec02.py">Lecture code (PY)</a></li>
+</ul>
+</br>
+
+
+
+

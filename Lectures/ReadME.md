@@ -1024,10 +1024,10 @@
 <td colspan="2"><strong>Unit 2: Sorting and Trees</strong></td>
 </tr>
 <tr class="row">
-<td><a href="MIT6_006F11_lec03.pdf">Insertion sort, merge sort (PDF)</a>&nbsp;(Courtesy of Charles Leiserson, Piotr Indyk, Constantinos Daskalakis, and Srini Devadas. Used with permission.)</td>
+<td><a href="MIT6_006F11_lec03.pdf">Insertion sort, merge sort (PDF)</a>&nbsp;</td>
 </tr>
 <tr class="alt-row">
-<td><a href="MIT6_006F11_lec04.pdf">Heaps and heap sort (PDF)</a>&nbsp;(Courtesy of Charles Leiserson, Piotr Indyk, Constantinos Daskalakis, and Srini Devadas. Used with permission.)</td>
+<td><a href="MIT6_006F11_lec04.pdf">Heaps and heap sort (PDF)</a>&nbsp;</td>
 </tr>
 <tr class="row">
 <td><a href="MIT6_006F11_lec05.pdf">Binary search trees, BST sort&nbsp;<span class="nobr">(PDF - 1.2MB)</span></a></td>

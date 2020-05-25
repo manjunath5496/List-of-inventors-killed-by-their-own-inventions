@@ -3,7 +3,7 @@
 <li><a href="#course2">Introduction to Computational Thinking and Data Science</a></li>
 <li><a href="#course3">Computation Structures</a></li>
 <li><a href="#course4">Effective Programming in C and C++</a></li>
-<li><a href="#course5">Physical Chemistry</a></li>
+<li><a href="#course5">Software Construction</a></li>
 <li><a href="#course6">Physical Chemistry II</a></li>
 <li><a href="#course7">Computational Quantum Mechanics of Molecular and Extended Systems</a></li>
 <li><a href="#course8">Kinetics of Chemical Reactions</a></li>
@@ -638,4 +638,28 @@
 </tbody>
 </table>
 </br>
+<h2 id="course5">Software Construction</h2>
+<table class="tablewidth50" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">QUIZ</th>
+<th scope="col">SOLUTION</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td><a href="MIT6_005S16_Quiz1.pdf">Quiz 1 (PDF)</a></td>
+<td><a href="MIT6_005S16_Quiz1_soln.pdf">Quiz 1 Solution (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_005S16_Quiz2.pdf">Quiz 2 (PDF)</a></td>
+<td><a href="MIT6_005S16_Quiz2_soln.pdf">Quiz 2 Solution (PDF)</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
 

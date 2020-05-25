@@ -665,7 +665,7 @@
 <p>State machine syntax and semantics (<a href="MIT6_005f08_lec_state_machine.pdf">PDF</a>)</p>
 <p>Graphical object model notation (<a href="MIT6_005f08_lec_object_model.pdf">PDF</a>)</p>
 <p>&nbsp;</p>
-<h2 class="subhead">&nbsp;</h2>
+
 
 <table class="tablewidth" summary="See table caption for summary.">
 <thead>

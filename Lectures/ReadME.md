@@ -4,7 +4,7 @@
 <li><a href="#course3">Computation Structures</a></li>
 <li><a href="#course4">Effective Programming in C and C++</a></li>
 <li><a href="#course5">Software Construction</a></li>
-<li><a href="#course6">Physical Chemistry II</a></li>
+<li><a href="#course6">Elements of Software Construction</a></li>
 <li><a href="#course7">Computational Quantum Mechanics of Molecular and Extended Systems</a></li>
 <li><a href="#course8">Kinetics of Chemical Reactions</a></li>
 <li><a href="#course9">Non-Equilibrium Statistical Mechanics</a></li>
@@ -657,9 +657,186 @@
 </tr>
 </tbody>
 </table>
+</br>
+<h2 id="course6">Elements of Software Construction</h2>
 
 
+<h2 class="subhead">Review Handouts</h2>
+<p>State machine syntax and semantics (<a href="MIT6_005f08_lec_state_machine.pdf">PDF</a>)</p>
+<p>Graphical object model notation (<a href="MIT6_005f08_lec_object_model.pdf">PDF</a>)</p>
+<p>&nbsp;</p>
+<h2 class="subhead">&nbsp;</h2>
 
+<table class="tablewidth" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">TOPICS</th>
+<th scope="col">LECTURE&nbsp;NOTES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>
+<h3 class="subsubhead">Introduction</h3>
+<p>Basic Java syntax and semantics; overview of objectives and structure of the course</p>
+</td>
+<td>(<a href="MIT6_005f08_lec01.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>
+<h3 class="subsubhead">Classes</h3>
+<p>More Java: exceptions, input/output, classes, access control, static</p>
+</td>
+<td>(<a href="MIT6_005f08_lec02.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>
+<h3 class="subsubhead">Subclassing and interfaces</h3>
+<p>Subclassing, inheritance, overriding, interfaces, packages; distinction between declared type and actual type; downcasting; anonymous classes</p>
+</td>
+<td>(<a href="MIT6_005f08_lec03.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>
+<h3 class="subsubhead">Designing state machines</h3>
+<p>State machine design; graphical and textual notation; state machine semantics; parallel combinations of machines</p>
+</td>
+<td>(<a href="MIT6_005f08_lec04.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>
+<h3 class="subsubhead">Implementing state machines</h3>
+<p>State machine implementation patterns; concurrency and queues; modularity and interfaces</p>
+</td>
+<td>(<a href="MIT6_005f08_lec05.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>
+<h3 class="subsubhead">State machine invariants</h3>
+<p>Safety and liveness properties; state properties and invariants; inductive reasoning; computing the product machine of a parallel combination; state explosion; fault tolerance; interlocks and the idea of a trusted base</p>
+</td>
+<td>(<a href="MIT6_005f08_lec06.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>
+<h3 class="subsubhead">Designing stream processors</h3>
+<p>Stream processing programs; grammars vs. machines; JSP method of program derivation; regular grammars and expressions</p>
+</td>
+<td>(<a href="MIT6_005f08_lec07.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>
+<h3 class="subsubhead">Decoupling and interfaces</h3>
+<p>Modularity, decoupling, information hiding; module dependence diagrams; using interfaces for decoupling</p>
+</td>
+<td>(<a href="MIT6_005f08_lec08.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>
+<h3 class="subsubhead">Testing and coverage</h3>
+<p>Why software testing is hard; input space partitioning, boundary testing, state machine coverage, code coverage; test-first development and regression testing</p>
+</td>
+<td>(<img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_005f08_lec09.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>
+<h3 class="subsubhead">Designing a SAT solver, part 1</h3>
+<p>The SAT problem and SAT solvers; a new paradigm of functions over immutable types; use datatype productions to model structured values; patterns for implementing datatypes (Variant as Class, Interpreter)</p>
+</td>
+<td>(<a href="MIT6_005f08_lec10.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>
+<h3 class="subsubhead">Designing a SAT solver, part 2</h3>
+<p>Review of basic datatype patterns; a naive solver with backtracking search; design improvements with Facade, Option types, and a 3-valued logic</p>
+</td>
+<td>(<a href="MIT6_005f08_lec11.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>
+<h3 class="subsubhead">Debugging</h3>
+<p>Techniques for avoiding debugging: assertions, modular development with unit testing, code reviews; strategies for debugging: reducing test cases, hypothesis-driven debugging, binary search; Heisenbugs</p>
+</td>
+<td>(<img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_005f08_lec12.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>
+<h3 class="subsubhead">Designing a SAT solver, part 3</h3>
+<p>Abstract data types; representation independence; characterizing types by operations; encapsulation; examples of types used by DPLL solver; Factory Method pattern</p>
+</td>
+<td>(<a href="MIT6_005f08_lec13.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>
+<h3 class="subsubhead">Rep invariants, equality, visitors</h3>
+<p>Advice on implementing types; rep invariants and abstraction functions; equality for immutable types; Iterator and Visitor patterns</p>
+</td>
+<td>(<a href="MIT6_005f08_lec14.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>
+<h3 class="subsubhead">Little languages</h3>
+<p>Representing behavior using data structures; language datatypes, visitors, functional objects, higher-order functions; solving a problem by creating a domain-specific language</p>
+</td>
+<td>(<a href="MIT6_005f08_lec15.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>
+<h3 class="subsubhead">Basics of mutable types</h3>
+<p>Heap semantics (aliasing, assignment, field setting); reachability and conceptual storage leaks; the Object Contract and equality properties; hash maps and their representation invariant; problems caused by mutation of keys</p>
+</td>
+<td>(<a href="MIT6_005f08_lec16.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>
+<h3 class="subsubhead">Event-based programming</h3>
+<p>Fundamentals of programming graphical user interfaces; view hierarchy, Composite pattern, Publish-Subscribe pattern, Model-View-Controller (MVC); pitfalls of event-based programming</p>
+</td>
+<td>(<a href="MIT6_005f08_lec17.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>
+<h3 class="subsubhead">Designing a photo organizer</h3>
+<p>The relational paradigm; conceptual modeling; object model syntax and semantics; Mitchell and Webb on "unity of purpose"</p>
+</td>
+<td>(<a href="MIT6_005f08_lec18.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>
+<h3 class="subsubhead">Implementing a photo organizer</h3>
+<p>Implementation as object model transformation; key issue of where state resides; standard patterns; navigation, immutability and encapsulation; MVC considerations</p>
+</td>
+<td>(<a href="MIT6_005f08_lec19.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>
+<h3 class="subsubhead">Concurrency</h3>
+<p>Shared-memory and message-passing paradigms; race conditions and deadlock; using threads and blocking queues in Java; concurrency issues in graphical user interfaces</p>
+</td>
+<td>(<img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_005f08_lec20.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>
+<h3 class="subsubhead">Usability</h3>
+<p>User interface design principles: learnability, visibility, efficiency, errors, simplicity; iterative design; sketching and paper prototyping; user testing</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="alt-row">
+<td>
+<h3 class="subsubhead">Relational databases</h3>
+<p>Using a database to represent an object model; relational algebra and SQL; transactions</p>
+</td>
+<td>(<img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_005f08_lec22.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>
+<h3 class="subsubhead">Conclusion</h3>
+<p>Final words; courses and internships that might follow 6.005; winners of Project 3 awards; 6.005 quiz game</p>
+</td>
+<td>(<a href="MIT6_005f08_lec23.pdf">PDF</a>)</td>
+</tr>
+</tbody>
+</table>
 
-
-
+</br>

@@ -12,7 +12,7 @@
 <li><a href="#course11">Computer Language Engineering</a></li>
 <li><a href="#course12">Probabilistic Systems Analysis and Applied Probability</a></li>
 <li><a href="#course13">Mathematics for Computer Science</a></li>
-<li><a href="#course14">Synthetic Organic Chemistry II</a></li>
+<li><a href="#course14">Automata, Computability, and Complexity</a></li>
 <li><a href="#course15">Organic Structure Determination</a></li>
 <li><a href="#course16">Thermodynamics of Biomolecular Systems</a></li>
 <li><a href="#course17">Advanced Organic Chemistry</a></li>
@@ -1903,5 +1903,108 @@
 </tbody>
 </table>
 </br>
+<h2 id="course14">Automata, Computability, and Complexity</h2>
 
-
+<table class="tablewidth75" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">TOPICS</th>
+<th scope="col">LECTURE&nbsp;NOTES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>Introduction</td>
+<td>(<a href="MIT6_045JS11_lec01.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Logic, circuits, and gates</td>
+<td>(<a href="MIT6_045JS11_lec02.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Deterministic finite automata (DFAs) and nondeterministic finite automata (NFAs)</td>
+<td>(<a href="MIT6_045JS11_lec03.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>NFAs and regular expressions</td>
+<td>(<a href="MIT6_045JS11_lec04.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Non-regular languages and the pumping lemma</td>
+<td>(<a href="MIT6_045JS11_lec05.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Turing machines</td>
+<td>(<a href="MIT6_045JS11_lec06.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Decidability</td>
+<td>(<a href="MIT6_045JS11_lec07.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Undecidable problems and Post correspondence problem (PCP)</td>
+<td>(<a href="MIT6_045JS11_lec08.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Mapping reducibility and Rice's theorem</td>
+<td>(<a href="MIT6_045JS11_lec09.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Self-reference and the recursion theorem</td>
+<td>(<a href="MIT6_045JS11_lec10.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Introduction to cryptography</td>
+<td>(<a href="MIT6_045JS11_lec11.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Complexity theory</td>
+<td>(<a href="MIT6_045JS11_lec12.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Pseudorandom generators and one-way functions</td>
+<td>(<a href="MIT6_045JS11_lec13.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Public-key cryptography</td>
+<td>(<a href="MIT6_045JS11_lec14.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>More complexity theory</td>
+<td>(<a href="MIT6_045JS11_lec15.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>More NP-completeness</td>
+<td>(<a href="MIT6_045JS11_lec16.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Probabilistic Turing machines and complexity classes</td>
+<td>(<a href="MIT6_045JS11_lec17.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Trapdoor one-way functions and zero-knowledge proofs</td>
+<td>(<a href="MIT6_045JS11_lec18.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Probably approximately correct (PAC) learning</td>
+<td>(<a href="MIT6_045JS11_lec19.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>More PAC learning</td>
+<td>(<a href="MIT6_045JS11_lec20.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Introduction to quantum</td>
+<td>(<a href="MIT6_045JS11_lec21.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Quantum mechanics and BQP</td>
+<td>(<a href="MIT6_045JS11_lec22.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Quantum algorithms</td>
+<td>(<a href="MIT6_045JS11_lec23.pdf">PDF</a>)</td>
+</tr>
+</tbody>
+</table>
+</br>

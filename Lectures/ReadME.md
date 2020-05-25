@@ -477,6 +477,114 @@
 <table class="tablewidth100" summary="See table caption for summary.">
 <thead>
 <tr>
+<th scope="col">ASSIGNMENTS</th>
+<th scope="col">SUPPORTING&nbsp;FILES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td colspan="2"><strong>Assignment 1</strong></td>
+</tr>
+<tr class="alt-row">
+<td>
+<p><a href="MIT6_S096IAP14_ass1_p1.pdf">Problem 1: Floating Point (PDF)</a></p>
+<p><a href="s1.pdf">Sample Solution to Assignment 1, Problem 1</a></p>
+</td>
+<td>
+<p>Test data:&nbsp;<a href="floating.data.zip">floating.data (ZIP)</a>&nbsp;(This ZIP file contains: 7 .in files and 7 .out files.)</p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="MIT6_S096IAP14_ass1_p2.pdf">Problem 2: Matrix Manipulation (PDF)</a></p>
+<p><a href="s2.pdf">Sample Solution to Assignment 1, Problem 2</a></p>
+</td>
+<td>
+<p>Test data:&nbsp;<a href="matrix.data.zip">matrix.data (ZIP)</a>&nbsp;(This ZIP file contains: 10 .in files and 10 .out files.)</p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p><a href="MIT6_S096IAP14_ass1_p3.pdf">Problem 3: Matrix Manipulation 2 (PDF)</a></p>
+<p><a href="s3.pdf">Sample Solution to Assignment 1, Problem 3</a></p>
+</td>
+<td>
+<p>Test data:&nbsp;<a href="matrix2.data.zip">matrix2.data&nbsp;<span class="nobr">(ZIP - 20.7MB)</span></a>&nbsp;(This ZIP file contains: 11 .in files and 11 .out files.)</p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="MIT6_S096IAP14_ass1_p4.pdf">Problem 4: Transposition Cipher (PDF)</a></p>
+<p><a href="s4.pdf">Sample Solution to Assignment 1, Problem 4</a></p>
+</td>
+<td>
+<p>Test data:&nbsp;<a href="loop.data.zip">loop.data&nbsp;<span class="nobr">(ZIP - 19.1MB)</span></a>&nbsp;(This ZIP file contains: 10 .in files and 10 .out files.)</p>
+</td>
+</tr>
+<tr class="alt-row">
+<td colspan="2"><strong>Assignment&nbsp;2</strong></td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="MIT6_S096IAP14_ass2_p1.pdf">Problem 1: Linked List Library (PDF)</a></p>
+<p><a href="s5.pdf">Sample Solution to Assignment 2, Problem 1</a></p>
+</td>
+<td>
+<p>Solution code and test data:&nbsp;<a href="list.zip">list (ZIP)</a>&nbsp;(This ZIP file contains: 2 .h files, 2 .c files, 1 .make file and 1 .txt file.)</p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p><a href="MIT6_S096IAP14_ass2_p2.pdf">Problem 2: Minimum Spanning Tree (PDF)</a></p>
+<p><a href="s6.pdf">Sample Solution to Assignment 2, Problem 2</a></p>
+</td>
+<td>
+<p>Solution code and test data:&nbsp;<a href="mst.data.zip">mst&nbsp;<span class="nobr">(ZIP - 5.3MB)</span></a>&nbsp;(This ZIP file contains: 1 .make file and 1 .cpp file.)</p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="MIT6_S096IAP14_ass2_p3.pdf">Problem 3: Rational Number Library (PDF)</a></p>
+<p><a href="s7.pdf">Sample Solution to Assignment 2, Problem 3</a></p>
+</td>
+<td>
+<p>Solution and test data:&nbsp;<a href="rational.zip">rational (ZIP)</a>&nbsp; (This ZIP file contains: 2 .h files, 3 .cpp files, 1 .make file and 1 .txt file.)</p>
+</td>
+</tr>
+<tr class="alt-row">
+<td colspan="2"><strong>Assignment&nbsp;3</strong></td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="MIT6_S096IAP14_ass3_p1.pdf">Problem 1: C++ Linked List Library (PDF)</a></p>
+<p><a href="s8.pdf">Sample Solution to Assignment 3, Problem 1</a></p>
+</td>
+<td>
+<p>Solution and test data:&nbsp;<a href="cpplist.zip">cpplist (ZIP)</a>&nbsp;(This ZIP file contains: 3 .h files, 4 .cpp files, 1 .make file and 1 .txt file.)</p>
+</td>
+</tr>
+<tr class="alt-row">
+<td colspan="2"><strong>Assignment&nbsp;4 (Final Project)<br /></strong></td>
+</tr>
+<tr class="row">
+<td>
+<p>Problem: N-Body Gravity Simulation (problem statement available in&nbsp;<a href="#kcourse3">Lecture Notes</a>&nbsp;for Lecture 8)</p>
+</td>
+<td>
+<p>Starting environment:&nbsp;<a href="nbody.zip">nbody&nbsp;<span class="nobr">(ZIP - 2.2MB)</span></a>&nbsp;(This ZIP file contains: 5 .h files, 5 .mk files, 7 .cpp files, 1 .make file and 1 .txt file.)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</br>
+
+
+<p id="kcourse3">&nbsp;&nbsp;</p>
+
+
+<table class="tablewidth100" summary="See table caption for summary.">
+<thead>
+<tr>
 <th scope="col">LECTURE&nbsp;TOPICS</th>
 <th scope="col">SUPPORTING FILES</th>
 </tr>

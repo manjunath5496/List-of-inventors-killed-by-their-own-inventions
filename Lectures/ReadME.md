@@ -7,7 +7,7 @@
 <li><a href="#course6">Elements of Software Construction</a></li>
 <li><a href="#course7">Introduction to Computer Science and Programming in Python</a></li>
 <li><a href="#course8">Introduction to Computer Science and Programming</a></li>
-<li><a href="#course9">Non-Equilibrium Statistical Mechanics</a></li>
+<li><a href="#course9">Introduction to Algorithms</a></li>
 <li><a href="#course10">Introductory Quantum Mechanics I</a></li>
 <li><a href="#course11">Introductory Quantum Mechanics II</a></li>
 <li><a href="#course12">Small-Molecule Spectroscopy and Dynamics</a></li>
@@ -995,5 +995,191 @@
 <li><a href="MIT6_00SCS11_q1_soln.pdf">Quiz 1 Solutions (PDF)</a></li>
 </ul>
 </br>
+<h2 id="course9">Introduction to Algorithms</h2>
 
-
+<table class="tablewidth75" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">TOPICS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td colspan="2"><strong>Unit 1: Introduction</strong></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_006F11_lec01.pdf">Algorithmic thinking, peak finding&nbsp;<span class="nobr">(PDF - 1.9MB)</span></a></td>
+</tr>
+<tr class="row">
+<td>
+<p>Models of computation, document distance</p>
+<ul>
+<li><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_006F11_lec02_orig.pdf">Original (handwritten) notes&nbsp;<span class="nobr">(PDF - 5.2MB)</span></a></li>
+<li><a href="MIT6_006F11_lec02.pdf">Typed notes (PDF)</a></li>
+<li><a href="lec02_code.zip">Lecture code (ZIP)</a>&nbsp;(This ZIP file contains: 8 .py files.)</li>
+</ul>
+</td>
+</tr>
+<tr class="alt-row">
+<td colspan="2"><strong>Unit 2: Sorting and Trees</strong></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_006F11_lec03.pdf">Insertion sort, merge sort (PDF)</a>&nbsp;(Courtesy of Charles Leiserson, Piotr Indyk, Constantinos Daskalakis, and Srini Devadas. Used with permission.)</td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_006F11_lec04.pdf">Heaps and heap sort (PDF)</a>&nbsp;(Courtesy of Charles Leiserson, Piotr Indyk, Constantinos Daskalakis, and Srini Devadas. Used with permission.)</td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_006F11_lec05.pdf">Binary search trees, BST sort&nbsp;<span class="nobr">(PDF - 1.2MB)</span></a></td>
+</tr>
+<tr class="alt-row">
+<td>
+<p>AVL trees, AVL sort</p>
+<ul>
+<li><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_006F11_lec06_orig.pdf">Original (handwritten) notes&nbsp;<span class="nobr">(PDF - 3.9MB)</span></a></li>
+<li><a href="MIT6_006F11_lec06.pdf">Typed notes&nbsp;<span class="nobr">(PDF - 1.4MB)</span></a></li>
+<li><a href="lec06_code.zip">Lecture code (ZIP)</a>&nbsp;(This ZIP file contains: 2 .py files and 1 .txt file.)</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p>Counting sort, radix sort, lower bounds for sorting</p>
+<ul>
+<li><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_006F11_lec07_orig.pdf">Original (handwritten) notes&nbsp;<span class="nobr">(PDF - 3.1MB)</span></a></li>
+<li><a href="MIT6_006F11_lec07.pdf">Typed notes (PDF)</a></li>
+</ul>
+</td>
+</tr>
+<tr class="alt-row">
+<td colspan="2"><strong>Unit 3: Hashing</strong></td>
+</tr>
+<tr class="row">
+<td>
+<p>Hashing with chaining</p>
+<ul>
+<li><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_006F11_lec08_orig.pdf">Original (handwritten) notes&nbsp;<span class="nobr">(PDF - 4.3MB)</span></a></li>
+<li><a href="MIT6_006F11_lec08.pdf">Typed notes (PDF)</a></li>
+</ul>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p>Table doubling, Karp-Rabin</p>
+<ul>
+<li><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_006F11_lec09_orig.pdf">Original (handwritten) notes&nbsp;<span class="nobr">(PDF - 3.7MB)</span></a></li>
+<li><a href="MIT6_006F11_lec09.pdf">Typed notes (PDF)</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_006F11_lec10.pdf">Open addressing, cryptographic hashing (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td colspan="2"><strong>Unit 4: Numerics</strong></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_006F11_lec11.pdf">Integer arithmetic, Karatsuba multiplication (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_006F11_lec12.pdf">Square roots, Newton's method (PDF)</a></td>
+</tr>
+<tr class="row">
+<td colspan="2"><strong>Unit 5: Graphs</strong></td>
+</tr>
+<tr class="alt-row">
+<td>
+<p>Breadth-first search (BFS)</p>
+<ul>
+<li><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_006F11_lec13_orig.pdf">Original (handwritten) notes&nbsp;<span class="nobr">(PDF - 3.8MB)</span></a></li>
+<li><a href="MIT6_006F11_lec13.pdf">Typed notes&nbsp;<span class="nobr">(PDF - 1.5MB)</span></a></li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p>Depth-first search (DFS), topological sorting</p>
+<ul>
+<li><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_006F11_lec14_orig.pdf">Original (handwritten) notes&nbsp;<span class="nobr">(PDF - 3.1MB)</span></a></li>
+<li><a href="MIT6_006F11_lec14.pdf">Typed notes&nbsp;<span class="nobr">(PDF - 1.6MB)</span></a></li>
+</ul>
+</td>
+</tr>
+<tr class="alt-row">
+<td colspan="2"><strong>Unit 6: Shortest Paths</strong></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_006F11_lec15.pdf">Single-source shortest paths problem (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_006F11_lec16.pdf">Dijkstra (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_006F11_lec17.pdf">Bellman-Ford&nbsp;<span class="nobr">(PDF - 1.2MB)</span></a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_006F11_lec18.pdf">Speeding up Dijkstra&nbsp;<span class="nobr">(PDF - 1.1MB)</span></a></td>
+</tr>
+<tr class="row">
+<td colspan="2"><strong>Unit 7: Dynamic Programming</strong></td>
+</tr>
+<tr class="alt-row">
+<td>
+<p>Dynamic programming I: Fibonacci, shortest paths</p>
+<ul>
+<li><a href="MIT6_006F11_lec19_orig.pdf"><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." />Original (handwritten) notes&nbsp;<span class="nobr">(PDF - 3.8MB)</span></a></li>
+<li><a href="MIT6_006F11_lec19.pdf">Typed notes&nbsp;<span class="nobr">(PDF - 1.1MB)</span></a></li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p>Dynamic programming II: text justification, blackjack</p>
+<ul>
+<li><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_006F11_lec20_orig.pdf">Original (handwritten) notes&nbsp;<span class="nobr">(PDF - 4.0MB)</span></a></li>
+<li><a href="MIT6_006F11_lec20.pdf">Typed notes (PDF)</a></li>
+</ul>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p>Dynamic programming III: parenthesization, edit distance, knapsack</p>
+<ul>
+<li><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_006F11_lec21_orig.pdf">Original (handwritten) notes&nbsp;<span class="nobr">(PDF - 4.2MB)</span></a></li>
+<li><a href="MIT6_006F11_lec21.pdf">Typed notes (PDF)</a></li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p>Dynamic programming IV: guitar fingering, Tetris, Super Mario Bros.</p>
+<ul>
+<li><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_006F11_lec22_orig.pdf">Original (handwritten) notes&nbsp;<span class="nobr">(PDF - 4.4MB)</span></a></li>
+<li><a href="MIT6_006F11_lec22.pdf">Typed notes (PDF)</a></li>
+</ul>
+</td>
+</tr>
+<tr class="alt-row">
+<td colspan="2"><strong>Unit 8: Advanced Topics</strong></td>
+</tr>
+<tr class="row">
+<td>
+<p>Computational complexity</p>
+<ul>
+<li><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_006F11_lec23_orig.pdf">Original (handwritten) notes&nbsp;<span class="nobr">(PDF - 3.9MB)</span></a></li>
+<li><a href="MIT6_006F11_lec23.pdf">Typed notes (PDF)</a></li>
+</ul>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p>Topics in algorithms research</p>
+<ul>
+<li><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_006F11_lec24_orig.pdf">Original (handwritten) notes for second half of class&nbsp;<span class="nobr">(PDF - 4.4MB)</span></a></li>
+<li><a href="MIT6_006F11_lec24.pdf">Typed notes&nbsp;<span class="nobr">(PDF - 1.8MB)</span></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</br>

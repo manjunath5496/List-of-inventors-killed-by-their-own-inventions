@@ -8,7 +8,7 @@
 <li><a href="#course7">Introduction to Computer Science and Programming in Python</a></li>
 <li><a href="#course8">Introduction to Computer Science and Programming</a></li>
 <li><a href="#course9">Introduction to Algorithms</a></li>
-<li><a href="#course10">Introductory Quantum Mechanics I</a></li>
+<li><a href="#course10">Artificial Intelligence</a></li>
 <li><a href="#course11">Introductory Quantum Mechanics II</a></li>
 <li><a href="#course12">Small-Molecule Spectroscopy and Dynamics</a></li>
 <li><a href="#course13">Chemistry of Biomolecules I</a></li>
@@ -1295,3 +1295,13 @@
 </tr>
 </tbody>
 </table>
+</br>
+
+<h2 id="course10">Artificial Intelligence</h2>
+
+
+
+
+
+
+

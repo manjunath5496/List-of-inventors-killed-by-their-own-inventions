@@ -840,3 +840,61 @@
 </table>
 
 </br>
+
+<table summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col" width="50%">EXPLORATIONS</th>
+<th scope="col" width="50%">SUPPORTING&nbsp;FILES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>Exploration 1: A Midi piano (<a href="MIT6_005f08_explore01.pdf">PDF</a>)</td>
+<td>
+<p>exploration1 (<a href="exploration1.zip">ZIP</a>) (This ZIP file contains 4 .java files and 2 files with no file extension.)</p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>Exploration 2: Building a Sudoku solver with SAT (<a href="MIT6_005f08_explore02.pdf">PDF</a>)</td>
+<td>
+<p>exploration2 (<a href="exploration2.zip">ZIP</a>) (This ZIP file contains 2 .txt files and 2 files with no file extension.)</p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p>Exploration 3: Photo organizer (<a href="MIT6_005f08_explore03.pdf">PDF</a>)</p>
+</td>
+<td>exploration3 (<a href="exploration3.zip">ZIP - 3.1MB</a>) (This ZIP file contains 12 .jpeg files, 5 .java files and 2 files with no file extension.)
+<p>&nbsp;</p>
+<p>(Photo.java, PreviewPane.java, and Thumbnail.java are co-written by Jongmin Baek, and are used with permission.)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</br>
+<table class="tablewidth50" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">PROBLEM&nbsp;SETS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>
+<p>Problem set 1: The state machine paradigm (<a href="MIT6_005f08_pset01.pdf">PDF</a>)</p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p>Problem set 2: The symbolic paradigm (<a href="MIT6_005f08_pset02.pdf">PDF</a>)</p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p>Problem set 3: The relational paradigm (<a href="MIT6_005f08_pset03.pdf">PDF</a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</br>

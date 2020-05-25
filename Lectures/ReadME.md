@@ -525,6 +525,7 @@
 </tr>
 <tr class="alt-row">
 <td><a href="MIT6_S096IAP14_Lecture10.pdf">Course Recap, Interviews, Advanced Topics: Grab Bag &amp; Perspective (PDF)</a></td>
+  <td>&nbsp;</td>
 </tr>
 </tbody>
 </table>

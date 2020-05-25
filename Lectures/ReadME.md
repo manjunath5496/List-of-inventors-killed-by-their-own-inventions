@@ -1299,8 +1299,19 @@
 
 <h2 id="course10">Artificial Intelligence</h2>
 
-
-
+<p>Chapter 1: Introduction&nbsp;<span class="nobr">(<a href="ch1_intro.pdf">PDF - 2.4 MB</a>)</span></p>
+<p>Chapter 2: Search&nbsp;<span class="nobr">(<a href="ch2_search1.pdf">PDF 1 of 3 - 2.6 MB</a>)</span>&nbsp;<span class="nobr">(<a href="ch2_search2.pdf">PDF 2 of 3 - 1.9 MB</a>)</span>&nbsp;<span class="nobr">(<a href="ch2_search3.pdf">PDF 3 of 3 - 2.4 MB</a>)</span></p>
+<p>Chapter 3: Constraint Satisfactory Problems&nbsp;<span class="nobr">(CSP)</span>&nbsp;and Games&nbsp;<span class="nobr">(<a href="ch3_csp_games1.pdf">PDF 1 of 2 - 2.4 MB</a>)</span>&nbsp;<span class="nobr">(<a href="ch3_csp_games2.pdf">PDF 2 of 2</a>)</span></p>
+<p>Chapter 4: Learning Introduction&nbsp;<span class="nobr">(<a href="ch4_learnintro.pdf">PDF - 2.7 MB</a>)</span></p>
+<p>Chapter 5: Machine Learning I&nbsp;<span class="nobr">(<a href="ch5_mach1.pdf">PDF - 1.8 MB</a>)</span></p>
+<p>Chapter 6: Machine Learning II&nbsp;<span class="nobr">(<a href="ch6_mach2.pdf">PDF - 1.7 MB</a>)</span>&nbsp;<span class="nobr">(These notes are labeled as "Section 10.")</span></p>
+<p>Chapter 7: Machine Learning III&nbsp;<span class="nobr">(<a href="ch7_mach3.pdf">PDF - 2.1 MB</a>)</span></p>
+<p>Chapter 8: Machine Learning IV&nbsp;<span class="nobr">(<a href="ch8_mach4.pdf">PDF - 2.1 MB</a>)</span></p>
+<p>Chapter 9: Logic I&nbsp;<span class="nobr">(<a href="ch9_logic1a.pdf">PDF 1 of 2 - 1.6 MB</a>)</span>&nbsp;<span class="nobr">(<a href="ch9_logic1b.pdf">PDF 2 of 2 - 2.1 MB</a>)</span></p>
+<p>Chapter 10: Logic II&nbsp;<span class="nobr">(<a href="ch10_logic2a.pdf">PDF 1 of 2 - 2.1 MB</a>)</span>&nbsp;<span class="nobr">(<a href="ch10_logic2b.pdf">PDF 2 of 2 - 2.0 MB</a>)</span></p>
+<p>Chapter 11: Logic Programming&nbsp;<span class="nobr">(<a href="ch11_logicprog.pdf">PDF - 1.4 MB</a>)</span></p>
+<p>Chapter 12: Language Understanding&nbsp;<span class="nobr">(<a href="ch12_language1.pdf">PDF 1 of 2 - 2.3 MB</a>)</span>&nbsp;<span class="nobr">(<a href="ch12_language2.pdf">PDF 2 of 2 - 1.0 MB</a>)</span></p>
+</br>
 
 
 

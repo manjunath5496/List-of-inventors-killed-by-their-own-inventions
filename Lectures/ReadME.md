@@ -988,6 +988,12 @@
 </ul>
 </br>
 
-
+<ul class="arrow">
+<li><a href="MIT6_00SCS11_q1_topics.pdf">Quiz 1 Topics List (PDF)</a></li>
+<li><a href="MIT6_00SCS11_q1_practice.pdf">Practice Quiz 1 (PDF)</a></li>
+<li><a href="MIT6_00SCS11_q1.pdf">Quiz 1 Problems (PDF)</a></li>
+<li><a href="MIT6_00SCS11_q1_soln.pdf">Quiz 1 Solutions (PDF)</a></li>
+</ul>
+</br>
 
 

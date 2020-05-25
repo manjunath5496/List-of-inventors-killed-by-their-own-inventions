@@ -1567,4 +1567,27 @@
 </tr>
 </tbody>
 </table>
-
+</br>
+<table class="tablewidth50" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">EXAMS</th>
+<th scope="col">SOLUTIONS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>Quiz 1 (<a href="1/quiz1.pdf">PDF</a>)</td>
+<td>(<a href="1/quiz1_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Quiz 2 (<a href="1/quiz2.pdf">PDF</a>)</td>
+<td>(<a href="1/quiz2_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Final Exam (<a href="1/final.pdf">PDF</a>)</td>
+<td>(<a href="1/final_sol.pdf">PDF</a>)</td>
+</tr>
+</tbody>
+</table>
+</br>

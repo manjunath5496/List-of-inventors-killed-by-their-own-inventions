@@ -972,4 +972,11 @@
 </tbody>
 </table>
 </br>
-
+<p>Please review the&nbsp;<a href="MIT6_0001F16_StyleGuide.pdf">6.0001 Style Guide (PDF)</a>&nbsp;before attempting the problem sets. If you need additional help, please consult the 6.0001 list of&nbsp;<a href="MIT6_0001F16_additional.pdf">Programming Resources (PDF)</a>. Solutions are not available.</p>
+<p><a href="ps0.zip">Problem Set 0 (ZIP - 2.0MB)</a>&nbsp;(This file contains: 1 .py file and 2 .pdf files.)</p>
+<p><a href="MIT6_0001F16_ps1.pdf">Problem Set 1 (PDF)</a></p>
+<p><a href="ps2.zip">Problem Set 2 (ZIP)</a>&nbsp;(This file contains: 1 .txt file, 1 .py file and 1 .pdf file.)</p>
+<p><a href="PS3.zip">Problem Set 3 (ZIP)</a>&nbsp;(This file contains: 1 .pdf file, 2 .py files and 1 .txt file.)</p>
+<p><a href="ps4.zip">Problem Set 4 (ZIP)</a>&nbsp;(This file contains: 1 .pdf file, 3 .py files and&nbsp; 2 .txt files.)</p>
+<p><a href="pset5.zip">Problem Set 5 (ZIP - 1.1MB)</a>&nbsp;(This file contains: 5 .py files, 1 .pdf file and 1 .txt file.)</p>
+</br>

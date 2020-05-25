@@ -5,7 +5,7 @@
 <li><a href="#course4">Effective Programming in C and C++</a></li>
 <li><a href="#course5">Software Construction</a></li>
 <li><a href="#course6">Elements of Software Construction</a></li>
-<li><a href="#course7">Computational Quantum Mechanics of Molecular and Extended Systems</a></li>
+<li><a href="#course7">Introduction to Computer Science and Programming in Python</a></li>
 <li><a href="#course8">Kinetics of Chemical Reactions</a></li>
 <li><a href="#course9">Non-Equilibrium Statistical Mechanics</a></li>
 <li><a href="#course10">Introductory Quantum Mechanics I</a></li>
@@ -898,3 +898,78 @@
 </tbody>
 </table>
 </br>
+<h2 id="course7">Introduction to Computer Science and Programming in Python</h2>
+
+<table class="tablewidth100" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">TOPICS</th>
+<th scope="col">LECTURE SLIDES</th>
+<th scope="col">LECTURE CODES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>What is computation?</td>
+<td><a href="MIT6_0001F16_Lec1.pdf">Slides for Lecture 1 (PDF)</a></td>
+<td><a href="lec1.py">Code for Lecture 1 (PY)</a></td>
+</tr>
+<tr class="alt-row">
+<td>Branching and Iteration</td>
+<td><a href="MIT6_0001F16_Lec2.pdf">Slides for Lecture 2 (PDF)</a></td>
+<td><a href="lec2_branch_loops.py">Code for Lecture 2 (PY)</a></td>
+</tr>
+<tr class="row">
+<td>String Manipulation, Guess and Check, Approximations, Bisection</td>
+<td><a href="MIT6_0001F16_Lec3.pdf">Slides for Lecture 3 (PDF)</a></td>
+<td><a href="lec3_strings_algos.py">Code for Lecture 3 (PY)</a></td>
+</tr>
+<tr class="alt-row">
+<td>Decomposition, Abstractions, Functions</td>
+<td><a href="MIT6_0001F16_Lec4.pdf">Slides for Lecture 4 (PDF 1.1MB)</a></td>
+<td><a href="lec4_functions.py">Code for Lecture 4 (PY)</a></td>
+</tr>
+<tr class="row">
+<td>Tuples, Lists, Aliasing, Mutability, Cloning</td>
+<td><a href="MIT6_0001F16_Lec5.pdf">Slides for Lecture 5 (PDF)</a></td>
+<td><a href="lec5_tuples_lists.py">Code for Lecture 5 (PY)</a></td>
+</tr>
+<tr class="alt-row">
+<td>Recursion, Dictionaries</td>
+<td><a href="MIT6_0001F16_Lec6.pdf">Slides for Lecture 6&nbsp;<span class="nobr">(PDF - 1.3MB)</span></a></td>
+<td><a href="lec6_recursion_dictionaries.py">Code for Lecture 6 (PY)</a></td>
+</tr>
+<tr class="row">
+<td>Testing, Debugging, Exceptions, Assertions</td>
+<td><a href="MIT6_0001F16_Lec7.pdf">Slides for Lecture 7 (PDF)</a></td>
+<td><a href="lec7_debug_except.py">Code for Lecture 7 (PY)</a></td>
+</tr>
+<tr class="alt-row">
+<td>Object Oriented Programming</td>
+<td><a href="MIT6_0001F16_Lec8.pdf">Slides for Lecture 8&nbsp;<span class="nobr">(PDF)</span></a></td>
+<td><a href="lec8_classes.py">Code for Lecture 8 (PY)</a></td>
+</tr>
+<tr class="row">
+<td>Python Classes and Inheritance</td>
+<td><a href="MIT6_0001F16_Lec9.pdf">Slides for Lecture 9&nbsp;<span class="nobr">(PDF - 1.6MB)</span></a></td>
+<td><a href="lec9_inheritance.py">Code for Lecture 9 (PY)</a></td>
+</tr>
+<tr class="alt-row">
+<td>Understanding Program Efficiency, Part 1</td>
+<td><a href="MIT6_0001F16_Lec10.pdf">Slides for Lecture 10 (PDF)</a></td>
+<td><a href="lec10_complexity_part1.py">Code for Lecture 10 (PY)</a></td>
+</tr>
+<tr class="row">
+<td>Understanding Program Efficiency, Part 2</td>
+<td><a href="MIT6_0001F16_Lec11.pdf">Slides for Lecture 11 (PDF)</a></td>
+<td><a href="lec11_complexity_part2.py">Code for Lecture 11 (PY)</a></td>
+</tr>
+<tr class="alt-row">
+<td>Searching and Sorting</td>
+<td><a href="MIT6_0001F16_Lec12.pdf">Slides for Lecture 12&nbsp;<span class="nobr">(PDF - 2.4MB)</span></a></td>
+<td><a href="lec12_sorting.py">Code for Lecture 12 (PY)</a></td>
+</tr>
+</tbody>
+</table>
+</br>
+

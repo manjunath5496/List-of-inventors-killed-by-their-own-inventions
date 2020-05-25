@@ -1219,14 +1219,14 @@
 </td>
 <td>
 <p><a href="MIT6_006F11_ps3_sol.pdf">Problem Set 3 Solutions (PDF)</a></p>
-<p><a href="http://ocw.mit.edu/ans7870/6/6.006/f11/ps3_code_sol.zip">Problem Set 3 Code Solutions&nbsp;<span class="nobr">(ZIP - 15.7MB)</span></a></p>
+<p><a href="ps3_code_sol.zip">Problem Set 3 Code Solutions&nbsp;<span class="nobr">(ZIP - 15.7MB)</span></a></p>
 </td>
 </tr>
 <tr class="alt-row">
 <td>Hash functions, Python dictionaries, matching DNA sequences</td>
 <td>
 <p><a href="MIT6_006F11_ps4.pdf">Problem Set 4 (PDF)</a></p>
-<p><a href="http://ocw.mit.edu/ans7870/6/6.006/f11/ps4.tar.gz">Problem Set 4 Code (GZ - 12.4MB)</a>&nbsp;</p>
+<p><a href="ps4.tar.gz">Problem Set 4 Code (GZ - 12.4MB)</a>&nbsp;</p>
 </td>
 <td>
 <p><a href="MIT6_006F11_ps4_sol.pdf">Problem Set 4 Solutions (PDF)</a></p>

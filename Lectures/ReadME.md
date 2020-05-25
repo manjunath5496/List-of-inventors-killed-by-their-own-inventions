@@ -1316,3 +1316,88 @@
 <h2 id="course11">Computer Language Engineering</h2>
 
 
+<table class="tablewidth75" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">TOPICS</th>
+<th scope="col">LECTURE&nbsp;NOTES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>Introduction</td>
+<td>(<a href="MIT6_035S10_lec01.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Specifying languages with regular expressions and context-free grammars</td>
+<td>(<a href="MIT6_035S10_lec02.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>
+<p>Introduction to shift-reduce parsing</p>
+<p>Parse table construction</p>
+</td>
+<td>
+<p>(<a href="MIT6_035S10_lec03.pdf">PDF</a>)</p>
+<p>(<a href="MIT6_035S10_lec03b.pdf">PDF</a>)</p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>Top-down parsing</td>
+<td>(<a href="MIT6_035S10_lec04.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Intermediate formats</td>
+<td>(<a href="MIT6_035S10_lec05.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Semantic analysis</td>
+<td>(<a href="MIT6_035S10_lec06.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Unoptimized code generation</td>
+<td>(<a href="MIT6_035S10_lec07.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Unoptimized code generation (cont.)</td>
+<td>(<a href="MIT6_035S10_lec08.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Introduction to program analysis and optimization</td>
+<td>(<a href="MIT6_035S10_lec09.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Introduction to dataflow analysis</td>
+<td>(<a href="MIT6_035S10_lec10.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Foundations of dataflow analysis</td>
+<td>(<a href="MIT6_035S10_lec11_12.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Introduction to code optimization: instruction scheduling</td>
+<td>(<a href="MIT6_035S10_lec13.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Loop optimizations: instruction scheduling</td>
+<td>(<a href="MIT6_035S10_lec14.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>More loop optimizations</td>
+<td>(<a href="MIT6_035S10_lec15.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Register allocation</td>
+<td>(<a href="MIT6_035S10_lec16.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Parallelization</td>
+<td>(<a href="MIT6_035S10_lec17.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Memory optimization</td>
+<td><span class="nobr">(<img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_035S10_lec18.pdf">PDF - 2.5MB</a>)</span></td>
+</tr>
+</tbody>
+</table>
+</br>

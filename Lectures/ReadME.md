@@ -1764,7 +1764,7 @@
 <td>
 <p><a href="1/MIT6_042JS15_Coloring.pdf">Coloring (PDF)</a></p>
 <p><a href="1/MIT6_042JS15_Connectivity.pdf">Connectivity (PDF)</a></p>
-<p><a href="1/MIT6_042JS15_connectivity.pdf">k-Connectivity (PDF)</a></p>
+<p><a href="1/MIT6_042JS15_connectivityk.pdf">k-Connectivity (PDF)</a></p>
 </td>
 </tr>
 <tr class="row">

@@ -1204,7 +1204,7 @@
 <td>Fractal rendering, digital circuit simulation</td>
 <td>
 <p><a href="MIT6_006F11_ps2.pdf">Problem Set 2 (PDF)</a></p>
-<p><a href="ps2.zip">Problem Set 2 Code (ZIP)</a></p>
+<p><a href="ps203.zip">Problem Set 2 Code (ZIP)</a></p>
 </td>
 <td>
 <p><a href="MIT6_006F11_ps2_sol.pdf">Problem Set 2 Solutions (PDF)</a></p>
@@ -1215,7 +1215,7 @@
 <td>Range queries, digital circuit layout</td>
 <td>
 <p><a href="MIT6_006F11_ps3.pdf">Problem Set 3 (PDF)</a></p>
-<p><a href="ps3.zip">Problem Set 3 Code (ZIP - 3.2MB)</a></p>
+<p><a href="ps303.zip">Problem Set 3 Code (ZIP - 3.2MB)</a></p>
 </td>
 <td>
 <p><a href="MIT6_006F11_ps3_sol.pdf">Problem Set 3 Solutions (PDF)</a></p>

@@ -9,7 +9,7 @@
 <li><a href="#course8">Introduction to Computer Science and Programming</a></li>
 <li><a href="#course9">Introduction to Algorithms</a></li>
 <li><a href="#course10">Artificial Intelligence</a></li>
-<li><a href="#course11">Introductory Quantum Mechanics II</a></li>
+<li><a href="#course11">Computer Language Engineering</a></li>
 <li><a href="#course12">Small-Molecule Spectroscopy and Dynamics</a></li>
 <li><a href="#course13">Chemistry of Biomolecules I</a></li>
 <li><a href="#course14">Synthetic Organic Chemistry II</a></li>
@@ -1313,6 +1313,6 @@
 <p>Chapter 12: Language Understanding&nbsp;<span class="nobr">(<a href="ch12_language1.pdf">PDF 1 of 2 - 2.3 MB</a>)</span>&nbsp;<span class="nobr">(<a href="ch12_language2.pdf">PDF 2 of 2 - 1.0 MB</a>)</span></p>
 </br>
 
-
+<h2 id="course11">Computer Language Engineering</h2>
 
 

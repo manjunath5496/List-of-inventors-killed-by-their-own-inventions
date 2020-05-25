@@ -1183,3 +1183,93 @@
 </tbody>
 </table>
 </br>
+<table summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">TOPICS</th>
+<th scope="col">PROBLEM SETS</th>
+<th scope="col">SOLUTIONS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>Asymptotic complexity, recurrence relations, peak finding</td>
+<td>
+<p><a href="MIT6_006F11_ps1.pdf">Problem Set 1 (PDF)</a></p>
+<p><a href="ps1.zip">Problem Set 1 Code (ZIP)</a></p>
+</td>
+<td><a href="MIT6_006F11_ps1_sol.pdf">Problem Set 1 Solutions (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td>Fractal rendering, digital circuit simulation</td>
+<td>
+<p><a href="MIT6_006F11_ps2.pdf">Problem Set 2 (PDF)</a></p>
+<p><a href="ps2.zip">Problem Set 2 Code (ZIP)</a></p>
+</td>
+<td>
+<p><a href="MIT6_006F11_ps2_sol.pdf">Problem Set 2 Solutions (PDF)</a></p>
+<p><a href="ps2_code_sol.zip">Problem Set 2 Code Solutions (ZIP - 7.7MB)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>Range queries, digital circuit layout</td>
+<td>
+<p><a href="MIT6_006F11_ps3.pdf">Problem Set 3 (PDF)</a></p>
+<p><a href="ps3.zip">Problem Set 3 Code (ZIP - 3.2MB)</a></p>
+</td>
+<td>
+<p><a href="MIT6_006F11_ps3_sol.pdf">Problem Set 3 Solutions (PDF)</a></p>
+<p><a href="http://ocw.mit.edu/ans7870/6/6.006/f11/ps3_code_sol.zip">Problem Set 3 Code Solutions&nbsp;<span class="nobr">(ZIP - 15.7MB)</span></a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>Hash functions, Python dictionaries, matching DNA sequences</td>
+<td>
+<p><a href="MIT6_006F11_ps4.pdf">Problem Set 4 (PDF)</a></p>
+<p><a href="http://ocw.mit.edu/ans7870/6/6.006/f11/ps4.tar.gz">Problem Set 4 Code (GZ - 12.4MB)</a>&nbsp;</p>
+</td>
+<td>
+<p><a href="MIT6_006F11_ps4_sol.pdf">Problem Set 4 Solutions (PDF)</a></p>
+<p><a href="ps4_code_sol.zip">Problem Set 4 Code Solutions (ZIP)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>The Knight's Shield, RSA public key encryption, image decryption</td>
+<td>
+<p><a href="MIT6_006F11_ps5.pdf">Problem Set 5 (PDF)</a></p>
+<p><a href="ps5.zip">Problem Set 5 Code (ZIP)</a></p>
+<p><a href="MIT6_006F11_ps5e.pdf">Problem Set 5 Grading Explanation (PDF)</a></p>
+</td>
+<td>
+<p><a href="MIT6_006F11_ps5_sol.pdf">Problem Set 5 Solutions (PDF)</a></p>
+<p><a href="ps5_code_sol.zip">Problem Set 5 Code Solutions (ZIP)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>Social networks, Rubik's Cube, Dijkstra</td>
+<td>
+<p><a href="MIT6_006F11_ps6.pdf">Problem Set 6 (PDF)</a></p>
+<p><a href="ps6.zip">Problem Set 6 Code (ZIP - 2.9MB)</a>&nbsp;</p>
+</td>
+<td>
+<p><a href="MIT6_006F11_ps6_sol.pdf">Problem Set 6 Solutions (PDF)</a></p>
+<p><a href="ps6_code_sol.zip">Problem Set 6 Code Solutions (ZIP)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>Seam carving, stock purchasing and knapsack</td>
+<td>
+<p><a href="MIT6_006F11_ps7.pdf">Problem Set 7 (PDF)</a></p>
+<p><a href="https://dx.doi.org/10.1145/1276377.1276390">Seam Carving for Content-Aware Image Resizing</a></p>
+<p><a href="ps7_code.zip">Problem Set 7 Code (ZIP)</a>&nbsp;</p>
+<p><a href="ps7_writeup.zip">Problem Set 7 Answer Template (ZIP)</a></p>
+<p><a href="MIT6_006F11_ps7e.pdf">Problem Set 7 Grading Explanation (PDF)</a></p>
+</td>
+<td>
+<p><a href="MIT6_006F11_ps7_sol.pdf">Problem Set 7 Solutions (PDF)</a></p>
+<p><a href="ps7_sol.zip">Problem Set 7 Code Solutions (ZIP)</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</br>

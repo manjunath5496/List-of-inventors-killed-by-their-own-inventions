@@ -15,7 +15,7 @@
 <li><a href="#course14">Automata, Computability, and Complexity</a></li>
 <li><a href="#course15">Design and Analysis of Algorithms</a></li>
 <li><a href="#course16">Information and Entropy</a></li>
-<li><a href="#course17">Advanced Organic Chemistry</a></li>
+<li><a href="#course17">Introduction to MATLAB</a></li>
 <li><a href="#course18">Introduction to Organic Synthesis Laboratory</a></li>
 <li><a href="#course19">Introduction to Experimental Chemistry</a></li>
 <li><a href="#course20">Biochemistry Laboratory</a></li>
@@ -2375,4 +2375,83 @@
 </table>
 
 </br>
+
+<h2 id="course17">Introduction to MATLAB</h2>
+
+<table class="tablewidth75">
+<thead>
+<tr>
+<th>TOPICS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>
+<p><a href="MIT6_057IAP19_lec1.pdf">Lecture 1: Introduction to MATLAB (PDF - 2.8MB)</a></p>
+<ul>
+<li>Getting Started</li>
+<li>Scripts</li>
+<li>Making Variables</li>
+<li>Manipulating Variables</li>
+<li>Basic Plotting</li>
+</ul>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p><a href="MIT6_057IAP19_lec2.pdf">Lecture 2: Visualization and Programming (PDF - 2.3 MB)</a></p>
+<ul>
+<li>Functions</li>
+<li>Flow Control</li>
+<li>Line Plots</li>
+<li>Image/Surface Plots</li>
+<li>Efficient Codes</li>
+<li>Debugging</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="MIT6_057IAP19_lec3.pdf">Lecture 3: Solving Equations, Curve Fitting, and Numerical Techniques (PDF - 1.2MB)</a></p>
+<ul>
+<li>Linear Algebra</li>
+<li>Polynomials</li>
+<li>Optimization</li>
+<li>Differentiation/Integration</li>
+<li>Differential Equations</li>
+</ul>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p><a href="MIT6_057IAP19_lec4.pdf">Lecture 4: Advanced Methods (PDF)</a></p>
+<ul>
+<li>Probability and Statistics</li>
+<li>Data Structures</li>
+<li>Images</li>
+<li>File I/O</li>
+</ul>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="MIT6_057IAP19_lec5.pdf">Lecture 5: Various Functions and Toolboxes (PDF - 3.3MB)</a></p>
+<ul>
+<li>Documentation</li>
+<li>Miscellaneous Useful Functions</li>
+<li>Graphical User Interfaces</li>
+<li>Simulink</li>
+<li>Symbolic Toolbox</li>
+<li>Image Processing</li>
+<li>Hardware Interface</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</br>
+
+
+
+
 

@@ -1,0 +1,126 @@
+\input 6001mac.tex
+\def\fbox#1{%
+  \vtop{\vbox{\hrule%
+              \hbox{\vrule\kern3pt%
+                    \vtop{\vbox{\kern3pt#1}\kern3pt}%
+                    \kern3pt\vrule}}%
+        \hrule}}
+
+\def\emptybox#1#2{\fbox{\vbox to #2{\hbox to #1 {\null}}}}
+
+\begin{document}
+
+\twocolumn
+\setlength{\topmargin}{-0.25in}
+
+\psetheader{IAP, 2005}{Quiz I}
+
+NAME:\emptybox{2.5in}{.25in}
+
+Section Number:  \emptybox{.25in}{.25in}
+
+Tutor's Name:\emptybox{2.0in}{.25in}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+PART & Value & Grade & Grader\\
+\hline
+1&18& & \\
+\hline
+2&20& & \\
+\hline
+3&30& & \\
+\hline
+4&12& & \\
+\hline
+5&20& & \\
+\hline
+\hline
+Total&100& & \\
+\hline
+\end{tabular}
+
+
+If you wish to write a note on any problem, put a check in the box
+\emptybox{.09in}{.09in} next to the problem number, and use the space
+provided at the end of the answer sheet.  {\it Notes written outside
+the answer boxes on this page will be ignored.}
+\vspace{1in}
+
+{\bf PART 0 (0 points)}
+
+How many hours of sleep did you get last night?
+\emptybox{.5in}{.5in}
+
+\newpage
+
+{\bf PART 1 (18 points)}
+
+\quesbox{4}{2in}
+\quesboxsmall{2}
+\quesbox{4}{2in}
+\quesboxsmall{2}
+\quesbox{4}{2in}
+\quesboxsmall{2}
+
+\newpage
+
+{\bf PART 2 (20 points)}
+
+\quesbox{20}{3in}
+
+\newpage
+
+{\bf PART 3 (30 points)}
+
+\quesbox{10}{2in}
+\quesbox{10}{2in}
+\quesbox{5}{1in}
+\quesbox{5}{1in}
+
+\newpage
+
+{\bf PART 4 (12 points)}
+
+\quesboxsmall{3}
+\quesboxsmall{3}
+\quesboxsmall{3}
+\quesboxsmall{3}
+
+\newpage
+
+{\bf PART 5 (20 points)}
+
+\quesboxsmall{2}
+\quesboxsmall{2}
+\quesboxsmall{2}
+\quesboxsmall{2}
+\quesboxsmall{2}
+\quesboxsmall{2}
+\quesboxsmall{2}
+\quesboxsmall{2}
+\quesboxsmall{2}
+\quesboxsmall{2}
+
+\newpage
+\onecolumn
+
+The rest of this page is for your use in marking special notes (see
+instructions on front page).
+
+\emptybox{6.0in}{6.0in}
+
+\end{document}
+
+% how to make a single big box
+
+\newpage
+\onecolumn
+
+\begin{tabular}{lll}
+Q46.(21)&\emptybox{.09in}{.09in}\\
+\multicolumn{3}{l}{\begin{minipage}[b]{6.0in}
+\emptybox{6.0in}{6.0in}
+\end{minipage}}\\
+\end{tabular}
+

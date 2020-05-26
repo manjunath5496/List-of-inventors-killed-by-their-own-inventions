@@ -1,0 +1,146 @@
+6.090 IAP '05 Quiz Practice Problems
+
+Part 1: Evaluation
+
+Evaluate the following expressions and give the value and type of the
+last expression in each group.  If the expressions result in an error, 
+
+For example:
+
+(define x 3)
+x
+
+Answer:
+
+Value: 3
+Type: number
+
+
+1.
+(define x 7)
+(+ x 7)
+
+2.
+(define y (lambda (z) (+ z 3)))
+y
+
+3.
+(let ((a 3)
+      (b (lambda (c) (lambda (d) (+ c d)))))
+  (b a))
+
+4.
+((lambda (a b) (b a)) 3 (lambda (c) (+ c 1)))
+
+5.
+(define m 3)
+(let ((m 5)
+      (n (if (= m 3) 7 9)))
+  n)
+
+
+Part 2: Recursive Procedures
+
+Write (expt x n): a procedure that raises x to the nth power (without
+reference to your notes)
+
+(define (expt x n)
+  to-be-completed)
+
+
+Part 3: Box and Pointer
+
+Draw the box and pointer diagrams for the following expressions:
+
+1.
+(cons 3 (cons 4 nil))
+
+2.
+(list (list 1 2) (list 3 4))
+
+3.
+(let ((a (cons 3 nil))
+      (b (cons 4 nil)))
+  (append a b))
+
+4.
+(cdr (cdr (cons (list 1 2 3) (list 4 5 6 7))))
+
+
+Part 4:
+
+Let's write a student abstraction.  Students have two important
+features: a name, and a cluefulness rating.  The clue rating ranges
+from 1-10.  The constructor is defined as follows:
+
+(define (make-student name clue)
+  (list "student" name "clue" clue))
+
+Finish the definition of the selectors such that the following
+contract holds:
+
+(define s (make-student "Ben" 3))
+
+(student-name s)
+;Value: "Ben"
+(student-clue s)
+;Value: 3
+
+1.
+(define (student-name student)
+  to-be-completed)
+
+2.
+(define (student-clue student)
+  to-be-completed)
+
+Suppose we have a list of students in the class and we wanted to
+compute the total clue of the whole class (sum of each student's clue).
+
+(define (total-clue list-of-students)
+  (if (null? list-of-students)
+      0
+      (+ ___________
+         ____________)))
+
+3.
+Fill in the two blanks above.  You may use any primitive procedures or
+procedures written above.
+
+
+4.  Now suppose we want the average clue.  You may use any primitive
+procedures (including length) or procedures written above.  You may
+also assume a non-empty list-of-students.
+
+(define (average-clue list-of-students)
+  (/ ________    ____________))
+
+
+Part 5:
+
+Are the following procedures recursive or iterative?
+
+1.
+(define (list-of-sevens n)
+  (if (= n 0)
+      nil
+      (cons 7 (list-of-sevens (- n 1)))))
+
+2.
+(define (odd? x)
+  (if (< x 2)
+      (= x 1)
+      (odd? (- x 2))))
+
+3.
+(define (list-ref lst k)
+  (if (= k 0)
+      (car lst)
+      (list-ref (cdr lst) (- k 1))))
+
+4.
+(define (fib n)
+  (if (< n 2)
+      n
+      (+ (fib (- n 1))
+         (fib (- n 2)))))

@@ -1,0 +1,69 @@
+6.090 IAP '05 Practice Problem Answers
+
+Part 1: Evaluation
+
+1.
+14
+number
+
+2.
+procedure
+num->num
+
+3.
+procedure
+num->num
+
+4.
+4
+num
+
+5.
+7
+num
+
+Part 2:
+
+(define (expt x n)
+  (if (= n 0)
+      1
+      (* n (expt x (- n 1)))))
+
+Part 3:
+
+I refuse to do more ascii art.
+
+Part 4:
+
+1.
+(define (student-name student)
+  (second student))  ; or (cadr student)
+
+2.
+(define (student-clue student)
+  (fourth student))  ; or (cadddr student)
+
+3.
+(define (total-clue list-of-students)
+  (if (null? list-of-students)
+      0
+      (+ (student-clue (car list-of-students))
+         (total-clue (cdr list-of-students)))))
+
+4.
+(define (average-clue list-of-students)
+  (/ (total-clue list-of-students) (length list-of-students)))
+
+Part 5:
+
+1.
+recursive
+
+2.
+iterative
+
+3.
+iterative
+
+4.
+recursive

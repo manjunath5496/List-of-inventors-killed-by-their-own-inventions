@@ -1,0 +1,95 @@
+Part 1
+
+1.
+I refuse to draw more ascii art
+
+2.
+(1 (2) 3)
+
+3.
+I refuse to draw more ascii art
+
+4.
+(1 2 3 (4))
+
+5.
+I refuse to draw more ascii art
+
+6.
+(7 42 54)
+
+
+Part 2
+
+7.
+(define (tower x n)
+  (if (= n 0)
+      1
+      (expt x (tower x (- n 1)))))
+
+Part 3
+
+8.
+(define (make-player name wins losses)
+  (list name wins losses))
+
+9.
+(define (player-win-ratio player)
+  (/ (player-wins player)
+     (+ (player-wins player) (player-losses player))))
+
+(define (check-record list-of-players)
+  (if (null? list-of-players)
+      0
+      (+ (- (player-wins (car list-of-players))
+            (player-losses (car list-of-players)))
+         (check-record (cdr list-of-players)))))
+
+10.
+0
+
+11.
+(- (player-wins (car list-of-players))
+   (player-losses (car list-of-players)))
+
+12.
+recursive
+
+13.
+iterative
+
+14.
+recursive
+
+15.
+iterative
+
+16.
+20
+
+17.
+number
+
+18.
+compound-procedure
+
+19.
+bool, num -> num
+
+20.
+error
+
+21.
+the object 20 is not applicable.
+
+22.
+compound-procedure
+
+23.
+num -> string
+
+24.
+error
+
+25.
+wrong number of arguments to three

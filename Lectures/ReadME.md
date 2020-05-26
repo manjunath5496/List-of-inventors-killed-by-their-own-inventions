@@ -2774,6 +2774,7 @@
 <td headers="col2">Henderson Picture Language (<a href="3/lec9.pdf">PDF</a>) (<a href="3/lec9.tex">TEX</a>)</td>
 <td>Student Notes 9 (<a href="3/class9.pdf">PDF</a>)</td>
 <td headers="col3">Code to load, lec9 (<a href="3/lec9.zip">ZIP</a>) (The ZIP contains: 5 .scm files, and 25 .pgm files.)</td>
+<td headers="col3">&nbsp;</td>  
 </tr>
 </tbody>
 </table>

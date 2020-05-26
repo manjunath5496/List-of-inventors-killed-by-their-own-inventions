@@ -18,7 +18,7 @@
 <li><a href="#course17">Introduction to MATLAB</a></li>
 <li><a href="#course18">Great Ideas in Theoretical Computer Science</a></li>
 <li><a href="#course19">Practical Programming in C</a></li>
-<li><a href="#course20">Biochemistry Laboratory</a></li>
+<li><a href="#course20">Introduction to C Memory Management and C++ Object-Oriented Programming</a></li>
 <li><a href="#course21">Organic Chemistry II</a></li>
 <li><a href="#course22">Organic Chemistry I</a></li>
 <li><a href="#course23">Advanced Chemical Experimentation and Instrumentation</a></li>
@@ -2663,4 +2663,49 @@
 </tr>
 </tbody>
 </table>
+</br>
+<h2 id="course20">Introduction to C Memory Management and C++ Object-Oriented Programming</h2>
+
+<table summary="See table caption for summary.">
+<thead>
+<tr>
+<th>TOPICS</th>
+<th>LECTURE&nbsp;NOTES</th>
+<th>SUPPORTING&nbsp;FILES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>Motivation for using C/C++; discussion of where C and C++ sit in the abstraction hierarchy; writing our first C programs</td>
+<td>(<a href="2/MIT6_088IAP10_lec01.pdf">PDF</a>)</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="alt-row">
+<td>The logistics of memory manipulation in C (pointers, structs)</td>
+<td>(<a href="2/MIT6_088IAP10_lec02.pdf">PDF</a>)</td>
+<td>(<a href="2/lec02.zip">ZIP</a>) (This ZIP file contains: 1 .c file and 1 .h file.)</td>
+</tr>
+<tr class="row">
+<td>More advanced memory manipulation in C. We'll show double linked-list insert in place, inserting into a linked list using a double pointer, corner cases of using memory (when we actually need heap allocation), etc.</td>
+<td>(<a href="2/MIT6_088IAP10_lec03.pdf">PDF</a>)</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="alt-row">
+<td>Introduction to C++; encapsulation: classes, namespaces, constructors and destructors; memory management in C++ (new, delete); operator overloading and standard input/output</td>
+<td>(<a href="2/MIT6_088IAP10_lec04.pdf">PDF</a>)</td>
+<td>(<a href="2/lec04.zip">ZIP</a>) (This Zip file contains: 3 .cc files and 2 .h files.)</td>
+</tr>
+<tr class="row">
+<td>Inheritance and polymorphism; templates; standard library containers</td>
+<td>(<a href="2/MIT6_088IAP10_lec05.pdf">PDF</a>)</td>
+<td>(<a href="2/lec05.zip">ZIP</a>) (This ZIP file contains: 4 .cc files and 3 .h files.)</td>
+</tr>
+<tr class="alt-row">
+<td>Tricks of the trade. Things people might see in interviews, etc. Review and discussion of the covered topics, Q&amp;A.</td>
+<td>(<a href="2/MIT6_088IAP10_lec06.pdf">PDF</a>)</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+
 </br>

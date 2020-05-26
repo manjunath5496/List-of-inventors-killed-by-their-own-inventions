@@ -2834,3 +2834,6 @@
 </tbody>
 </table>
 </br>
+<p>Practice Problems (<a href="3/quizpractice.txt">TXT</a>)<br />Practice Problems Solutions (<a href="3/quizpracticeans.txt">TXT</a>)</p>
+<p>Quiz 1 (<a href="3/quiz.pdf">PDF</a>) (<a href="3/quiz.tex">TEX</a>)<br />Quiz 1 Answer Sheet (<a href="3/quizanssheet.pdf">PDF</a>) (<a href="3/quizanssheet.tex">TEX</a>)<br />Quiz 1 Solutions (<a href="3/quizsolns.txt">TXT</a>)</p>
+</br>

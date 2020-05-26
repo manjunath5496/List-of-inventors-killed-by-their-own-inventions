@@ -25,7 +25,7 @@
 <li><a href="#course24">Introduction to C++</a></li>
 <li><a href="#course25">Software Studio</a></li>
 <li><a href="#course26">Algorithms for Computational Biology</a></li>
-<li><a href="#course27">Thermodynamics and Kinetics</a></li>
+<li><a href="#course27">Laboratory in Software Engineering</a></li>
 </ul>
 <p>&nbsp;</p>
 <h2 id="course1">Structure and Interpretation of Computer Programs</h2>
@@ -3268,6 +3268,135 @@
 </tr>
 <tr class="row">
 <td headers="tbl979id0_1">HMMs and Gene Finding (<a href="4/lecture7.pdf">PDF</a>)</td>
+</tr>
+</tbody>
+</table>
+</br>
+<h2 id="course27">Laboratory in Software Engineering</h2>
+<table class="tablewidth75" style="width: 607px;" summary="See table caption for summary.">
+<thead>
+<tr>
+<th style="width: 258px;" scope="col">TOPICS</th>
+<th style="width: 333px;" scope="col">LECTURE&nbsp;NOTES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td style="width: 591px;" colspan="2"><strong>Week 1</strong></td>
+</tr>
+<tr class="alt-row">
+<td style="width: 258px;">Introduction</td>
+<td style="width: 333px;">(<a href="4/lec1.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td style="width: 258px;">Object semantics</td>
+<td style="width: 333px;">(<a href="4/lec2.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td style="width: 591px;" colspan="2"><strong>Week 2</strong></td>
+</tr>
+<tr class="row">
+<td style="width: 258px;">Subclassing</td>
+<td style="width: 333px;">(<a href="4/lec3.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td style="width: 258px;">Specifications</td>
+<td style="width: 333px;">(<a href="4/lec4.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td style="width: 258px;">Testing</td>
+<td style="width: 333px;">(<a href="4/lec5.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td style="width: 591px;" colspan="2"><strong>Week 3</strong></td>
+</tr>
+<tr class="row">
+<td style="width: 258px;">
+<p>Object model notations</p>
+<p>Code summary</p>
+</td>
+<td style="width: 333px;">
+<p>(<a href="4/lec6.pdf">PDF</a>)</p>
+<p>(<a href="4/lec6_summary.pdf">PDF</a>)</p>
+</td>
+</tr>
+<tr class="alt-row">
+<td style="width: 258px;">Introduction to ADTs</td>
+<td style="width: 333px;">(<a href="4/lec7.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td style="width: 591px;" colspan="2"><strong>Week 4</strong></td>
+</tr>
+<tr class="alt-row">
+<td style="width: 258px;">Representation invariants</td>
+<td style="width: 333px;">(<a href="4/lec8.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td style="width: 258px;">Abstraction functions</td>
+<td style="width: 333px;">(<a href="4/lec9.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td style="width: 258px;">Dependencies and decoupling</td>
+<td style="width: 333px;">(<a href="4/lec10.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td style="width: 591px;" colspan="2"><strong>Week 5</strong></td>
+</tr>
+<tr class="alt-row">
+<td style="width: 258px;">Exceptions</td>
+<td style="width: 333px;">(<a href="4/lec11.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td style="width: 258px;">Equality</td>
+<td style="width: 333px;">(<a href="4/lec12.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td style="width: 258px;">Polymorphism: guest lecture by Gilad Bracha</td>
+<td style="width: 333px;">&nbsp;</td>
+</tr>
+<tr class="row">
+<td style="width: 591px;" colspan="2"><strong>Week 6</strong></td>
+</tr>
+<tr class="alt-row">
+<td style="width: 258px;">Subtypes and subclasses</td>
+<td style="width: 333px;">(<a href="4/lec14.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td style="width: 591px;" colspan="2"><strong>Week 7</strong></td>
+</tr>
+<tr class="alt-row">
+<td style="width: 258px;">Classes and interfaces</td>
+<td style="width: 333px;">(<a href="4/lec15.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td style="width: 258px;">Usability 1</td>
+<td style="width: 333px;">(<a href="4/lec16.pdf">PDF</a>)&nbsp;</td>
+</tr>
+<tr class="alt-row">
+<td style="width: 258px;">Usability 2</td>
+<td style="width: 333px;">(<a href="4/lec17.pdf">PDF</a>)&nbsp;</td>
+</tr>
+<tr class="row">
+<td style="width: 591px;" colspan="2"><strong>Week 8</strong></td>
+</tr>
+<tr class="alt-row">
+<td style="width: 258px;">Design patterns</td>
+<td style="width: 333px;">(<a href="4/lec18.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td style="width: 258px;">Design project experiences 1</td>
+<td style="width: 333px;">(<a href="4/lec19.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td style="width: 258px;">Design project experiences 2</td>
+<td style="width: 333px;">(<a href="4/lec20.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td style="width: 591px;" colspan="2"><strong>Week 10</strong></td>
+</tr>
+<tr class="alt-row">
+<td style="width: 258px;">Managing a small software team</td>
+<td style="width: 333px;">(<a href="4/lec21.pdf">PDF</a>)&nbsp;</td>
 </tr>
 </tbody>
 </table>

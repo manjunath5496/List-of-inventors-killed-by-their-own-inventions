@@ -16,7 +16,7 @@
 <li><a href="#course15">Design and Analysis of Algorithms</a></li>
 <li><a href="#course16">Information and Entropy</a></li>
 <li><a href="#course17">Introduction to MATLAB</a></li>
-<li><a href="#course18">Introduction to Organic Synthesis Laboratory</a></li>
+<li><a href="#course18">Great Ideas in Theoretical Computer Science</a></li>
 <li><a href="#course19">Introduction to Experimental Chemistry</a></li>
 <li><a href="#course20">Biochemistry Laboratory</a></li>
 <li><a href="#course21">Organic Chemistry II</a></li>
@@ -2450,8 +2450,85 @@
 </tbody>
 </table>
 </br>
+<h2 id="course18">Great Ideas in Theoretical Computer Science</h2>
 
-
-
-
+<table class="tablewidth75" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">TOPICS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>Introduction (<a href="2/lec1.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Logic (<a href="2/lec2.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Circuits and finite automata (<a href="2/lec3.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Turing machines (<a href="2/lec4.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Reducibility and G&ouml;del (<a href="2/lec5.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Minds and machines (<a href="2/lec6.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Complexity (<a href="2/lec7.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Polynomial time (<a href="2/lec8.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>P and NP (<a href="2/lec9.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>NP-completeness (<a href="2/lec10.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>NP-completeness in practice (<a href="2/lec11.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Space complexity and more (<a href="2/lec12.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Randomness (<a href="2/lec13.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Probabilistic complexity classes (<a href="2/lec14.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Derandomization / cryptography double feature (<a href="2/lec15.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Private-key cryptography (<a href="2/lec16.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Public-key cryptography (<a href="2/lec17.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Cryptographic protocols (<a href="2/lec18.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Interactive proofs / machine learning (<a href="2/lec19.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Probably Approximately Correct (PAC) learning (<a href="2/lec20.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Learning, Chomsky, RSA, quantum (<a href="2/lec21.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Quantum computing (<a href="2/lec22_23.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Quantum algorithms (<a href="2/lec24.pdf">PDF</a>)</td>
+</tr>
+</tbody>
+</table>
+</br>
 

@@ -3529,6 +3529,7 @@
 </table>
 </br>
 
+
 <table class="tablewidth75">
 <thead>
 <tr>
@@ -3547,7 +3548,7 @@
 </tr>
 <tr class="row">
 <td><a href="4/MIT6_172F18_practicequiz3.pdf">Practice Quiz 3 (PDF)</a></td>
-<td>No Solutions Provided</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="alt-row">
 <td><a href="4/MIT6_172F18_practicequiz4.pdf">Practice Quiz 4 (PDF)</a></td>
@@ -3555,5 +3556,6 @@
 </tr>
 </tbody>
 </table>
+
 
 </br>

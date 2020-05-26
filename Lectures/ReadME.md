@@ -2781,3 +2781,56 @@
 
 </br>
 
+
+<table class="tablewidth50" summary="See table caption for summary.">
+<thead>
+<tr class="tableheader">
+<th id="col1" scope="col" abbr="Week Number">ASSIGNMENTS</th>
+<th id="col2" scope="col">SOLUTIONS</th>
+<th id="col3" scope="col">SUPPORTING&nbsp;FILES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td headers="col1">Homework&nbsp;1 (<a href="3/hw1.pdf">PDF</a>)</td>
+<td headers="col2">Solutions 1 (<a href="3/hw1solns.txt">TXT</a>)</td>
+<td headers="col3">&nbsp;</td>
+</tr>
+<tr class="alt-row">
+<td headers="col1">Homework 2 (<a href="3/hw2.pdf">PDF</a>)</td>
+<td headers="col2">Solutions 2 (<a href="3/hw2solns.txt">TXT</a>)</td>
+<td headers="col3">&nbsp;</td>
+</tr>
+<tr class="row">
+<td headers="col1">Homework&nbsp;3 (<a href="3/hw3.pdf">PDF</a>)</td>
+<td headers="col2">Solutions 3 (<a href="3/hw3solns.txt">TXT</a>)</td>
+<td headers="col3">&nbsp;</td>
+</tr>
+<tr class="alt-row">
+<td headers="col1">Homework&nbsp;4 (<a href="3/hw4.pdf">PDF</a>)</td>
+<td headers="col2">Solutions 4 (<a href="3/hw4solns.txt">TXT</a>)</td>
+<td headers="col3">&nbsp;</td>
+</tr>
+<tr class="row">
+<td headers="col1">Homework&nbsp;5 (<a href="3/hw5.pdf">PDF</a>)</td>
+<td headers="col2">Solutions 5 (<a href="3/hw5solns.txt">TXT</a>)</td>
+<td headers="col3">&nbsp;</td>
+</tr>
+<tr class="alt-row">
+<td headers="col1">Homework&nbsp;6 (<a href="3/hw6.pdf">PDF</a>)</td>
+<td headers="col2">Solutions 6 (<a href="3/hw6solns.txt">TXT</a>)<br /><br />nimrod-solns.scm (<a href="3/nimrodsolns.scm">SCM</a>)</td>
+<td headers="col3">nimrod.scm (<a href="3/nimrod.scm">SCM</a>)</td>
+</tr>
+<tr class="row">
+<td headers="col1">Homework&nbsp;7 (<a href="3/hw7.pdf">PDF</a>)</td>
+<td headers="col2">hw7solns.scm (<a href="3/hw7solns.scm">SCM</a>)</td>
+<td headers="col3">hw7code.scm (<a href="3/hw7code.scm">SCM</a>)</td>
+</tr>
+<tr class="alt-row">
+<td headers="col1">Homework&nbsp;8 (<a href="3/hw8.pdf">PDF</a>)</td>
+<td headers="col2">Solutions 8 (<a href="3/hw8solns.txt">TXT</a>)</td>
+<td headers="col3">advgame.scm (<a href="3/advgame.scm">SCM</a>)</td>
+</tr>
+</tbody>
+</table>
+</br>

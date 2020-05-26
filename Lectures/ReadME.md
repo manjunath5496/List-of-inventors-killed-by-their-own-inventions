@@ -2954,3 +2954,38 @@
 </tbody>
 </table>
 </br>
+<table class="tablewidth50" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">ASSIGNMENTS</th>
+<th scope="col">SOLUTIONS</th>
+<th scope="col">LECTURES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>Problem set 1 (<a href="3/MIT6_096IAP11_assn01.pdf">PDF</a>)</td>
+<td>(<a href="3/MIT6_096IAP11_sol01.pdf">PDF</a>)</td>
+<td>1-2</td>
+</tr>
+<tr class="alt-row">
+<td>Problem set 2 (<a href="3/MIT6_096IAP11_assn02.pdf">PDF</a>)</td>
+<td>(<a href="3/MIT6_096IAP11_sol02.pdf">PDF</a>)</td>
+<td>3-5</td>
+</tr>
+<tr class="row">
+<td>Problem set 3 (<a href="3/MIT6_096IAP11_assn03.pdf">PDF</a>)</td>
+<td>(<a href="3/MIT6_096IAP11_sol03.pdf">PDF</a>)</td>
+<td>6-8</td>
+</tr>
+<tr class="alt-row">
+<td>Problem set 4 (<a href="3/MIT6_096IAP11_assn04.pdf">PDF</a>)</td>
+<td>(<a href="3/MIT6_096IAP11_sol04.pdf">PDF</a>)</td>
+<td>9-10</td>
+</tr>
+<tr class="row">
+<td colspan="3">Final project (<a href="3/MIT6_096IAP11_project.pdf">PDF</a>)</td>
+</tr>
+</tbody>
+</table>
+</br>

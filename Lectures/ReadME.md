@@ -2600,3 +2600,67 @@
 </table>
 </br>
 
+<table class="tablewidth" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">TOPICS</th>
+<th scope="col">ASSIGNMENTS</th>
+<th scope="col">SOLUTIONS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>Writing, compiling, and debugging programs; preprocessor macros; C file structure; variables; functions and problem statements; returning from functions</td>
+<td>(<a href="2/MIT6_087IAP10_assn01.pdf">PDF</a>)</td>
+<td>(<a href="2/MIT6_087IAP10_assn01_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Types, operators, expressions</td>
+<td>(<a href="2/MIT6_087IAP10_assn02.pdf">PDF</a>)</td>
+<td>(<a href="2/MIT6_087IAP10_assn02_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Control flow, functions, variable scope, static and global variables, I/O: printf and scanf, file I/O, character arrays, error handling, labels and goto</td>
+<td>
+<p>(<a href="2/MIT6_087IAP10_assn03.pdf">PDF</a>)</p>
+<p>(<a href="2/assn03.zip">ZIP</a>) (This ZIP file contains:&nbsp;1 .txt file and 2 .c files.)</p>
+</td>
+<td>(<a href="2/MIT6_087IAP10_assn03_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Pointers, arrays, strings, searching and sorting algorithms</td>
+<td>(<a href="2/MIT6_087IAP10_assn04.pdf">PDF</a>)</td>
+<td>(<a href="2/MIT6_087IAP10_assn04_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Linked lists, trees</td>
+<td>(<a href="2/MIT6_087IAP10_assn05.pdf">PDF</a>)</td>
+<td>(<a href="2/MIT6_087IAP10_assn05_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Pointers to pointers, multidimensional arrays, stacks and queues</td>
+<td>
+<p>(<a href="2/MIT6_087IAP10_assn06a.pdf">PDF</a>)</p>
+<p>(<a href="2/assn06a.zip">ZIP</a>) (This ZIP file contains:&nbsp;1 .txt file and 2 .c files.)</p>
+</td>
+<td>(<a href="2/MIT6_087IAP10_assn06a_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Function pointers, hash table</td>
+<td>
+<p>(<a href="2/MIT6_087IAP10_assn06b.pdf">PDF</a>)</p>
+<p>(<a href="2/assn06b.zip">ZIP</a>) (This ZIP file contains:&nbsp;1 .txt file and 2 .c files.)</p>
+</td>
+<td>(<a href="2/MIT6_087IAP10_assn06b_sol.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Using and creating libraries, B-trees and priority queues</td>
+<td>
+<p>(<a href="2/MIT6_087IAP10_assn07.pdf">PDF</a>)</p>
+<p>(<a href="2/assn07.zip">ZIP</a>) (This ZIP file contains: 2 .c files and 1 .db file.)</p>
+</td>
+<td>(<a href="2/assn07_sol.zip">ZIP</a>) (This ZIP file contains:&nbsp;5 .txt files and 5 .c files.)</td>
+</tr>
+</tbody>
+</table>
+</br>

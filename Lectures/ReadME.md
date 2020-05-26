@@ -19,7 +19,7 @@
 <li><a href="#course18">Great Ideas in Theoretical Computer Science</a></li>
 <li><a href="#course19">Practical Programming in C</a></li>
 <li><a href="#course20">Introduction to C Memory Management and C++ Object-Oriented Programming</a></li>
-<li><a href="#course21">Organic Chemistry II</a></li>
+<li><a href="#course21">Building Programming Experience: A Lead-In to 6.001</a></li>
 <li><a href="#course22">Organic Chemistry I</a></li>
 <li><a href="#course23">Advanced Chemical Experimentation and Instrumentation</a></li>
 <li><a href="#course24">Biological Engineering Design</a></li>
@@ -2709,3 +2709,74 @@
 </table>
 
 </br>
+<h2 id="course21">Building Programming Experience: A Lead-In to 6.001</h2>
+
+
+<table class="tablewidth70" summary="See table caption for summary.">
+<thead>
+<tr class="tableheader">
+<th id="col2" scope="col">TOPICS</th>
+<th scope="col">STUDENT NOTES</th>
+<th id="col3" scope="col">SUPPORTING&nbsp;FILES</th>
+<th id="col4" scope="col">SOLUTIONS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td headers="col2">Introduction and Basic Scheme (<a href="3/lec1.pdf">PDF</a>) (<a href="3/lec1.tex">TEX</a>)</td>
+<td>Student Notes 1 (<a href="3/class1.pdf">PDF</a>)</td>
+<td headers="col3">&nbsp;</td>
+<td headers="col4">Solutions 1 (<a href="3/lec1solns.txt">TXT</a>)</td>
+</tr>
+<tr class="alt-row">
+<td headers="col2">Procedures and Recursion (<a href="3/lec2.pdf">PDF</a>) (<a href="3/lec2.tex">TEX</a>)</td>
+<td>Student Notes 2 (<a href="3/class2.pdf">PDF</a>)</td>
+<td headers="col3">&nbsp;</td>
+<td headers="col4">Solutions 2 (<a href="3/lec2solns.txt">TXT</a>)</td>
+</tr>
+<tr class="row">
+<td headers="col2">More Procedures (<a href="3/lec3.pdf">PDF</a>) (<a href="3/lec3.tex">TEX</a>)</td>
+<td>Student Notes 3 (<a href="3/class3.pdf">PDF</a>)</td>
+<td headers="col3">Code to load, lec3 (<a href="3/lec3.scm">SCM</a>)</td>
+<td headers="col4">Solutions 3 (<a href="3/lec3solns.txt">TXT</a>)</td>
+</tr>
+<tr class="alt-row">
+<td headers="col2">Sugar, Recursive/Iterative, Basic Lists (<a href="3/lec4.pdf">PDF</a>) (<a href="3/lec4.tex">TEX</a>)</td>
+<td>Student Notes 4 (<a href="3/class4.pdf">PDF</a>)</td>
+<td headers="col3">&nbsp;</td>
+<td headers="col4">Solutions 4 (<a href="3/lec4solns.txt">TXT</a>)</td>
+</tr>
+<tr class="row">
+<td headers="col2">List Procedures, Data Abstraction (<a href="3/lec5.pdf">PDF</a>) (<a href="3/lec5.tex">TEX</a>)</td>
+<td>Student Notes 5 (<a href="3/class5.pdf">PDF</a>)</td>
+<td headers="col3">&nbsp;</td>
+<td headers="col4">Solutions 5 (<a href="3/lec5solns.txt">TXT</a>)</td>
+</tr>
+<tr class="alt-row">
+<td headers="col2">Higher Order Procedures, Types, Nimrod (<a href="3/lec6.pdf">PDF</a>) (<a href="3/lec6.tex">TEX</a>)</td>
+<td>Student Notes 6 (<a href="3/class6.pdf">PDF</a>)</td>
+<td headers="col3">&nbsp;</td>
+<td headers="col4">Solutions 6 (<a href="3/lec6solns.txt">TXT</a>)</td>
+</tr>
+<tr class="row">
+<td headers="col2">Quiz 1</td>
+<td>Student Notes 7 (<a href="3/class7.pdf">PDF</a>)</td>
+<td headers="col3">&nbsp;</td>
+<td headers="col4">Solutions 7 (<a href="3/lec7solns.txt">TXT</a>)</td>
+</tr>
+<tr class="alt-row">
+<td headers="col2">Tags, Association Lists, Trees (<a href="3/lec8.pdf">PDF</a>) (<a href="3/lec8.tex">TEX</a>)</td>
+<td>Student Notes 8 (<a href="3/class8.pdf">PDF</a>)</td>
+<td headers="col3">Code to load, lec8 (<a href="3/lec8.scm">SCM</a>)</td>
+<td headers="col4">Solutions 8 (<a href="3/lec8solns.txt">TXT</a>)<br /><br />lec8solns.scm (<a href="3/lec8solns.scm">SCM</a>)</td>
+</tr>
+<tr class="row">
+<td headers="col2">Henderson Picture Language (<a href="3/lec9.pdf">PDF</a>) (<a href="3/lec9.tex">TEX</a>)</td>
+<td>Student Notes 9 (<a href="3/class9.pdf">PDF</a>)</td>
+<td headers="col3">Code to load, lec9 (<a href="3/lec9.zip">ZIP</a>) (The ZIP contains: 5 .scm files, and 25 .pgm files.)</td>
+</tr>
+</tbody>
+</table>
+
+</br>
+

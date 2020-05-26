@@ -2178,3 +2178,26 @@
 </br>
 <p><a href="template.zip">LaTeX Template for Problem Sets (ZIP)</a>&nbsp;(This file contains: 1 .cls file, 2 .sty files, 1 .pdf file and 1 .tex file.)</p>
 </br>
+<table class="tablewidth50" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">EXAMS</th>
+<th scope="col">SOLUTIONS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td><a href="1/MIT6_046JS15_quiz1.pdf">Quiz 1 (PDF)</a></td>
+<td><a href="1/MIT6_046JS15_quiz1sols.pdf">Solutions to Quiz 1 (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="1/MIT6_046JS15_quiz2.pdf">Quiz 2 (PDF)</a></td>
+<td><a href="1/MIT6_046JS15_quiz2sols.pdf">Solutions to Quiz 2 (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="1/MIT6_046JS15_final.pdf">Final Exam (PDF)</a></td>
+<td><a href="1/MIT6_046JS15_finalsols.pdf">Solutions to Final Exam (PDF)</a></td>
+</tr>
+</tbody>
+</table>
+</br>

@@ -26,6 +26,7 @@
 <li><a href="#course25">Software Studio</a></li>
 <li><a href="#course26">Algorithms for Computational Biology</a></li>
 <li><a href="#course27">Laboratory in Software Engineering</a></li>
+<li><a href="#course28">Performance Engineering of Software Systems</a></li> 
 </ul>
 <p>&nbsp;</p>
 <h2 id="course1">Structure and Interpretation of Computer Programs</h2>
@@ -3401,3 +3402,130 @@
 </tbody>
 </table>
 </br>
+<h2 id="course28">Performance Engineering of Software Systems</h2>
+<table class="tablewidth75">
+<thead>
+<tr>
+<th>TOPICS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>
+<p><a href="4/MIT6_172F18_lec1.pdf">Introduction &amp; Matrix Multiplication (PDF - 6.9MB)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p><a href="4/MIT6_172F18_lec2.pdf">Bentley Rules for Optimizing Work (PDF - 3.5 MB)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="4/MIT6_172F18_lec3.pdf">Bit Hacks (PDF - 2.3MB)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p><a href="4/MIT6_172F18_lec4.pdf">Assembly Language and Computer Architecture (PDF - 6.4MB)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="4/MIT6_172F18_lec5.pdf">C to Assembly (PDF - 6.5MB)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p><a href="4/MIT6_172F18_lec6.pdf">Multicore Programming (PDF - 4.4MB)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="4/MIT6_172F18_lec7.pdf">Races and Parallelism (PDF - 4.4MB)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p><a href="4/MIT6_172F18_lec8.pdf">Analysis of Multithreaded Algorithms (PDF - 6.3MB)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="4/MIT6_172F18_lec9.pdf">What Compilers Can and Cannot Do (PDF - 7.4MB)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p><a href="4/MIT6_172F18_lec10.pdf">Measurement and Timing (PDF - 1.6MB)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="4/MIT6_172F18_lec11.pdf">Storage Allocation (PDF - 3.3MB)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p><a href="4/MIT6_172F18_lec12.pdf">Parallel Storage Allocation (PDF - 2.5MB)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="4/MIT6_172F18_lec13.pdf">The Cilk Runtime System (PDF - 4.7MB)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p><a href="4/MIT6_172F18_lec14.pdf">Caching and Cache-Efficient Algorithms (PDF - 2.8MB)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="4/MIT6_172F18_lec15.pdf">Cache-Oblivious Algorithms (PDF - 3.2MB)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p><a href="4/MIT6_172F18_lec16.pdf">Nondeterministic Parallel Programming (PDF - 3.3MB)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="4/MIT6_172F18_lec17.pdf">Synchronization Without Locks (PDF - 3.3MB)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p><a href="4/MIT6_172F18_lec18.pdf">Domain Specific Languages and Autotuning (PDF - 4.6MB)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="4/MIT6_172F18_lec19.pdf">Leiserchess Codewalk (PDF - 6.4MB)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p><a href="4/MIT6_172F18_lec20.pdf">Speculative Parallelism &amp; Leiserchess (PDF - 6.2MB)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="4/MIT6_172F18_lec21.pdf">Tuning a TSP Algorithm (PDF - 1.6MB)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p><a href="4/MIT6_172F18_lec22.pdf">Graph Optimization (PDF - 2.9MB)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p><a href="4/MIT6_172F18_lec23.pdf">High Performance in Dynamic Languages (PDF)</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</br>
+

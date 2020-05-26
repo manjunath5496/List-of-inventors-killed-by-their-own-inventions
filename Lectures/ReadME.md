@@ -23,7 +23,7 @@
 <li><a href="#course22">Introduction to Programming in Java</a></li>
 <li><a href="#course23">Java Preparation for 6.170</a></li>
 <li><a href="#course24">Introduction to C++</a></li>
-<li><a href="#course25">Biological Chemistry I</a></li>
+<li><a href="#course25">Software Studio</a></li>
 <li><a href="#course26">Biological Chemistry II</a></li>
 <li><a href="#course27">Thermodynamics and Kinetics</a></li>
 </ul>
@@ -2989,3 +2989,254 @@
 </tbody>
 </table>
 </br>
+<h2 id="course25">Software Studio</h2>
+<table class="tablewidth75" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">LECTURE&nbsp;TOPICS</th>
+<th scope="col">NOTES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td colspan="2"><strong>Week 1</strong></td>
+</tr>
+<tr class="alt-row">
+<td rowspan="7">Introduction &amp; Web Basics</td>
+<td><a href="3/MIT6_170S13_01-logistics.pdf">Intro &amp; Logistics (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_02-www-prece.pdf">Precedents of the Web (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_03-www-struct.pdf">Structure of the Web (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_04-web-srvrs.pdf">Web Servers &amp; Web Apps (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_05-dmn-names.pdf">The Domain Name System (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_06-dc-objt-mod.pdf">Document Object Model (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_07-http-prtcol.pdf">HTTP: Hypertext Transfer Protocol (PDF)</a></td>
+</tr>
+<tr class="row">
+<td colspan="2"><strong>Week 2</strong></td>
+</tr>
+<tr class="alt-row">
+<td rowspan="4">Routing &amp; Model-View-Controller Design</td>
+<td><a href="3/MIT6_170S13_08-sep-of-conc.pdf">Separation of Concerns (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_09-mdlrty-dp.pdf">Modularity &amp; Dependences (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_10-rails-ovrvw.pdf">An Overview of Rails (PDF - 1.1MB)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_11-mdl-vw-cntrl.pdf">Model-View-Controller (PDF)</a></td>
+</tr>
+<tr class="row">
+<td rowspan="5">Dependency &amp; REST</td>
+<td><a href="3/MIT6_170S13_12-web-frmwks.pdf">Web Frameworks (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_13-restful-ser.pdf">RESTful APIs (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_14-rest-in-rail.pdf">REST in Rails (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_15-dstrbtd-web.pdf">The Web as a Platform for Distributed Computing (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_16-ex-rails-app.pdf">Example Rails Application (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td colspan="2"><strong>Week 3</strong></td>
+</tr>
+<tr class="row">
+<td rowspan="6">Introduction to Data &amp; Object Modeling</td>
+<td><a href="3/MIT6_170S13_17-objt-mdl-rtnl.pdf">Object Models: Intro &amp; Rationale (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_18-objt-mdl-math.pdf">Object Models: Math Structures (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_19-objt-mdl-class.pdf">Object Models: Classification (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_20-objt-mdl-rel.pdf">Object Models: Relationships (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_21-objt-mdl-sem.pdf">Object Models: Semantics (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_22-objt-mdl-dyn.pdf">Object Models: Dynamics (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td rowspan="3">Relational Data Model</td>
+<td><a href="3/MIT6_170S13_23-rails-model.pdf">Rails Models: Classes &amp; Tables (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_24-objt-mdl-tns.pdf">Object Models: Transformations (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_25-imp-gen.pdf">Implementing Generalizations (PDF)</a></td>
+</tr>
+<tr class="row">
+<td colspan="2"><strong>Week 4</strong></td>
+</tr>
+<tr class="alt-row">
+<td rowspan="4">Design Concepts</td>
+<td><a href="3/MIT6_170S13_26-con-intro.pdf">Design Concepts: Intro (PDF - 1.2MB)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_27-con-idntfyg.pdf">Design Concepts: Identifying Concepts (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_28-con-design.pdf">Design Concepts: Design Moves (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_29-con-idioms.pdf">Design Concepts: Idioms (PDF)</a></td>
+</tr>
+<tr class="row">
+<td rowspan="2">Design &amp; Code Reviews for Project 1</td>
+<td><a href="3/MIT6_170S13_30-p1-des-rw.pdf">Design Review: Project 1 (PDF - 2.2MB)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_31-p1-cod-rw.pdf">Code Review: Project 1 (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td colspan="2"><strong>Week 5</strong></td>
+</tr>
+<tr class="row">
+<td rowspan="3">Intro to JavaScript</td>
+<td><a href="3/MIT6_170S13_32-java-intro.pdf">JavaScript: Intro (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_33-java-types.pdf">JavaScript: Values &amp; Types (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_34-java-var.pdf">JavaScript: Variables (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td rowspan="7">Closures</td>
+<td><a href="3/MIT6_170S13_35-java-fn-cls.pdf">JavaScript: Functions, Scope &amp; Closures (PDF - 1.1MB)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_36-java-cls-ex.pdf">JavaScript: Closure Examples (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_37-java-func.pdf">JavaScript: Functionals (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_38-java-obt-lt.pdf">JavaScript: Objects, Literals &amp; Constructors (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_39-java-adts.pdf">JavaScript: Abstract Types (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_40-java-prot.pdf">JavaScript: Prototypes (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_41-java-nast.pdf">JavaScript: This &amp; New Nasty Effects (PDF)</a></td>
+</tr>
+<tr class="row">
+<td colspan="2"><strong>Week 6</strong></td>
+</tr>
+<tr class="alt-row">
+<td rowspan="5">DOM</td>
+<td><a href="3/MIT6_170S13_42-dom-intro.pdf">DOM: Intro (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_43-dom-idioms.pdf">DOM: Programming Idioms (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_44-dom-unbtr.pdf">DOM: Unobtrusive JavaScript (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_45-dom-list.pdf">DOM: Events &amp; Listeners (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_46-dom-stars.pdf">DOM: Star Rating Widget Example (PDF)</a></td>
+</tr>
+<tr class="row">
+<td rowspan="3">Events &amp; Ajax</td>
+<td><a href="3/MIT6_170S13_47-asyn-intro.pdf">Ajax: Introduction (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_48-asyn-exam.pdf">Ajax: Examples (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_49-asyn-app.pdf">Ajax: Engage App (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td colspan="2"><strong>Week 7</strong></td>
+</tr>
+<tr class="row">
+<td>Design Review for Project 2</td>
+<td><img src="https://ocw.mit.edu/images/inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="3/MIT6_170S13_50-p2-review.pdf">Design Review: Project 2 (PDF - 2.7MB)</a></td>
+</tr>
+<tr class="alt-row">
+<td rowspan="3">Web Security</td>
+<td><a href="3/MIT6_170S13_51-sec-ovrw.pdf">Security: Overview (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_52-sec-inj.pdf">Security: Injection Attacks (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_53-sec-crs-ste.pdf">Security: Cross Site Attacks (PDF)</a></td>
+</tr>
+<tr class="row">
+<td colspan="2"><strong>Week 8</strong></td>
+</tr>
+<tr class="alt-row">
+<td rowspan="2">Software Development Methods</td>
+<td><a href="3/MIT6_170S13_54-devel-proce.pdf">Software Development Processes (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_55-th-on-proc.pdf">Thoughts on the Software Process (PDF - 1.4MB)</a></td>
+</tr>
+<tr class="row">
+<td colspan="2"><strong>Week 9</strong></td>
+</tr>
+<tr class="alt-row">
+<td rowspan="4">Designing Dependable Software</td>
+<td><a href="3/MIT6_170S13_56-sec-rev.pdf">Cross Site Request Forgery, Revisited (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_57-mdl-http.pdf">Modeling Basic HTTP (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_58-anal-ogn.pdf">Analyzing Origins (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_59-fini-story.pdf">Finishing the Origin Story (PDF)</a></td>
+</tr>
+<tr class="row">
+<td rowspan="5">
+<p>Presenting Your Ideas</p>
+</td>
+<td><a href="3/MIT6_170S13_60-final-proj.pdf">Final Project Overview (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="3/MIT6_170S13_61-powerpoint.pdf">Perils &amp; Pleasures of PPT (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="3/MIT6_170S13_62-takeout1.pdf">FeedAGeek: Sample Pitch v1 (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><img src="https://ocw.mit.edu/images/inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="3/MIT6_170S13_63-takeout-1a.pdf">FeedAGeek: Sample Pitch v1a (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="http://ocw.mit.edu/ans7870/6/6.170/s13/MIT6_170S13_64-takeout-2.pdf">FeedAGeek: Sample Pitch v2 (PDF - 12.0MB)</a></td>
+</tr>
+</tbody>
+</table>
+</br>
+
+

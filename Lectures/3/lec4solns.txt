@@ -1,0 +1,123 @@
+6.090 IAP '05 - Lecture 4 Solutions
+
+Problem 1:
+
+(define (foo x)
+  (+ x 3))
+;unspecified
+
+foo
+;procedure
+
+(foo 5)
+;8
+
+(define bar 5)
+;unspec
+
+(define (baz) 5)
+;unspec
+
+bar
+;5
+
+baz
+;procedure
+
+(bar)
+;error: 5 not applicable
+
+(baz)
+;5
+
+(let ((a 3)
+      (b 5))
+  (+ a b))
+;8
+
+(let ((+ *)
+      (* +))
+  (+ 3 (* 4 5)))
+;27
+
+(define m 3)
+(let ((m (+ m 1)))
+  (+ m 1))
+;5
+
+(define n 4)
+(let ((n 12)
+      (o (+ n 2)))
+  (* n o))
+;72
+
+Problem 2:   (gratuitous ASCII art)
+
++-+-+   +-+-+   +-+-+
+|.|.--->|.|.--->|.|\|
++|+-+   +|+-+   +|+-+
+ |       |       |
+ V       V       V
+ 1       2       3
+
++-+-+   +-+-+   +-+-+
+|.|.--->|.|.--->|.|\|
++|+-+   +|+-+   +|+-+
+ |       |       |
+ V       V       V
+ 3       1       2
+
++-+-+   +-+-+   +-+-+
+|.|.--->|.|.--->|.|\|
++|+-+   +|+-+   +|+-+
+ |       |       |
+ V       V       V
+ 1       3       5
+
++-+-+
+|.|\|
++|+-+
+ |   
+ V   
++-+-+
+|.|\|
++|+-+
+ |   
+ V   
+ 3   
+
+Problem 3:
+
+(list 1 2 3)
+;Value: (1 2 3)
+
+(list (list 1 2) (list 3 4) (list 5 6))
+;Value: ((1 2) (3 4) (5 6))
+
+(list (list 4 7) 2)
+;Value: ((4 7) 2)
+
+Problem 4:
+
+(define lst (list 7 6 5 4 3 2 1))
+(cadddr lst)
+;Value: 4
+(car (cdr (cdr (cdr lst))))
+;Value: 4
+(fourth lst)
+;Value: 4
+
+(define lst (list (list 7) (list 6 5 4) (list 3 2) 1))
+(caddr (cadr lst)
+;Value: 4
+(third (second lst))
+;Value: 4
+; the (caddadr lst) won't work.. too many a's and d's (up to 4 only)
+
+(define lst (list 7 (list 6 (list 5 (list 4 (list 3 (list 2 (list 1))))))))
+(car (cadr (cadr (cadr lst))))
+;Value: 4
+
+(define lst (list 7 (list (list 6 5 (list (list 4)) 3) 2) 1))
+(car (car (caddr (car (cadr lst)))))
+;Value: 4

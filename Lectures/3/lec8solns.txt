@@ -1,0 +1,105 @@
+6.090 IAP '05 - Lecture 8 Solutions
+
+(define (total-cost people-list)
+  (if (null? list)
+      0
+      (+ ....?
+         (total-cost (cdr people-list)))))
+
+uh oh
+could use (professor-salary (car people-list))
+or        (gradstudent-salary (car people-list))
+or        (second (car people-list))
+
+all bad.  for different reasons (type analysis)
+
+
+now can write and include a professor? in the professor abstraction:
+
+(define (professor? x)
+  (and (pair? x) (string=? (car x) "professor")))
+
+caveat: x must be a list with a string as the first element; ways to
+fix, not relevant for example.
+
+(define (gradstudent? x)
+  (and (pair? x) (string=? (car x) "gradstudent")))
+
+called tagging.
+
+now we can write the procedure:
+
+(define (total-cost people-list)
+  (if (null? people-list)
+      0
+      (if (professor? (car people-list))
+          (+ (professor-salary (car people-list))
+             (total-cost (cdr people-list)))
+	  (if (gradstudent? (car people-list))
+              (+ (* 1.7 (gradstudent-salary (car people-list)))
+                 (total-cost (cdr people-list)))
+              (error "non professor or student in people-list")))))
+
+
+Problem 1:
+
+;Value: alst
+
+;Value: #f
+
+;Value: (3 4)
+
+;Value: (5 12)
+
+;Value: ((1 2) (3 4))
+
+;Value: alst2
+
+;Value: ("foo" 17)
+
+;Value: (("foo" 17) ("baz" 54))
+
+;Value: #f
+
+;Value: #f
+
+Problem 2:
+
+(define (lookup word thesaurus)
+  (assoc word thesaurus))
+
+Problem 3:
+
+(define (tree-contains? tree val)
+  (if (leaf? tree)
+      (if (= val tree)
+          val
+          #f)
+      (if (< val (node-val tree))
+          (tree-contains? (node-left tree) val)
+          (tree-contains? (node-right tree) val))))
+
+Problem 4:
+
+(define (sum-tree tree)
+  (if (leaf? tree)
+      tree
+      (+ (sum-tree (node-left tree))
+         (sum-tree (node-right tree)))))
+
+Problem 5:
+
+(define (insert-tree elem tree)
+  (if (leaf? tree)
+      (if (= elem tree)
+          tree
+          (if (< elem tree)
+              (make-node (avg tree elem) elem tree)
+	      (make-node (avg tree elem) tree elem)))
+      (if (< elem (node-val tree))
+          (make-node (node-val tree)
+                     (insert-tree elem (node-left tree))
+                     (node-right tree))
+          (make-node (node-val tree)
+		     (node-left tree)
+                     (insert-tree elem (node-right tree))))))

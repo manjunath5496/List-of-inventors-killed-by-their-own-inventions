@@ -1,0 +1,151 @@
+\include{6001mac}
+\begin{document}
+\psetheader{IAP 2005}{Lecture 5}
+
+\section*{Problems}
+
+\begin{enumerate}
+\item Write {\tt list-copy}, which takes a list and returns an
+identical new list (ie do not just return the original list, {\tt
+cons} up a new list).
+\begin{verbatim}
+(list-copy (list 1 2 3))
+;Value: (1 2 3)
+\end{verbatim}
+\vspace{1in}
+
+\item Write {\tt n-copies}, which takes a value and a number of
+copies, and returns a list with the appropriate number of copies.
+\begin{verbatim}
+(n-copies 7 5)
+;Value: (7 7 7 7 7)
+(n-copies "yay" 1)
+;Value: ("yay")
+(n-copies 7 0)
+;Value: ()     ; or #f
+(n-copies (list 3) 3)
+;Value: ((3) (3) (3))
+\end{verbatim}
+\vspace{1in}
+
+\item Write {\tt reverse}, which takes a list and returns new list
+with the order of the elements reversed.
+\begin{verbatim}
+(reverse (list 1 2 3))
+;Value: (3 2 1)
+(reverse (list 1))
+;Value: (1)
+\end{verbatim}
+\vspace{1.5in}
+
+\item Write {\tt append}, which takes two lists and returns a new list
+with the elements of the first list and the second list.
+\begin{verbatim}
+(append (list 3 4) (list 1 2))
+;Value: (3 4 1 2)
+(append nil (list 1 2))
+;Value: (1 2)
+\end{verbatim}
+\vspace{1in}
+
+\item Write {\tt list-ref}, which takes a list and an index (starting
+at 0), and returns the nth element of the list.  You may assume that
+the index is less than the length of the list.
+
+\begin{verbatim}
+(list-ref (list 17 42 35 "hike") 0)
+;Value: 17
+(list-ref (list 17 42 35 "hike") 1)
+;Value: 35
+(list-ref (list 17 42 35 "hike") 2)
+;Value: 35
+\end{verbatim}
+\vspace{1in}
+
+\item Write {\tt list-range}, which takes two numbers (a,b : a < b)
+and returns a list containing the numbers from a to b, inclusive.
+
+\begin{verbatim}
+(list-range 1 5)
+;Value: (1 2 3 4 5)
+(list-range 2 5)
+;Value: (2 3 4 5)
+(list-range 42 42)
+;Value: (42)
+(list-range 207 5)
+;Value: ()
+\end{verbatim}
+\vspace{1in}
+
+\item Write {\tt max-list}, which takes in a list of numbers and
+returns the maximum element.  You may assume that the list is
+non-empty.  (Hint: different base case than normal!)
+\begin{verbatim}
+(max-list (list 1))
+;Value: 1
+(max-list (list 1 3 5))
+;Value: 5
+(max-list (list 2 56 8 43 21))
+;Value: 56
+\end{verbatim}
+\vspace{1in}
+\end{enumerate}
+
+\section*{Data Abstraction}
+
+\begin{enumerate}
+\item Derived Type - A user-designated and implemented type.
+\item Constructor - Builds entity of the type
+\item Selector - Returns one of the values of the type
+\item Contract - Specifies the relationship between the constructor(s)
+and the selector(s).
+\end{enumerate}
+
+\begin{verbatim}
+(define (make-point x y)
+
+(define (get-x point)
+
+(define (get-y point)
+
+\end{verbatim}
+
+\begin{enumerate}
+\setcounter{enumi}{7}
+\item Write {\tt add-points} which takes two points and returns a new
+point which is the sum of the x and y coordinates.
+\begin{verbatim}
+(define result (add-points (make-point 3 4) (make-point 1 2)))
+(get-x result)
+;Value: 4
+(get-y result)
+;Value: 6
+\end{verbatim}
+\vspace{1in}
+
+\item Write {\tt left-of?} which takes two points and returns true if
+the first point is to the left of the second point.
+
+\begin{verbatim}
+(left-of? (make-point 3 4) (make-point 1 2))
+;Value: #f
+(left-of? (make-point -3 4 (make-point 1 2)))
+;Value: #t
+\end{verbatim}
+\vspace{1in}
+\end{enumerate}
+
+\subsection*{Stacking Abstractions: Segments}
+
+\begin{enumerate}
+\setcounter{enumi}{9}
+\item Implement an abstraction for line-segments, which are defined by
+a pair of end-points.
+\vspace{2in}
+
+\item Write {\tt segment-length}, which takes a segment and returns
+it's length.
+\vspace{1in}
+\end{enumerate}
+
+\end{document}

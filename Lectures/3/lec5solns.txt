@@ -1,0 +1,124 @@
+6.090 IAP '05 - Lecture 5 Solutions
+
+(define (list-copy lst)
+  (if (null? lst)
+      lst
+      (cons (car lst) (list-copy (cdr lst)))))
+
+(define (n-copies elem copies)
+  (if (= copies 0)
+      nil
+      (cons elem (n-copies elem (- copies 1)))))
+
+;recursive
+(define (reverse lst)
+  (if (null? lst)
+      nil
+      (append (reverse (cdr lst))
+              (list (car lst)))))
+
+;iterative
+(define (reverse lst)
+  (reverse-helper lst nil))
+
+(define (reverse-helper lst answer)
+  (if (null? lst)
+      answer
+      (reverse-helper (cdr lst) (cons (car lst) answer))))
+
+(define (append lst1 lst2)
+  (if (null? lst1)
+      lst2
+      (cons (car lst1) (append (cdr lst1) lst2))))
+
+(define (list-ref lst k)
+  (if (= k 0)
+      (car lst)
+      (list-ref (cdr lst) (- k 1))))
+
+(define (list-range a b)
+  (if (> a b)
+      nil
+      (cons a (list-range (+ a 1) b))))
+
+(define (max-list lst)
+  (if (null? (cdr lst))
+      (car lst)
+      (max (car lst) (max-list (cdr lst)))))
+;or
+(define (max-list lst)
+  (max-helper (cdr lst) (car lst)))
+(define (max-helper lst answer)
+  (if (null? lst)
+      answer
+      (max-helper (cdr lst) (max (car lst) answer))))
+; where max is
+(define (max a b)
+  (if (> a b) a b))
+
+(define (make-point x y)
+  (list x y))
+
+(define (get-x p)
+  (car p))
+
+(define (get-y p)
+  (cadr p))
+
+;;;;;;;;;;;;;;;;;;;;; abtraction barrier
+
+(define (add-points p1 p2)
+  (make-point (+ (get-x p1) (get-x p2))
+              (+ (get-y p1) (get-y p2))))
+
+(define (left-of? p1 p2)
+  (< (get-x p1) (get-x p2)))
+
+;;;;; abstraction violation version:
+(define (left-of p1 p2)
+   (< (car p1) (car p2)))
+
+
+;; segment abstraction
+(define (make-segment p1 p2)
+  (list p1 p2))
+
+(define (segment-start seg)
+  (car seg))
+
+(define (segment-end seg)
+  (cadr seg))
+
+;;;;;;;;;;;;;;;;  abstraction barrier
+
+(define (segment-length seg)
+  (let ((deltax (- (get-x (segment-start seg))
+                   (get-x (segment-end seg))))
+        (deltay (- (get-y (segment-start seg))
+                   (get-y (segment-end seg)))))
+    (sqrt (+ (square deltax) (square deltay)))))
+
+;; figure abstraction
+
+; given list of segments, construct a figure
+(define (make-figure segs)
+  (list-copy segs))
+
+; given figure, compute 
+(define (figure-bounding-box fig)
+  (let ((xs (fig-xs fig))
+        (ys (fig-ys fig)))
+    (list (max-list xs)
+          (max-list ys)
+          (min-list xs)
+          (min-list ys))))
+
+(define (fig-xs fig)
+  (if (null? fig)
+      nil
+      (let ((current-segment (car fig)))
+        (cons (get-x (segment-start current-segment))
+	      (cons (get-x (segment-end current-segment))
+                    (fig-xs (cdr fig)))))))
+
+;fig-ys and min-list can be extrapolated from fig-xs and max-list

@@ -1,0 +1,228 @@
+\include{6001mac}
+\begin{document}
+\psetheader{IAP 2005}{Lecture 1}
+
+\section*{Glossary}
+\begin{itemize}
+\item [program] collection of procedures and static data that
+  accomplishes a specific task.
+\item [procedure] a piece of code that when called with arguments
+  computes and returns a result; possibly with some side-effects.  In
+  scheme, procedures are normal values like numbers.
+\item [function] see procedure; they're equivalent in scheme.  Some
+  other languages make a distinction.
+\item [argument] An input variable to a procedure.  A new version of
+  the variable is created every time the procedure is called.
+\item [parameter] see argument.
+\item [expression] A single valid scheme statement.  {\tt 5}, {\tt (+
+  3 4)}, and {\tt (if (lambda (x) x) 5 (+ 3 4))} are expressions.
+\item [value] The result of a evaluating an expression. 5, 7, and 5
+  respectively.
+\item [type] Values are classified into types.  Some types: numbers,
+  booleans, strings, lists, and procedures.  Generally, types are
+  disjoint (any value falls into exactly one type class).
+\item [call] Verb, the action of invoking, jumping to, or using a
+  procedure.
+\item [apply] Calling a procedure.  Often used as ``apply procedure p
+  to arguments a1 and a2.''
+\item [pass] Usage ``pass X to Y.''  When calling procedure Y, supply
+  X as one of the arguments.
+\item [side-effect] In relation to an expression or procedure, some
+  change to the system that does not involve the expression's value.  
+\item [iterate] To loop, or ``do'' the same code multiple times.
+\item [variable] A name that refers to a exactly one value.
+\item [binding] Also verb ``to bind''.  The pairing of a name with a
+  value to make a variable.
+\item [recurse] In a procedure, to call that same procedure again.
+\end{itemize}
+
+\newpage
+
+\section*{Values}
+\begin{enumerate}
+\item {\bf Numbers}
+\vspace{.5in}
+\item {\bf Booleans}
+\vspace{.5in}
+\item {\bf Strings}
+\vspace{.5in}
+\item {\bf Procedures}
+\vspace{.5in}
+\item {\bf Lists}
+\vspace{.5in}
+\end{enumerate}
+
+\section*{Scheme}
+\begin{enumerate}
+\item {\bf Basic Elements}
+  \begin{enumerate}
+  \item {\it self-evaluating} - expressions whose value is the same as
+    the expression.
+    \vspace{1in}
+  \item {\it names} - Name is looked up in the symbol table to find
+    the value associated with it.  Names may be made of any collection
+    of characters that doesn't start with a number.
+    \vspace{1in}
+  \end{enumerate}
+\item {\bf Combination}\\
+  {\tt (} {\it procedure} {\it arguments-separated-by-spaces} {\tt )}\\
+  Value is determined by evaluating the expression for the procedure
+  and applying the resulting value to the value of the arguments.
+  \vspace{1in}
+
+\item {\bf Special Forms}
+  \begin{enumerate}
+  \item {\large {\it define}} - {\tt (define {\it name value})}\\ The
+    name is bound to the result of evaluating the the value.  Return
+    value is {\it unspecified}.
+    \vspace{1in}
+  \item {\large {\it if}} - {\tt (if {\it test consequent alternative})}\\ If
+    the value of the test is \underline{not false (\#f)}, evaluate the
+    consequent, otherwise evaluate the alternative.
+    \vspace{1in}
+  \end{enumerate}
+\end{enumerate}
+
+\section*{Problems}
+Run scheme, open a new file ``class1.scm''.  All of your answers for
+the following problems should end up in this file.
+
+\begin{enumerate}
+\item {\large {\it Evaluation}} - For each expression:
+\begin{enumerate}
+\item Write the type of the expression
+\item Write your guess as to the expression's return value.
+If the expression is erroneous simply indicate ``error'' for the value.  
+If the expression returns an unspecified value, write whatever you want!
+\item Evaluate the expression, and copy the response from the *scheme* buffer.
+\end{enumerate}
+
+\begin{verbatim}
+4
+
+5.5
+
+4.2e1
+
+(+ 1 2)
+
+(7)
+
+(* (+ 7 8) (   -  5 6))
+
+
+
+(define one 1)
+
+(define two (+ 1 one))
+
+(define five 3)
+
+(+ five two)
+
+(define biggie-size *)
+
+(define hamburger 1)
+
+(biggie-size hamburger five)
+
+(= 7 (+ 3 4))
+
+(= #t #f)
+
+((+ 5 6))
+
+biggie-size
+
+(if #t 1 (+ 3 0))
+
+(if (if #f #t #f) #f #t)
+
+(if (if (= hamburger five) 3 7) 
+    (+ (if (= (+ 1 one) two)
+           3
+           5)
+       7)
+    "yay")
+
+(/ 256
+   (if (> five (+ two 1))
+       (/ 7 (- hamburger 1))
+       2))
+\end{verbatim}
+
+\item {\large {\it Five}} - write an expression that evaluates to 3.
+\vspace{.5in}
+\item {\LARGE {\it Five}} - write a {\it more interesting} expression
+that evaluates to 3.
+\vspace{.5in}
+\newpage
+\item {\large {\it Define X}} - for each of the following expressions:
+\begin{enumerate}
+\item Identify the variables are are {\it unbound}.
+\item Supply definitions (ie {\tt (define x ...)}) for each of the
+variables that make the expression evaluate to the target value.
+\item Type in the expressions and verify that your solution gives the
+correct result.
+\end{enumerate}
+
+\begin{verbatim}
+(+ x (* y 3))
+;Value: 13
+
+(if q (if r 3 4) 7)
+;Value: 4
+
+(+ 7 (if z (+ a z) 3))
+;Value: 11
+
+(= yum (* -1 (+ yum 2)))
+;Value: #t
+
+(< (if (not thirty-four) 34 thirty-four)
+   (+ thirty-four (* seventy-seven (if seventy-seven -1 1))))
+;Value: #f
+\end{verbatim}
+
+\newpage
+\item {\large {\it Primitive Procedures}} - for each of the following
+expressions:
+\begin{enumerate}
+\item Identify the primitive procedures which you don't already know
+\item Write down a guess as to what the primitive procedure does.
+\item Look it up in the MITScheme reference manual (you may find the
+index handy).
+\item Write an example usage of the procedure and test it to see that
+it works as you suspect it does.
+\item Fill in the blanks in the original expression such that it
+evaluates to the target value.
+\end{enumerate}
+
+\begin{verbatim}
+(+ 3 (abs ________))
+;Value: 5
+
+(if (> (expt 2 ____) 15)
+    (sqrt 2)
+    (sqrt 4))
+;Value: 1.4142135623730951
+
+(string-append "foo" ___ "baz")
+;Value: "foobarbaz"
+
+(string-append
+  (number->string
+    (gcd 35 _____))
+  " rules!")
+;Value: "7 rules!"
+
+(define s _______)
+(if (string-suffix? "yowzah" s)
+    (+ 7 (string-search-forward "ow" s))
+    #f)
+;Value: 14
+\end{verbatim}
+
+\end{enumerate}
+
+\end{document}

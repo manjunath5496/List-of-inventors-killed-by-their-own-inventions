@@ -1,0 +1,57 @@
+6.090 IAP '05 - Lecture 7 Solutions
+
+hypothetical cons abstraction
+
+(define (cons a b)
+  (lambda (x)
+    (if x
+        a
+        b)))
+
+(define (car p)
+  (p #t))
+
+(define (cdr p)
+  (p #f))
+
+
+list sorting
+
+(define (min x y)
+  (if (< x y)
+      x
+      y))
+
+(define (min-list lst)
+  (if (null? (cdr lst))
+      (car lst)
+      (min (car lst) (min-list (cdr lst)))))
+
+(define (without-n lst n)
+  (if (null? lst)
+      nil
+      (if (= (car lst) n)
+          (cdr lst)
+          (cons (car lst)
+                (without-n (cdr lst) n)))))
+
+(define (sort-list lst)
+  (if (or (null? lst) (null? (cdr lst)))
+      lst
+      (let ((least (min-list lst)))
+         (cons least
+               (sort-list (without-n lst least))))))
+
+(define (insert elem lst)
+  (if (null? lst)
+      (list elem)
+      (if (< elem (car lst))
+          (cons elem lst)
+          (cons (car lst)
+                (insert elem (cdr lst))))))
+
+(define (insert-sort lst)
+  (if (or (null? lst) (null? cdr lst))
+      lst
+      (insert (car lst)
+              (insert-sort (cdr lst)))))

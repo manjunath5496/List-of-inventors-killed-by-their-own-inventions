@@ -1,0 +1,261 @@
+\include{6001mac}
+\begin{document}
+\psetheader{IAP 2005}{Lecture 8}
+
+\section*{Tags}
+
+\begin{verbatim}
+; professor abstraction
+(define (make-professor name salary)
+  (list name salary))
+
+(define (professor-name prof)
+  (first prof))
+
+(define (professor-salary prof)
+  (second prof))
+
+; graduate student abstraction
+(define (make-gradstudent name salary)
+  (list name salary))
+
+(define (gradstudent-name grad)
+  (first grad))
+
+(define (gradstudent-salary grad)
+  (second grad))
+\end{verbatim}
+
+Given a list that contains both professors and graduate students,
+compute the total cost of their salaries.
+
+\begin{verbatim}
+(define (total-cost people-list)
+\end{verbatim}
+\vspace{3in}
+
+\section*{Association Lists}
+
+\subsection*{Scheme}
+\begin{enumerate}
+\item {\tt assoc} - {\tt (assoc {\it key} {\it alist})} - returns
+association containing matching key or \#f.
+\vspace{.5in}
+\item {\tt del-assoc} - {\tt (del-assoc {\it key} {\it alist})} -
+returns a new alist with association with matching key removed.
+\vspace{.5in}
+\end{enumerate}
+
+\subsection*{Problems}
+
+\begin{enumerate}
+\item Evaluate the following expressions, first guessing then checking
+with Scheme.
+\begin{verbatim}
+(define alst (list (list 1 2) (list 3 4) (list 5 6)))
+
+(assoc 4 alst)
+
+(assoc 3 alst)
+
+(assoc 5 (cons (list 5 12) alst))
+
+(del-assoc 5 alst)
+
+(define alst2 (list (list "foo" 17) (list "bar" 42) (list "baz" 54)))
+
+(assoc "foo" alst2)
+
+(del-assoc "bar" alst2)
+
+(assoc "yummy" alst2)
+
+(assoc "yummy" alst)
+\end{verbatim}
+
+\item Rewrite {\tt lookup} from homework 7 using {\tt assoc}.
+
+\begin{verbatim}
+(define (lookup word thesaurus)
+\end{verbatim}
+\vspace{1in}
+
+\end{enumerate}
+
+
+\section*{Trees}
+
+\begin{verbatim}
+(define (make-node val left right)
+  (list "node" val left right))
+
+(define (node? x)
+  (and (pair? x) (string=? (car x) "node")))
+
+(define (node-val node)
+  (second node))
+(define (node-left node)
+  (third node))
+(define (node-right node)
+  (fourth node))
+
+(define (leaf? x)
+  (not (node? x)))
+\end{verbatim}
+
+\begin{enumerate}
+\item Write {\tt tree-contains?}, which returns true if the tree contains the value as a leaf.
+\begin{verbatim}
+(define (tree-contains? tree val)
+\end{verbatim}
+\vspace{1in}
+
+\item Write {\tt sum-tree}, which returns the sum of the leaves of the tree.
+\begin{verbatim}
+(define (sum-tree tree)
+\end{verbatim}
+\vspace{1in}
+
+\end{enumerate}
+
+\begin{verbatim}
+(define (insert-list elem lst)
+  (if (null? lst)
+      (list elem)
+      (if (< elem (car lst))
+          (cons elem lst)
+          (cons (car lst) (insert-list elem (cdr lst))))))
+
+(define (avg v1 v2)
+  (/ (+ v1 v2) 2))
+\end{verbatim}
+
+\begin{enumerate}
+\setcounter{enumi}{2}
+\item Complete {\tt insert-tree}, which returns a {\it new tree} with the
+value added to the correct place in the tree.
+\begin{verbatim}
+(define (insert-tree elem tree)
+  (if (leaf? tree)
+      (if (= elem tree)
+          INSERT1
+          (if (< elem tree)
+              INSERT2
+              INSERT3))
+      (if (< elem (node-val tree))
+          (make-node (node-val tree)
+                     INSERT4
+                     (node-right tree))
+          (make-node (node-val tree)
+                     (node-left tree)
+                     INSERT5))))
+\end{verbatim}
+\vspace{2in}
+
+\end{enumerate}
+
+\newpage
+
+\section*{Animal Guessing Game}
+
+Download {\tt lec8.scm} from the website.
+
+\begin{enumerate}
+\item Write the {\tt animal} abstraction
+
+\item Write the {\tt ask-about-animal} procedure, which should take an
+animal as input and ask the player if that is their animal
+\begin{verbatim}
+(ask-about-animal (make-animal "elephant"))
+
+Is it a elephant (y or n)?         ;  ('n' key was struck)
+;Value: #f
+\end{verbatim}
+
+\item Look at the {\tt play-game} procedure.  This procedure uses a
+{\tt guesser} procedure combined with some {\tt knowledge} of animals
+in order to guess the player's animal.  Let's start off by using a
+list of {\tt animal}s as the knowledge.  Implement {\tt list-guesser},
+which takes in a list of animals and asks the player about them until
+it guesses the animal or runs out of knowledge.  If it succeeds, use
+{\tt print-msg} to print out a victory message.  If it runs out of
+knowledge without guessing the animal, print out {\tt "I give up."}.
+
+\item Look more closely at the {\tt play-game} procedure.  It uses the
+return value of the {\tt guesser} as the new knowledge to use when
+playing the next game.  Thus, we want to have the guesser return the
+knowledge.  The reason {\tt play-game} does this is it allows the
+guesser to ask a couple more questions when it fails to extend its
+knowledge to cover the situation where it lost:
+
+\begin{verbatim}
+(play-game new-list-guesser sample-list)
+
+Is it a elephant (y or n)? n
+
+Is it a hummingbird (y or n)? n
+I give up.
+
+What was your animal
+(Please enter a string (surrounded by "s) and use C-x, C-e to submit it)
+"thesaurus"
+
+play again (y or n)? y
+
+Is it a elephant (y or n)? n
+
+Is it a hummingbird (y or n)? n
+
+Is it a thesaurus (y or n)? y
+Yay!
+
+play again (y or n)? n
+;Value: (("animal" "elephant") ("animal" "hummingbird") ("animal" "thesaurus"))
+\end{verbatim}
+
+Write a {\tt new-list-guesser} procedure which returns a new improve
+knowledge list each time it runs.
+
+\item Most games of guess an animal are not played by repeated asking
+the player about every animal you know.  By asking other yes-no
+questions, the scope of possible animals can be narrowed to a small
+range.  The sounds like a job for trees!
+
+Implement the {\tt question} abstraction: a question is a node in our
+knowledge tree.
+
+\item Implement the {\tt ask-question} procedure which asks the player
+the question.
+
+\item The leaves of the tree are animals.  Implement {\tt
+tree-guesser} that takes in a tree as its knowledge and searchs the
+tree, asking questions to decide whether the left or right branch is
+the correct one.
+
+\begin{verbatim}
+(play-game new-tree-guesser sample-tree)
+
+does it fly (y or n)? n
+
+Is it a elephant (y or n)? y
+Yay!
+
+play again (y or n)? y
+
+does it fly (y or n)? y
+
+Is it a hummingbird (y or n)? y
+Yay!
+
+play again (y or n)? n
+;Value: ("question" "does it fly" ("animal" "hummingbird") ("animal" "elephant"))
+\end{verbatim}
+
+\item Once again, we should write our guesser such that it improves
+its knowledge each time.  The {\tt improve-tree} procedure has been
+given to you.  Write {\tt new-tree-guesser}.
+
+
+\end{enumerate}
+
+\end{document}

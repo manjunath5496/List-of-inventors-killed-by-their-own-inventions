@@ -1,0 +1,94 @@
+6.090 IAP '05 - Lecture 3 Solutions
+
+Problem 1
+
+(define abs
+  (lambda (x)
+    (if (< x 0)
+        (- x)
+        x)))
+
+Problem 2:
+
+(define sum-to-n
+  (lambda (n)
+    (if (= n 1)
+        1
+        (+ n (sum-to-n (- n 1))))))
+
+(define sum-of-n-squared
+  (lambda (n)
+    (if (= n 1)
+        1
+        (+ (* n n) (sum-of-n-squared (- n 1))))))
+
+Problem 3:
+
+(define find-e
+  (lambda (n)
+    (if (= n 0)
+        1
+        (+ (/ 1 (fact n))
+           (find-e (- n 1))))))
+
+Problem 4:
+
+(define loop
+  (lambda ()
+    (loop)))
+
+Problem 5:
+
+(define pad
+  (lambda (s n)
+    (if (= n 0)
+	s
+	(string-append (pad s (- n 1)) " "))))
+or
+(define pad
+  (lambda (s n)
+    (if (= n 0)
+	s
+	(pad (string-append s " ") (- n 1)))))
+
+Problem 6:
+
+(define gcd
+  (lambda (a b)
+    (if (= b 0)
+        a
+        (gcd b (remainder a b)))))
+
+Hanoi
+
+(define hanoi
+  (lambda (n to from scratch)
+    (if (= n 1)
+        (move n to from)
+        (begin
+         (hanoi (- n 1) from scratch to)
+         (move n to from)
+         (hanoi (- n 1) scratch to from)))))
+
+Problem 7:
+
+See lecture 4 solutions.
+
+Guessing Game
+
+(define guess-a-number
+  (lambda ()
+    (play-loop (random-number 1 100))))
+
+(define play-loop
+  (lambda (number)
+    (let ((guess (get-player-guess)))
+      (if (= guess number)
+	  (show-msg "You win!")
+	  (if (< guess number)
+	      (begin
+		(show-msg "Too low!")
+		(play-loop number))
+	      (begin
+		(show-msg "Too high!")
+		(play-loop number)))))))

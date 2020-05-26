@@ -1,0 +1,713 @@
+%Warning: This was Latex'ed on a Mac in order to include the figures
+% this next is to generate figures on the Mac
+%\def\picture #1 by #2 (#3){
+%  $${\vbox to #2{
+%    \hrule width #1 height 0pt depth 0pt
+%    \vfill
+%    \special{picture #3} % this is the low-level interface
+%    }}$$
+%  }
+
+%\input /zu/6001-devel/6001mac
+\input 6001mac
+%\input psfig
+\begin{document}
+
+\psetheader{Fall Semester, 1996-97}{Problem Set 4}
+
+\begin{center}
+{\bf The Square-limit language}
+\end{center}
+
+\begin{flushleft}
+Issued: Tuesday, September 24, 1996 \\
+\smallskip
+Written solutions due: in recitation on Friday, October 4, 1996\\
+\smallskip
+Tutorial preparation for: week of September 30, 1996 \\
+\smallskip
+Reading: Section 2.2; code files {\tt hend.scm} and
+{\tt hutils.scm} (attached)
+\end{flushleft}
+
+In this assignment, you will work with Peter Henderson's
+``square-limit'' graphics design language, which will be described in
+lecture on September 26, and which appears in Section 2.2.4 of the notes.  Before beginning work on this programming
+assignment, you should review that section.  The goal of
+this problem set is to reinforce ideas about data abstraction and
+higher-order procedures, and to emphasize the expressive power that
+derives from appropriate primitives, means of combination, and means
+of abstraction.\footnote{This problem set was developed by Hal
+Abelson, based upon work by Peter Henderson (``Functional Geometry,''
+in {\em Proc. ACM Conference on Lisp and Functional Programming},
+1982).  The image display code was designed and implemented by Daniel
+Coore.}
+
+%\begin{figure}[b]
+%\center{\leavevmode
+%         \psfig{file=/zu/hal/sicp/chapter-2/figs/sqlimit-wave.ps}
+%         \hskip .25in
+%         \psfig{file=/zu/hal/sicp/chapter-2/figs/sqlimit-rogers.ps}}
+%\caption[]{Designs generated with the picture language.}
+%\label{fig:sqlimit-designs}
+%\end{figure}
+
+Section 1 of this handout reviews the language, similar to what
+appears in the notes.  You will need to study this in order to prepare the
+tutorial presentations in section 2.  Section 3 gives the lab assignment,
+which includes an optional design contest.
+
+\section{1. The Square-limit language}
+
+Recall that the key idea in the square-limit language
+is to use {\em painter} procedures that take frames as inputs and
+paint images that are scaled to fit the frames.  To do this, we will
+need some basic building blocks.
+
+\subsection{Basic data structures}
+
+Vectors consist of a pair of numbers, glued together in some
+appropriate manner.  The contract we enforce for this data abstraction
+is the following:
+
+\begin{itemize}
+
+\item  the constructor {\tt make-vect} takes two arguments and
+associates them into a vector, and
+
+\item  the selectors {\tt xcor-vect} and
+{\tt ycor-vect} return the components of the vector constructed by
+{\tt make-vect}. (You'll actually  implement this abstraction later
+on, but of course for purposes of discussion, we only need to know the
+abstraction contract.)
+
+
+\end{itemize}
+
+We need a set of operations on vectors, and in particular assume
+three:
+
+\begin{itemize}
+
+\item 
+{\tt add-vect} takes two vectors as input, and returns as output
+another vector, whose components are the sums of the components of the
+input vectors;
+
+\item {\tt sub-vect} takes two vectors as input, and returns as output
+another vector, whose components are the differences of the components of the
+input vectors (e.g. the first vector minus the second);
+
+\item {\tt scale-vect} takes as input a number and a vector and returns a
+vector whose components are the components of the input vector,
+multiplied by the input number.
+
+\end{itemize}
+
+A pair of vectors determines a directed line segment---the segment
+running from the endpoint of the first vector to the endpoint of the
+second vector.  Again, we just need a contract:  
+
+\begin{itemize}
+
+\item constructor is {\tt
+make-segment} and
+
+\item  selectors are {\tt start-segment} and {\tt end-segment}.
+
+\end{itemize}
+
+\subsubsection{Frames}
+
+A frame is represented by three vectors: an origin and two edge
+vectors.
+
+\begin{verbatim}
+(define (make-frame origin edge1 edge2)
+  (list 'frame origin edge1 edge2))
+\null
+(define origin-frame cadr)
+(define edge1-frame caddr)
+(define edge2-frame cadddr)
+\end{verbatim}
+
+The frame's origin is given as a vector with respect to the origin of
+the graphics-window coordinate system.  The edge vectors specify the
+offsets of the corners of the frame from the origin of the frame.  If
+the edges are perpendicular, the frame will be a rectangle; otherwise
+it will be a more general parallelogram.  Figure~\ref{fig:frames} shows a
+frame and its associated vectors.
+
+%\begin{figure}
+%\epsffile{/zu/hal/sicp/chapter-2/figs/frame-vectors.eps}
+%\center{\leavevmode
+%        \psfig{file=/zu/hal/sicp/chapter-2/figs/frame-vectors.eps}}
+%
+%\caption[]{A frame is described by three vectors---an
+%origin and two edges.}
+%\label{fig:frames}
+%\end{figure} 
+
+Each frame determines a system of ``frame coordinates'' $(x,y)$ where
+$(0,0)$ is the origin of the frame, $x$ represents the displacement 
+along the first edge (as a fraction of the length of the edge) and $y$ is the
+displacement along the second edge.  For example, the origin of the
+frame has frame coordinates $(0,0)$ and the vertex diagonally opposite
+the origin has frame coordinates $(1,1)$.
+
+Another way to express this idea is to say that each frame has an
+associated {\em frame coordinate map} that transforms the frame
+coordinates of a point into the Cartesian plane coordinates of the
+point.  That is, $(x,y)$ gets mapped onto the Cartesian
+coordinates of the point given by the vector sum
+\begin{displaymath}
+\hbox{\rm Origin(Frame)} + x\cdot \hbox{\rm Edge}_1\hbox{\rm (Frame)}
++ y\cdot \hbox{\rm Edge}_2\hbox{\rm (Frame)} 
+\end{displaymath}
+
+We can represent the frame coordinate map by the following procedure:\\
+\begin{verbatim}
+(define (frame-coord-map frame)
+  (lambda (point-in-frame-coords)
+    (add-vect
+     (origin-frame frame)
+     (add-vect (scale-vect (xcor-vect point-in-frame-coords)
+                           (edge1-frame frame))
+               (scale-vect (ycor-vect point-in-frame-coords)
+                           (edge2-frame frame))))))
+\end{verbatim}
+
+For example, {\tt ((frame-coord-map a-frame) (make-vect 0 0))} will
+return the same value as {\tt (origin-frame a-frame)}.
+
+The procedure {\tt make-relative-frame} provides a convenient way to
+transform frames.  Given three points {\tt origin}, {\tt
+corner1}, and {\tt corner2} (expressed in frame coordinates), it
+returns a procedure which for any frame $f$ returns a new frame $g$
+which uses those points in $f$ coordinates to define the corners of
+the $g$ frame:
+
+\begin{verbatim}
+(define (make-relative-frame origin corner1 corner2)
+  (lambda (frame)
+    (let ((m (frame-coord-map frame)))
+      (let ((new-origin (m origin)))
+        (make-frame new-origin
+                    (sub-vect (m corner1) new-origin)
+                    (sub-vect (m corner2) new-origin))))))
+\end{verbatim}
+
+\noindent
+For example,\\
+\begin{verbatim}
+(make-relative-frame (make-vect .5 .5) (make-vect 1 .5) (make-vect .5 1))
+\end{verbatim}
+
+\noindent
+returns the procedure that takes a frame $f$ and returns the upper
+right quarter of $f$ as a new frame $g$.
+
+\subsubsection{Painters}
+
+As described in the notes, a painter is a procedure that, given a frame
+as argument, ``paints'' a picture in the frame.  That is to say, if
+{\tt p} is a painter and {\tt f} is a frame, then evaluating {\tt (p
+f)} will cause an image to appear in the frame.  The image will be
+scaled and stretched to fit the frame.
+
+The language you will be working with includes four ways to create
+primitive painters.
+
+The simplest painters are created with {\tt number->painter}, which
+takes a number as argument.  These painters fill a frame with a solid
+shade of gray.  The number specifies a gray level: 0 is black, 255 is
+white, and numbers in between are increasingly lighter shades of
+gray.  Here are some examples:
+
+\begin{verbatim}
+(define black (number->painter 0))
+(define white (number->painter 255))
+(define gray (number->painter 150))
+\end{verbatim}
+
+\noindent
+You can also specify a painter using {\tt procedure->painter}, which
+takes a procedure as argument.  The procedure determines a gray level
+(0 to 255) as a function of $(x,y)$ position, for example:
+
+\begin{verbatim}
+(define diagonal-shading
+  (procedure->painter (lambda (x y) (* 100 (+ x y)))))
+\end{verbatim}
+
+\noindent
+The $x$ and $y$ coordinates run from 0 to 1 and specify the fraction
+that each point is offset from the frame's origin along the frame's
+edges.  (See figure~\ref{fig:frames}.) Thus, the frame is filled out by
+the set of points $(x,y)$ such that $0\leq x,y \leq 1$.
+
+A third kind of painter is created by {\tt segments->painter}, which
+takes a list of line segments as argument.  This paints the line
+drawing specified by the list segments.  The $(x,y)$ coordinates of
+the line segments are specified as above.  For example, you can make
+the ``Z'' shape shown in figure~\ref{primitive-painters} as
+
+\begin{verbatim}
+(define mark-of-zorro
+  (let ((v1 (make-vect .1 .9))
+        (v2 (make-vect .8 .9))
+        (v3 (make-vect .1 .2))
+        (v4 (make-vect .9 .3)))
+    (segments->painter
+     (list (make-segment v1 v2)
+           (make-segment v2 v3)
+           (make-segment v3 v4)))))
+\end{verbatim}
+
+The final way to create a primitive painter is from a stored image.
+The procedure {\tt load-painter} uses an image from the 6001 image
+collection to create a painter
+\footnote{The images are kept in the
+directory {\tt 6001-images}.  The {\tt load-painter} procedure transforms
+them into painters, so that they can be scaled and deformed by the
+operations in the square-limit language.  Use the Edwin command {\tt
+M-x list-directory} to see entire contents of the directory.  Each
+image is $128\times 128$, stored in ``pgm'' format.}.
+For instance:
+
+\begin{verbatim}
+(define fovnder (load-painter "fovnder"))
+\end{verbatim}
+
+\noindent
+will paint an image of William Barton Rogers, the {\sc fovnder} of MIT.
+(See figure~\ref{primitive-painters}.) 
+
+%\begin{figure}
+%\picture 3.89 in by 1.82 in (primpics)
+%\center{\leavevmode
+%         \psfig{file=/zu/6001-devel/fall95/psets/ps3/zorro.ps}
+%         \hskip .25in
+%         \psfig{file=/zu/hal/sicp/chapter-2/figs/rogers-a.ps}
+%}
+
+%\caption{{\protect\footnotesize
+%Examples of primitive painters: {\tt mark-of-zorro} and {\tt fovnder}.}}
+%\label{primitive-painters}
+%\end{figure} 
+
+\subsection{Transforming and combining painters}
+
+Given a painter, we can produce a new painter that transforms its
+frame before painting in it.
+For example, if {\tt p} is a painter and {\tt f} is a frame, then\\
+\begin{verbatim}
+(p ((make-relative-frame (make-vect .5 .5) (make-vect 1 .5) (make-vect .5 1))
+    f))
+\end{verbatim}
+
+\noindent
+will paint in the upper-right-hand corner of the frame.
+
+We can abstract this idea with the following procedure:
+
+\begin{verbatim}
+(define (transform-painter origin corner1 corner2)
+  (lambda (painter)
+    (compose painter
+             (make-relative-frame origin corner1 corner2))))
+\end{verbatim}
+
+\noindent
+Calling {\tt transform-painter} with an origin and two corners
+returns a procedure that transforms a painter into one that paints
+relative to a new frame with the specified origin and corners.  For
+example, we could define:\\
+\begin{verbatim}
+(define (shrink-to-upper-left painter)
+  ((transform-painter (make-vect .5 .5) (make-vect 1 .5) (make-vect .5 1))
+   painter))
+\end{verbatim}
+
+\noindent
+Note that this can be written equivalently as\\
+\begin{verbatim}
+(define shrink-to-upper-left
+  (transform-painter (make-vect .5 .5) (make-vect 1 .5) (make-vect .5 1)))
+\end{verbatim}
+
+Another transformed frame, called {\tt flip-horiz} should flip images
+horizontally (we'll ask you to implement this later), another 
+rotates images counterclockwise by 90 degrees:\\
+\begin{verbatim}
+(define rotate90
+  (transform-painter (make-vect 1 0)
+                     (make-vect 1 1)
+                     (make-vect 0 0)))
+\end{verbatim}
+and similar rotations, {\tt rotate180} and {\tt rotate270}, can be created.
+
+We can combine the results of two painters in a single frame by
+calling each painter on the frame:
+
+\begin{verbatim}
+(define (superpose painter1 painter2)
+  (lambda (frame)
+    (painter1 frame)
+    (painter2 frame)))
+\end{verbatim}
+
+To draw one image beside another, we combine one in the left half
+of the frame with one in the right half of the frame:
+
+\begin{verbatim}
+(define (beside painter1 painter2)
+  (let ((split-point (make-vect .5 0)))
+    (superpose
+     ((transform-painter zero-vector
+                         split-point
+                         (make-vect 0 1))
+      painter1)
+     ((transform-painter split-point
+                         (make-vect 1 0)
+                         (make-vect .5 1))
+      painter2))))
+
+\end{verbatim}
+
+We can also define painters that combine painters vertically, by
+using {\tt rotate} together with {\tt beside}.  The painter produced
+by {\tt below} shows the image for {\tt painter1} below the image
+for {\tt painter2}:
+
+\begin{verbatim}
+(define (below painter1 painter2)
+  (rotate270 (beside (rotate90 painter2)
+                     (rotate90 painter1))))
+\end{verbatim}
+
+\section{2. Tutorial exercises}
+
+You should prepare the following exercises for oral presentation in
+tutorial.  They cover material in sections 2.1 and 2.2 of the text,
+and they also test your understanding of the square-limit language
+described above, in preparation for doing this week's lab in.  You may
+wish to use the computer to check your answers to these questions, but
+you should try to do them (at least initially) without the computer.
+
+\paragraph{Tutorial exercise 1:}
+Do exercises 2.17, 2.22, and 2.23 from the notes.
+
+\paragraph{Tutorial exercise 2:}
+In the square-limit language, a frame is represented as a list of four
+things---the symbol {\tt frame} followed by the origin and the two
+edge vectors.
+
+\begin{enumerate}
+
+\item Pick some values for the coordinates of origin and edge vectors
+and draw the box-and-pointer structure for the resulting frame --
+using some definition that you choose for vectors as well.
+
+\item Suppose we change the representation of frames and represent
+them instead as a list of three vectors---the origin and the two
+edges---without including the symbol {\tt frame}.  Give the new
+definitions of {\tt make-frame}, {\tt origin-frame}, {\tt
+edge1-frame}, and {\tt edge2-frame} for this representation.  In
+addition to changing these constructors and selectors, what other
+changes to the implementation of the square-limit language are
+required in order to use this new representation?
+
+\item Why might it be useful to include the symbol {\tt frame} as part
+of the representation of frames?
+\end{enumerate}
+
+\paragraph{Tutorial exercise 3:}
+Describe the patterns drawn by
+
+\begin{verbatim}
+(procedure->painter (lambda (x y) (* x y)))
+(procedure->painter (lambda (x y) (* 255 x y)))
+\end{verbatim}
+
+\paragraph{Tutorial exercise 4:}
+Section 1 defines {\tt below} in terms of {\tt beside} and {\tt
+rotate}.  Give an alternative definition of {\tt below} that does not
+use {\tt beside}.
+
+\paragraph{Tutorial exercise 5:}
+Describe the effect of
+
+\begin{verbatim}
+(transform-painter (make-vect .1 .9)
+                   (make-vect 1.5 1)
+                   (make-vect .2 0))
+\end{verbatim}
+
+\section{3. To do in lab}
+
+Load the code for problem set 3, which contains the procedures
+described in section 1.  You will not need to modify any of these.  We
+suggest that you define your new procedures in a separate (initially
+empty) editor buffer, to make it easy to reload the system if things
+get fouled up.
+
+When the problem set code is loaded, it will create three graphics windows,
+named {\tt g1}, {\tt g2}, and {\tt g3}.  To paint a picture in a
+window, use the procedure {\tt paint}.  For example,
+
+\begin{verbatim}
+(paint g1 fovnder)
+\end{verbatim}
+
+\noindent
+will show a picture of William Barton Rogers in window {\tt g1}
+(once you have successfully completed lab exercise 1 and {\tt
+(load-rest)} successfully evaluates.
+
+There is also a procedure called {\tt paint-hi-res}, which paints the
+images at higher resolution ($256 \times 256$ rather than $128 \times
+128$).  Painting at a higher resolution produces better looking
+images, but takes four times as long.  As you work on this problem
+set, you should look at the images using {\tt paint}, and reserve {\tt
+paint-hi-res} to see the details of images that you find
+interesting.\footnote{Painting a primitive image like {\tt fovnder} won't
+look any different at high resolution, because the original picture is
+only $128 \times 128$.  But as you start stretching and shrinking the
+image, you will see differences at higher resolution.}
+
+\paragraph{Printing pictures} You can print images on the laserjet
+printer with Edwin's {\tt M-x print-graphics} command as described
+in the {\em Don't Panic} manual.  The laserjet cannot print true
+greyscale pictures, so the pictures will not look as good as they do
+on the screen. Please print only a few images---only the ones that you
+really want---so as not to waste paper and clog the printer queues.
+We suggest that you print only images created with {\tt paint-hi-res},
+not {\tt paint}.
+
+\paragraph{Lab exercise 1:}  Complete the implementation of the data
+abstractions, by choosing a representation for vectors {\tt
+(make-vect, xcor-vect, ycor-vect)} and for
+segments {\tt (make-segment, start-segment, end-segment)}.  Use those
+abstractions to implement the three operations on vectors {\tt
+(add-vect, sub-vect, scale-vect)}.  You may find it convenient to do
+this in the copy of {\tt hutils.scm} that was loaded into your editor.
+Once you are done adding your definitions, save the file and then load
+it into your Scheme buffer by evaluating:
+
+\begin{verbatim}
+(load ``~/work/hutils.scm'')
+\end{verbatim}
+
+If you work on the problem set in multiple sessions, be sure that you
+reload this file after you have loaded up the problem set, so that
+your new definitions will override the ones in the problem set file.
+
+Turn in a listing of your
+code, and some examples of using it.
+
+\vskip 20pt
+
+Once you have created your data abstractions,  evaluate
+
+\begin{verbatim}
+(load-rest)
+\end{verbatim}
+ 
+\noindent
+to have the rest of the code for the problem set loaded into your
+Scheme environment.
+
+\paragraph{Lab exercise 2:}
+Make a collection of primitive painters to use in the rest of this
+lab.  In addition to the ones predefined for you (and listed in
+section 1), define at least one new painter of each of the four
+primitive types: a uniform grey level made with {\tt number->painter},
+something defined with {\tt procedure->painter}, a line-drawing made
+with {\tt segments->painter}, and an image of your choice that is
+loaded from the 6001 image collection with {\tt load-painter}.  Turn
+in a list of your definitions.
+
+\paragraph{Lab exercise 3:}
+Earlier we referred to examples of transforming painters, i.e.
+procedures that take a painter as input and create a new painter that
+will draw relative to some new frame.  Increase
+the repetoire of such methods by implementing a transformation,
+{\tt flip-horiz}, which takes as input a painter, and returns a new
+painter that draws its input flipped about the vertical axis.
+Also implement {\tt rotate180} and {\tt rotate270} in analogy to {\tt
+rotate90}.  Turn in a listing of your procedures.
+
+\paragraph{Lab exercise 4:}
+Experiment with some combinations of your primitive painters, using
+{\tt beside}, {\tt below}, {\tt superpose}, flips, and rotations, to get a
+feel for how these means of combination work.  You needn't turn in
+anything for this exercise.
+
+\paragraph{Lab exercise 5:}
+The ``diamond'' of a frame is defined to be the smaller frame
+created by joining the midpoints of the original frame's sides, as shown in
+figure~\ref{diamond}.  Define a procedure {\tt
+diamond} that transforms a painter into one that paints its image in
+the diamond of the specified frame, as shown in
+figure~\ref{diamond}.  Try some examples, and turn in a listing of
+your procedure.
+
+%\begin{figure}
+
+%\center{\leavevmode
+%         \psfig{file=/zu/6001-devel/fall95/psets/ps3/fovnderd.ps,height=2.5in}
+%}       
+
+%\caption{{\protect\footnotesize
+%The ``diamond'' of a frame is formed by joining the midpoints
+%of the sides.  This is illustrated with a  painting created by {\tt (diamond fovnder)}.}}
+%\label{diamond}
+%\end{figure} 
+
+\paragraph{Lab exercise 6:}
+
+The ``diamond'' transformation has the property that, if you start
+with a square frame, the diamond frame is still square
+(although rotated).  Define a transformation similar to {\tt
+diamond}, but which does not produce square frames.  Try your
+transformation on some images to get some nice effects.  Turn in a
+listing of your procedure.
+
+\paragraph{Lab exercise 7:}
+The following recursive {\tt right-split} procedure was demonstrated
+in lecture:
+
+\begin{verbatim}
+(define (right-split painter n)
+  (if (= n 0)
+      painter
+      (let ((smaller (right-split painter (- n 1))))
+        (beside painter (below smaller smaller)))))
+\end{verbatim}
+
+Try this with some of the painters you've previously defined, both
+primitives and combined ones.  Now define an analogous {\tt up-split}
+procedure as shown in figure~\ref{up-split}.  Make sure to test it on
+a variety of painters.  Turn in a listing of your procedure.  (In
+defining your procedure, remember that {\tt (below painter1
+painter2)} produces {\tt painter1} below {\tt painter2}.)
+
+%\begin{figure}
+%\picture 3.75 in by 1.79 in (up-split)
+%\center{\leavevmode
+%         \psfig{file=/zu/6001-devel/fall95/psets/ps3/upsplit.ps,height=2.5in}
+%}       
+%\caption{{\protect\footnotesize
+%The {\tt up-split} procedure places a picture below two (recursively)
+%up-split copies of itself. This was created from {\tt (up-split fovnder 4)}}}
+%\label{up-split}
+%\end{figure} 
+
+
+\paragraph{Lab exercise 8:}
+{\tt Right-split} and {\tt up-split} are both examples of a common
+pattern that begins with a means of combining two painters and applies
+this over and over in a recursive pattern.  We can capture this idea
+in a procedure called {\tt keep-combining}, which takes as argument a
+{\tt combiner} (which combines two painters).  For instance, we should
+be able to give an alternative definition of {\tt right-split} as
+
+\begin{verbatim}
+(define new-right-split
+  (keep-combining
+   (lambda (p1 p2)
+     (beside p1 (below p2 p2)))))
+\end{verbatim}
+
+\noindent
+Complete the following definition of {\tt keep-combining}:
+
+\begin{verbatim}
+(define (keep-combining combine-2)
+  ;; combine-2 = (lambda (painter1 painter2) ...)
+  (lambda (painter n)
+    ((repeated
+      fill-in-missing-expression
+      n)
+     painter)))
+\end{verbatim}
+
+where {\tt repeated} is given by:
+
+\begin{verbatim}
+(define (repeated f n)
+  (cond ((= n 0) identity)
+        ((= n 1) f)
+        (else (compose f (repeated f (- n 1))))))
+\end{verbatim}
+
+\noindent
+Show that you can indeed define {\tt right-split} using your
+procedure, and give an analogous definition of {\tt up-split}.
+
+
+\paragraph{Lab exercise 9}
+Once you have {\tt keep-combining}, you can use it to define lots of
+recursive means of combination.  Figure~\ref{keep-combining} shows
+an example, which comes from:
+
+\begin{verbatim}
+(define nest-diamonds
+  (keep-combining
+    (lambda (p1 p2) (superpose p1 (diamond p2)))))
+\null
+(nest-diamonds fovnder 4)
+\end{verbatim}
+
+\noindent
+Invent some variations of your own.  Turn in the code
+and one or two sample pictures.
+
+%\begin{figure}
+%\picture 1.81 in by 1.81 in (nest-fovnder)
+%\center{\leavevmode
+%         \psfig{file=/zu/6001-devel/fall95/psets/ps3/nest.ps,height=2.5in}
+%}       
+%\caption{{\protect\footnotesize
+%Some recursive combination schemes, defined with {\tt keep-combining}.}}
+%\label{keep-combining}
+%\end{figure} 
+
+\paragraph{Lab exercise 10:}
+The procedures you have implemented give you a wide choice of things
+to experiment with.  Invent some new means of combination, both simple
+ones like {\tt beside} and complex higher-order ones like {\tt
+keep-combining} and see what kinds of interesting images you can create.
+Turn in the code and one or two figures.
+
+\paragraph{Contest (Optional)}
+
+Hopefully, you generated some interesting designs in doing this
+assignment.  If you wish, you can enter printouts of your best designs
+in the 6.001 PS3 design contest.  Turn in your design collection
+together with your homework, but {\em stapled separately}, and make
+sure your name is on the work.  For each design, show the expression
+you used to generate it.  Designs will be judged by the 6.001 staff
+and other internationally famous art critics, and fabulous prizes will
+be awarded in lecture.  There is a limit of five entries per student.
+Make sure to turn in not only the pictures, but also the procedure(s)
+that generated them.
+
+\vspace{6ex}
+
+How much time did you spend on this homework assignment? Report separately
+time spent before going to lab and time spent in the 6.001 lab.
+
+\vspace{6ex}
+
+If you cooperated with other students working this problem set
+please indicate their names on your solutions. As you should know,
+as long as the guidelines described in the 
+{\em 6.001 Policy on Cooperation}\ handout are followed,
+such cooperation is allowed and encouraged.
+
+
+
+\end{document}
+

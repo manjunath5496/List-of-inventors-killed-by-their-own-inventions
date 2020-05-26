@@ -1,0 +1,171 @@
+6.090 IAP '05 - Lecture 2 Solutions
+
+Problem 1:
+
+#[compound-procedure 10]
+
+17
+
+42
+
+Error: division by zero
+
+17
+
+Problem 2:
+
+a)
+
+(define cube
+  (lambda (x)
+    (* x x x)))
+
+(cube 2)
+;Value: 8
+(cube 3)
+;Value: 27
+
+b)
+
+(define the-answer?
+  (lambda (answer)
+    (= answer 42)))
+or
+(define the-answer?
+  (lambda (answer)
+    (if (= answer 42)
+        #t
+        #f)))
+
+(the-answer? 3)
+;Value: #f
+(the-answer? 42)
+;Value: #t
+
+c)
+
+(define sign
+  (lambda (x)
+    (if (> x 0)
+        1
+        (if (= x 0)
+            0
+            -1))))
+or
+(define sign
+  (lambda (x)
+    (if (= x 0)
+        0
+        (/ x (abs x)))))
+
+(sign 5)
+;Value: 1
+(sign 0)
+;Value: 0
+(sign -10)
+;Value: -1
+
+d)
+
+(define usable-page
+  (lambda (m)
+    (* (- 8.5 m m) (- 11 m m))))
+
+e)
+
+(define beautiful-rectangle
+  (lambda (width)
+    (* width (/ (+ (sqrt 5) 1) 2))))
+
+f)
+
+(define positive-root
+  (lambda (a b c)
+    (if (< (- (* b b) (* 4 a c)) 0)
+        "complex roots"
+        (/ (+ (- b) (sqrt (- (* b b) (* 4 a c))))
+           (* 2 a)))))
+or
+(define det
+  (lambda (a b c)
+    (- (* b b) (* 4 a c))))
+(define positive-root
+  (lambda (a b c)
+    (if (< (det a b c) 0)
+        "complex roots"
+	(/ (+ (- b) (sqrt (det a b c)))
+	   (* 2 a)))))
+
+
+Problem 3:
+
+a)
+
+(define biggie-size
+  (lambda (combo)
+    (+ combo 4)))
+
+b)
+
+(define unbiggie-size
+  (lambda (combo)
+    (- combo 4)))
+
+c)
+
+(define biggie-size?
+  (lambda (combo)
+    (> combo 4)))
+
+d)
+
+(define combo-price
+  (lambda (combo)
+    (if (biggie-size? combo)
+        (+ .5 (combo-price (unbiggie-size combo)))
+	(* 1.17 combo))))
+
+Problem 4:
+
+Plan:
+
+Base case:      x^0 = 1
+Recursive case: x^n = x^(n-1) * x
+
+(define expt
+  (lambda (x n)
+    (if (= n 0)
+        1
+        (* x (expt x (- n 1))))))
+
+(expt 2 2)
+;Value: 4
+(expt 2 3)
+;Value: 8
+
+Problem 5:
+
+Plan:
+
+Base Case:      x < y => remainder x y = x
+Recursive Case: remainder x y = remainder (x-y) y
+
+(define remainder
+  (lambda (x y)
+    (if (< x y)
+        x
+        (remainder (- x y) y))))
+
+Problem 6:
+
+Plan:
+
+Base Cases:     fib 0 = 1, fib 1 = 1
+Recursive Case: fib n = fib (n-1) + fib (n-2)
+
+(define fib
+  (lambda (n)
+    (if (< n 2)
+        1
+        (+ (fib (- n 1)) (fib (- n 2))))))
+

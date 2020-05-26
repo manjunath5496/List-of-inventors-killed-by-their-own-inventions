@@ -1,0 +1,115 @@
+6.090 IAP '05 - Lecture 1 Solutions
+
+Problem 1
+
+4
+
+5.5
+
+42.
+
+3
+
+;The object 7 is not applicable.
+
+-15
+
+unspec
+
+unspec
+
+unspec
+
+5
+
+unspec
+
+unspec
+
+3
+
+#t
+
+;The object #t, passed as the first argument to integer-equal?, is not the correct type.
+
+;The object 11 is not applicable
+
+;Value: #[compiled-procedure 9 ("arith" #x44) #xF #xE1F5C3]
+
+1
+
+#t
+
+10
+
+128
+
+Problem 2:
+
+3
+
+Problem 3:
+
+(if #t (- (* 3 4) (/ 81 9)) 4)
+
+Problem 4:
+
+Numerous answers possible, here's a set:
+
+(define x 4)
+(define y 3)
+(+ x (* y 3)))
+
+(define q #t)
+(define r #f)
+(if q (if r 3 4) 7))
+
+(define z 3)
+(define a 1)
+(+ 7 (if z (+ a z) 3)))
+
+(define yum -1)
+(= yum (* -1 (+ yum 2))))
+
+(define thirty-four 102)
+(define seventy-seven 1)
+(< (if (not thirty-four) 34 thirty-four)
+   (+ thirty-four (* seventy-seven (if seventy-seven -1 1))))
+
+Problem 5:
+
+1) abs - absolute value
+(abs 5)
+;Value: 5
+(abs -5)
+;Value: 5
+
+(+ 3 (abs -2))
+
+2) expt x y - exponentiation x^y
+   sqrt x   - square root of x
+(expt 12 2)
+;Value: 144
+(sqrt 9)
+;Value: 3
+2^4 = 16, so fill the blank with number >= 4
+
+(if (> (expt 2 12) 15)
+    (sqrt 2)
+    (sqrt 4))
+
+4) string-append - glue two (or more) string together
+(string-append "yay" "rah")
+;Value: "yayrah"
+
+(string-apend "foo" "bar" "baz")
+
+5) string-suffix? suffix s - does string s end with suffix
+   string-search-forward pattern s - returns index of first occurance of
+      pattern in string s.
+s must be a string which ends in yowzah, which has "ow" at index 7
+
+(define s "yayrahyowzah")
+(if (string-suffix? "yowzah" s)
+    (+ 7 (string-search-forward "ow" s))
+    #f)

@@ -1,0 +1,97 @@
+6.090 IAP '05 - Lecture 6 Solutions
+
+(define (sum f x y dx)
+  (if (> x y)
+      0
+      (+ (f x)
+         (sum f (+ x dx) y dx))))
+
+(define (make-adder amt)
+  (lambda (x) (+ x amt)))
+
+(define add-3 (make-adder 3))
+
+(add-3 5)
+;Value: 8
+
+(define compose
+  (lambda (f g)
+    (lambda (x)
+      (f (g x)))))
+
+(define square (lambda (x) (* x x)))
+(define inc (lambda (x) (+ x 1)))
+
+(define inc-square (compose square inc))
+
+(inc-square 3)
+
+
+4
+;Value: 4
+;Type: num
+
+(+ 1 1)
+;Value: 2
+;Type: num
+
+(lambda (x) (+ x 1))
+;Value: compound-procedure
+;Type: num -> num
+
+(lambda (x) (= x 1))
+;Value: compound-procedure
+;Type: num -> bool
+
+(define square
+  (lambda (x) (* x x)))
+;Value: unspecified
+
+square
+;Value: compound-procedure
+;Type: num -> num
+
+(square 5)
+;Value: 25
+;Type: num
+
+(define a
+  (lambda (f) (+ (f 5) 1)))
+;Value: unspecified
+
+a
+;Value: compound-procedure
+;Type: (num -> num) -> num
+
+(a square)
+;Value: 26
+;Type: num
+
+(define b
+  (lambda (x y)
+    (+ (a x) y)))
+;Value: unspecified
+
+b
+;Value: compound-procedure
+;Type: (num -> num), num -> num
+
+(b square 4)
+;Value: 30
+;Type: num
+
+(define c
+  (lambda (x)
+    (lambda (y)
+      (+ x y))))
+;Value: unspecified
+
+c
+;Value: compound-procedure
+;Type: num -> (num -> num)
+
+(c 5)
+;Value: compound-procedure
+;Type: num -> num
+
+  

@@ -1,0 +1,80 @@
+\include{6001mac}
+\begin{document}
+\psetheader{IAP 2005}{Lecture 6}
+
+\section*{Scheme}
+
+\begin{enumerate}
+\item {\bf Special Forms}
+  \begin{enumerate}
+  \item {\large {\it and}} - {\tt (and {\it arg1 arg2 ...})}\\
+    Evaluates arguments from left to right, stopping at the first one
+    that evaluates to false and returning false.  Should all the
+    arguments evaluate true-ishly, returns the value of the last
+    argument.
+    \vspace{1in}
+  \item {\large {\it or}} - {\tt (or {\it arg1 arg2 ...})}\\ Evaluates
+    arguments from left to right, stopping at the first one that
+    evaluates to true-ish and returns that value.  Should all the
+    arguments evaluate to false, returns false.
+    \vspace{1in}
+  \end{enumerate}
+\end{enumerate}
+
+\section*{Higher Order Procedures}
+
+\begin{verbatim}
+(define sum
+  (lambda (f x y dx)
+\end{verbatim}
+
+\newpage
+
+\section*{Types}
+
+\section*{Problems}
+
+For each expression, write the type of the {\bf value} that results
+from evaluating the expression.  Ignore {\tt define} expressions.
+\begin{verbatim}
+4
+
+(+ 1 1)
+
+(lambda (x) (+ x 1))
+
+(lambda (x) (= x 1))
+
+(define square
+  (lambda (x) (* x x)))
+
+square
+
+(square 5)
+
+(define a
+  (lambda (f) (+ (f 5) 1)))
+
+a
+
+(a square)
+
+(define b
+  (lambda (x y)
+    (+ (a x) y)))
+
+b
+
+(b square 4)
+
+(define c
+  (lambda (x)
+    (lambda (y)
+      (+ x y))))
+
+c
+
+(c 5)
+\end{verbatim}
+
+\end{document}

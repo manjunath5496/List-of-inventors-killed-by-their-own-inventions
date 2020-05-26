@@ -1,0 +1,227 @@
+\include{6001mac}
+\begin{document}
+\psetheader{IAP 2005}{Lecture 2}
+
+\section*{Scheme}
+\begin{enumerate}
+\item {\bf Basic Elements}
+  \begin{enumerate}
+  \item {\it self-evaluating} - expressions whose value is the same as
+    the expression.
+    \vspace{.5in}
+  \item {\it names} - Name is looked up in the symbol table to find
+    the value associated with it.  Names may be made of any collection
+    of characters that doesn't start with a number.
+    \vspace{.5in}
+  \end{enumerate}
+\item {\bf Combination}\\
+  {\tt (} {\it procedure} {\it arguments-separated-by-spaces} {\tt )}\\
+  Value is determined by evaluating the expression for the procedure
+  and applying the resulting value to the value of the arguments.
+  \vspace{.5in}
+
+\item {\bf Special Forms}
+  \begin{enumerate}
+  \item {\large {\it define}} - {\tt (define {\it name value})}\\ The
+    name is bound to the result of evaluating the the value.  Return
+    value is {\it unspecified}.
+    \vspace{.5in}
+  \item {\large {\it if}} - {\tt (if {\it test consequent alternative})}\\ If
+    the value of the test is \underline{not false (\#f)}, evaluate the
+    consequent, otherwise evaluate the alternative.
+    \vspace{.5in}
+  \item {\large {\it lambda}} - {\tt (lambda {\it parameters body})}\\ Creates
+    a procedure with the given parameters and body.  Parameters is a
+    list of names of variables.  Body is one or more scheme
+    expressions.  When the procedure is applied, the body expressions
+    are evaluated in order and the value of the last one is returned.
+    \vspace{.5in}
+  \end{enumerate}
+\end{enumerate}
+
+\section*{Problems}
+
+\begin{enumerate}
+
+\item {\large {\it Evaluation}} - For each expression:
+\begin{enumerate}
+\item Write the type of the expression
+\item Write your guess as to the expression's return value.
+If the expression is erroneous simply indicate ``error'' for the value.  
+If the expression returns an unspecified value, write whatever you want!
+If the expression returns a procedure, indicate ``procedure'' for the value.
+\item Evaluate the expression, and copy the response from the *scheme* buffer.
+\end{enumerate}
+
+\begin{verbatim}
+(lambda (x) x)
+
+((lambda (x) x) 17)
+
+((lambda (x y) x) 42 17)
+
+((lambda (x y) y) (/ 1 0) 3)
+
+((lambda (x y) (x y 3)) (lambda (a b) (+ a b)) 14)
+\end{verbatim}
+
+\item {\large {\it Writing Procedures}} - Write the procedure
+indicated.  Then test it in scheme to make sure it works.
+\begin{enumerate}
+\item Write a procedure {\tt cube} that returns the cube of it's input.
+\begin{verbatim}
+(define cube
+\end{verbatim}
+\vspace{.5in}
+
+\item Write a procedure {\tt the-answer?}, which returns true ({\tt
+\#t}) if the input is the number 42.
+\begin{verbatim}
+(define the-answer?
+\end{verbatim}
+\vspace{1in}
+
+\item Write a procedure {\tt sign} that returns 1 if it's input is
+positive, -1 if it's input is negative, and 0 if it's input is 0.
+\begin{verbatim}
+(define sign
+\end{verbatim}
+\vspace{1in}
+
+\item Given a margin width {\tt m}, which is both the top, bottom,
+left, and right margin of the page, write a procedure that computes
+the "usable" (non margin) area of the 8.5in by 11in sheet of paper.
+
+\begin{verbatim}
+(usable-page 0)
+;Value: 93.5
+(usable-page 1)
+;Value: 58.5
+
+(define usable-page
+\end{verbatim}
+\vspace{1in}
+
+\item Write a procedure that when given a width, returns the length of the
+most beautiful rectangle having that width.  According to studies, the
+most beautiful rectangle is one whose ratio of length to width is the
+golden ratio.  The golden ratio can be most easily be expressed as
+(sqrt(5)+1)/2.
+
+\begin{verbatim}
+(beautiful-rectangle 1)
+;Value: 1.618033988749895
+(beautiful-rectangle 34.5)
+;Value: 55.82217261187137
+
+(define beautiful-rectangle
+\end{verbatim}
+\vspace{1in}
+
+\item Write a procedure that computes the positive root of the
+quadratic polynomial using the quadratic formula.  The positive root
+is the larger of the two roots.  If the polynomial has complex roots,
+your procedure should return the string "complex roots".
+
+\begin{verbatim}
+(postive-root 1 -2 1)
+;Value: 1
+(positive-root 3 1 3)
+;Value: "complex roots"
+
+(define postive-root
+\end{verbatim}
+\vspace{1in}
+\end{enumerate}
+
+\item {\large {\it Biggie-Sizing!}}
+
+Suppose we're designing an point-of-sale and order-tracking
+system for Wendy's\footnote{6.090 and MIT do not endorse and are not
+affiliated with Wendy's in any way.  They merely capitalize on the
+pleasant way ``biggie-size'' rolls off the tongue.}.  Luckily the
+\"{U}ber-Qwuick drive through supports only 4 options: Classic Single
+Combo (hamburger with one patty), Classic Double With Cheese Combo (2
+patties), and Classic Triple with Cheese Combo (3 patties),
+Avant-Garde Quadruple with Guacamole Combo (4 patties).  We shall
+encode these combos as 1, 2, 3, and 4 respectively.  Each meal can be
+{\it biggie-sized} to acquire a larger box of fries and drink.  A {\it
+biggie-sized} combo is represented by 5, 6, 7, and 8 respectively.
+\begin{enumerate}
+\item Write a procedure named {\tt biggie-size} which when given a
+regular combo returns a {\it biggie-sized} version.
+\vspace{.75in}
+\item Write a procedure named {\tt unbiggie-size} which when given a
+{\it biggie-sized} combo returns a non-{\it biggie-sized} version.
+\vspace{.75in}
+\item Write a procedure named {\tt biggie-size?} which when given a
+combo, returns true if the combo has been {\it biggie-sized} and false
+otherwise.
+\vspace{.75in}
+\item Write a procedure named {\tt combo-price} which takes a combo
+and returns the price of the combo.  Each patty costs \$1.17, and a
+{\it biggie-sized} version costs \$.50 extra overall.
+\vspace{.75in}
+\end{enumerate}
+
+\end{enumerate}
+
+\section*{Recursion}
+\vspace{3in}
+
+\section*{More Problems}
+\begin{enumerate}
+\setcounter{enumi}{3}
+\item Write {\tt expt}, a procedure that raises {\tt x} to the {\tt
+n}th power.  You may assume that {\tt n} is non-negative and integer.
+\begin{verbatim}
+(expt 2 2)
+;Value: 4
+(expt 2 3)
+;Value: 8
+
+Plan:
+
+(define expt
+  (lambda (x n)
+\end{verbatim}
+\vspace{1in}
+
+\newpage
+\item Write {\tt remainder}, a procedure that computes the remainder
+of {\tt x} divided by {\tt y}.
+\begin{verbatim}
+(remainder 2 5)
+;Value: 2
+(remainder 7 5)
+;Value: 2
+
+Plan:
+
+(define remainder
+  (lambda (x y)
+\end{verbatim}
+\vspace{1in}
+
+\item Write {\tt fib}, a procedure that computes the {\tt n}th
+fibonacci number.
+\begin{verbatim}
+(fib 0)
+;Value: 1
+(fib 1)
+;Value: 1
+(fib 2)
+;Value: 2
+(fib 6)
+;Value: 13
+
+Plan:
+
+(define fib
+  (lambda (n)
+\end{verbatim}
+\vspace{1in}
+
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,153 @@
+\include{6001mac}
+\begin{document}
+\psetheader{IAP 2005}{Lecture 3}
+
+\section*{Scheme}
+\begin{enumerate}
+\item {\bf Special Forms}
+  \begin{enumerate}
+  \item {\large {\it begin}} - {\tt (begin {\it exps})}\\ Evaluate each
+  expression in order and return the value of the last expression.
+  \vspace{.5in}
+  \end{enumerate}
+\end{enumerate}
+
+\section*{Problems}
+
+\begin{enumerate}
+\item Write {\tt abs}, a function that returns the absolute value of
+its input.
+
+\begin{verbatim}
+(abs 5)
+;Value: 5
+(abs -5)
+;Value: 5
+
+(define abs
+  (lambda (val)
+\end{verbatim}
+\vspace{1in}
+
+\item Write {\tt sum-to-n} which sums the numbers from 1 to n
+inclusive.
+
+\begin{verbatim}
+(define sum-to-n
+  (lambda (n)
+\end{verbatim}
+\vspace{1in}
+Alter the procedure to sum the squares of the numbers.
+
+\item Write a procedure that computes $e$.
+\vspace{1.5in}
+
+\item Write a procedure that runs forever.  (Remember that C-c, C-c stops evaluation)
+\vspace{1in}
+
+\item Using {\tt string-append}, write a procedure {\tt pad}, which
+takes a string and a number, that returns the string with
+that number of spaces added to the end.
+
+\begin{verbatim}
+(pad "yay" 0)
+;Value: "yay"
+(pad "yay" 1)
+;Value: "yay "
+(pad "yay" 3)
+;Value: "yay   "
+
+(define pad
+\end{verbatim}
+\vspace{1in}
+
+\item Write a procedure that uses Euclid's algorithm to compute the GCD of
+two numbers.  Euclid's algorithm (according to Knuth it's the oldest
+known algorithm) goes as follows: if r is the remainder of a divided
+by b, then the common divisors of a and b are the same as those of b
+and r.  Additionally, the gcd of a number and 0 is the number.
+
+\begin{verbatim}
+(gcd 206 40)
+;Value: 2
+
+(define gcd
+  (lambda (a b)
+\end{verbatim}
+\end{enumerate}
+
+\section*{Tower of Hanoi}
+
+\vspace{2in}
+
+\section*{Scheme}
+
+\begin{enumerate}
+\item {\bf Special Forms}
+  \begin{enumerate}
+  \item {\large {\it define} (sugared form)} - {\tt (define ({\it
+    name parameters}) {\it expressions})}\\ This form is equivalent to
+    {\tt (define {\it name} (lambda ({\it parameters}) {\it
+    expressions}))}.
+    \vspace{.5in}
+  \item {\large {\it let}} - {\tt (let {\it bindings body})}\\ Binds the
+    given bindings for the duration of the body.  The bindings is a
+    list of {\tt ({\it name value})} pairs.  The body consists of one
+    or more expressions which are evaluated in order and the value of
+    last is returned.
+    \vspace{1in}
+  \end{enumerate}
+\end{enumerate}
+
+\section*{Problems}
+
+\begin{enumerate}
+\setcounter{enumi}{6}
+\item Guess the value, then evaluate the expression in scheme.  If
+your guess differs from the actual output, try desugaring any relevant
+expressions.
+
+\begin{verbatim}
+(define (foo x)
+  (+ x 3))
+
+foo
+
+(foo 5)
+
+(define bar 5)
+
+(define (baz) 5)
+
+bar
+
+baz
+
+(bar)
+
+(baz)
+
+(let ((a 3)
+      (b 5))
+  (+ a b))
+
+(let ((+ *)
+      (* +))
+  (+ 3 (* 4 5)))
+
+(define m 3)
+(let ((m (+ m 1)))
+  (+ m 1))
+
+(define n 4)
+(let ((n 12)
+      (o (+ n 2)))
+  (* n o))
+
+\end{verbatim}
+
+\end{enumerate}
+
+\section*{Guessing Game}
+
+\end{document}

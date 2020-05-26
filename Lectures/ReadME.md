@@ -2124,3 +2124,57 @@
 
 </br>
 
+
+<table class="tablewidth75" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">ASSIGNMENTS</th>
+<th scope="col">SOLUTIONS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td><a href="MIT6_046JS15_pset1.pdf">Problem Set 1 (PDF)</a></td>
+<td><a href="MIT6_046JS15_pset1sols.pdf">Solutions to Problem Set 1 (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_pset2.pdf">Problem Set 2 (PDF)</a></td>
+<td><a href="MIT6_046JS15_pset2sols.pdf">Solutions to Problem Set 2 (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_046JS15_pset3.pdf">Problem Set 3 (PDF)</a></td>
+<td><a href="MIT6_046JS15_pset3sols.pdf">Solutions to Problem Set 3 (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_pset4.pdf">Problem Set 4 (PDF)</a></td>
+<td><a href="MIT6_046JS15_pset4sols.pdf">Solutions to Problem Set 4 (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_046JS15_pset5.pdf">Problem Set 5 (PDF)</a></td>
+<td><a href="MIT6_046JS15_pset5sols.pdf">Solutions to Problem Set 5 (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_pset6.pdf">Problem Set 6 (PDF)</a></td>
+<td><a href="MIT6_046JS15_pset6sols.pdf">Solutions to Problem Set 6 (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_046JS15_pset7.pdf">Problem Set 7 (PDF)</a></td>
+<td><a href="MIT6_046JS15_pset7sols.pdf">Solutions to Problem Set 7 (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_pset8.pdf">Problem Set 8 (PDF)</a></td>
+<td><a href="MIT6_046JS15_pset8sols.pdf">Solutions to Problem Set 8 (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_046JS15_pset9.pdf">Problem Set 9 (PDF)</a></td>
+<td><a href="MIT6_046JS15_pset9sols.pdf">Solutions to Problem Set 9 (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_pset10.pdf">Problem Set 10 (PDF)</a></td>
+<td><a href="MIT6_046JS15_pset10sols.pdf">Solutions to Problem Set 10 (PDF)</a></td>
+</tr>
+</tbody>
+</table>
+</br>
+<p><a href="template.zip">LaTeX Template for Problem Sets (ZIP)</a>&nbsp;(This file contains: 1 .cls file, 2 .sty files, 1 .pdf file and 1 .tex file.)</p>
+</br>

@@ -24,7 +24,7 @@
 <li><a href="#course23">Java Preparation for 6.170</a></li>
 <li><a href="#course24">Introduction to C++</a></li>
 <li><a href="#course25">Software Studio</a></li>
-<li><a href="#course26">Biological Chemistry II</a></li>
+<li><a href="#course26">Algorithms for Computational Biology</a></li>
 <li><a href="#course27">Thermodynamics and Kinetics</a></li>
 </ul>
 <p>&nbsp;</p>
@@ -3238,5 +3238,37 @@
 </tbody>
 </table>
 </br>
+<h2 id="course26">Algorithms for Computational Biology</h2>
 
 
+<table class="tablewidth3" summary="See table caption for summary.">
+<thead>
+<tr>
+<th id="tbl979id0_1" scope="col">TOPICS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td headers="tbl979id0_1">Computational Challenges (<a href="4/lecture1.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td headers="tbl979id0_1">BLAST (<a href="4/lecture2_newest.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td headers="tbl979id0_1">Motif Discovery (<a href="4/lecture3.pdf">PDF - 1.2 MB</a>)</td>
+</tr>
+<tr class="alt-row">
+<td headers="tbl979id0_1">Gibbs Sampling (<a href="4/lecture4.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td headers="tbl979id0_1">Sequence Alignment (<a href="4/lecture5_newest.pdf">PDF - 1.4 MB</a>)</td>
+</tr>
+<tr class="alt-row">
+<td headers="tbl979id0_1">RNA Secondary Structure</td>
+</tr>
+<tr class="row">
+<td headers="tbl979id0_1">HMMs and Gene Finding (<a href="4/lecture7.pdf">PDF</a>)</td>
+</tr>
+</tbody>
+</table>
+</br>

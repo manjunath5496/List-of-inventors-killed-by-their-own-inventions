@@ -14,7 +14,7 @@
 <li><a href="#course13">Mathematics for Computer Science</a></li>
 <li><a href="#course14">Automata, Computability, and Complexity</a></li>
 <li><a href="#course15">Design and Analysis of Algorithms</a></li>
-<li><a href="#course16">Thermodynamics of Biomolecular Systems</a></li>
+<li><a href="#course16">Information and Entropy</a></li>
 <li><a href="#course17">Advanced Organic Chemistry</a></li>
 <li><a href="#course18">Introduction to Organic Synthesis Laboratory</a></li>
 <li><a href="#course19">Introduction to Experimental Chemistry</a></li>
@@ -2201,3 +2201,178 @@
 </tbody>
 </table>
 </br>
+<h2 id="course16">Information and Entropy</h2>
+
+
+<table>
+<thead>
+<tr>
+<th>TOPICS</th>
+<th>READINGS</th>
+<th>ASSIGNMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>
+<p>Unit 1: Bits</p>
+<p>Unit 2: Codes</p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_preface.pdf">Notes, Preface (PDF)</a></p>
+<p><a href="MIT6_050JS08_chapter1.pdf">Notes, Chapter 1: Bits (PDF)</a></p>
+<p><a href="MIT6_050JS08_chapter2.pdf">Notes, Chapter 2: Codes (PDF)</a></p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_ps_01.pdf">Problem Set 1 (PDF)</a></p>
+<p><a href="MIT6_050JS08_ps_01_sol.pdf">Problem Set 1 Solutions&nbsp;(PDF)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p>Unit 3: Compression</p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_chapter3.pdf">Notes, Chapter 3: Compression (PDF)</a></p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_ps_02.pdf">Problem Set 2 (PDF)</a></p>
+<p><a href="MIT6_050JS08_ps_02_sol.pdf">Problem Set 2 Solutions (PDF)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p>Unit 4: Noise and errors</p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_chapter4.pdf">Notes, Chapter 4: Noise and errors (PDF)</a></p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_ps_03.pdf">Problem Set 3 (PDF)</a></p>
+<p><a href="MIT6_050JS08_ps_03_sol.pdf">Problem Set 3 Solutions (PDF)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p>Unit 5: Probability</p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_chapter5.pdf">Notes, Chapter 5: Probability (PDF)</a></p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_ps_04.pdf">Problem Set 4 (PDF)</a></p>
+<p><a href="MIT6_050JS08_ps_04_sol.pdf">Problem Set 4 Solutions (PDF)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p>Unit 6: Communications</p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_chapter6.pdf">Notes, Chapter 6: Commmunications (PDF)</a></p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_ps_05.pdf">Problem Set 5 (PDF)</a></p>
+<p><a href="MIT6_050JS08_ps_05_sol.pdf">Problem Set 5 Solutions (PDF)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p>Unit 7: Processes</p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_chapter7.pdf">Notes, Chapter 7: Processes (PDF)</a></p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_ps_06.pdf">Problem Set 6 (PDF)</a></p>
+<p><a href="MIT6_050JS08_ps_06_sol.pdf">Problem Set 6 Solutions (PDF)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p>Unit 8: Inference</p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_chapter8.pdf">Notes, Chapter 8: Inference (PDF)</a></p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_ps_07.pdf">Problem Set 7 (PDF)</a></p>
+<p><a href="MIT6_050JS08_ps_07_sol.pdf">Problem Set 7 Solutions (PDF)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p>Unit 9: Maximum Entropy</p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_chapter9.pdf">Notes, Chapter 9: Maximum Entropy (PDF)</a></p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_ps_08.pdf">Problem Set 8 (PDF)</a></p>
+<p><a href="MIT6_050JS08_ps_08_sol.pdf">Problem Set 8 Solutions (PDF)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p>Quiz</p>
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p>Unit 10: Physical Systems</p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_chapter10.pdf">Notes, Chapter 10: Physical Systems (PDF)</a></p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_ps_09.pdf">Problem Set 9 (PDF)</a></p>
+<p><a href="MIT6_050JS08_ps_09_sol.pdf">Problem Set 9 Solutions (PDF)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p>Unit 11: Energy</p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_chapter11.pdf">Notes, Chapter 11: Energy (PDF)</a></p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_ps_10.pdf">Problem Set 10 (PDF)</a></p>
+<p><a href="MIT6_050JS08_ps_10_sol.pdf">Problem Set 10 Solutions (PDF)</a></p>
+</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p>Unit 12: Temperature</p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_chapter12.pdf">Notes, Chapter 12: Temperature (PDF)</a></p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_ps_11.pdf">Problem Set 11 (PDF)</a></p>
+<p><a href="MIT6_050JS08_ps_11_sol.pdf">Problem Set 11 Solutions (PDF)</a></p>
+</td>
+</tr>
+<tr class="row">
+<td>
+<p>Unit 13: Quantum Information</p>
+</td>
+<td>
+<p><a href="MIT6_050JS08_chapter13.pdf">Notes, Chapter 13: Quantum Information (PDF)</a></p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="alt-row">
+<td>
+<p>Final Exam</p>
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+
+</br>
+

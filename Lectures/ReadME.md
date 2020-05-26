@@ -3233,7 +3233,7 @@
 <td><img src="https://ocw.mit.edu/images/inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="3/MIT6_170S13_63-takeout-1a.pdf">FeedAGeek: Sample Pitch v1a (PDF)</a></td>
 </tr>
 <tr class="row">
-<td><a href="http://ocw.mit.edu/ans7870/6/6.170/s13/MIT6_170S13_64-takeout-2.pdf">FeedAGeek: Sample Pitch v2 (PDF - 12.0MB)</a></td>
+<td><a href="MIT6_170S13_64-takeout-2.pdf">FeedAGeek: Sample Pitch v2 (PDF - 12.0MB)</a></td>
 </tr>
 </tbody>
 </table>

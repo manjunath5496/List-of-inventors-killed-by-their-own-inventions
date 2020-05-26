@@ -20,7 +20,7 @@
 <li><a href="#course19">Practical Programming in C</a></li>
 <li><a href="#course20">Introduction to C Memory Management and C++ Object-Oriented Programming</a></li>
 <li><a href="#course21">Building Programming Experience: A Lead-In to 6.001</a></li>
-<li><a href="#course22">Organic Chemistry I</a></li>
+<li><a href="#course22">Introduction to Programming in Java</a></li>
 <li><a href="#course23">Advanced Chemical Experimentation and Instrumentation</a></li>
 <li><a href="#course24">Biological Engineering Design</a></li>
 <li><a href="#course25">Biological Chemistry I</a></li>
@@ -2837,3 +2837,46 @@
 <p>Practice Problems (<a href="3/quizpractice.txt">TXT</a>)<br />Practice Problems Solutions (<a href="3/quizpracticeans.txt">TXT</a>)</p>
 <p>Quiz 1 (<a href="3/quiz.pdf">PDF</a>) (<a href="3/quiz.tex">TEX</a>)<br />Quiz 1 Answer Sheet (<a href="3/quizanssheet.pdf">PDF</a>) (<a href="3/quizanssheet.tex">TEX</a>)<br />Quiz 1 Solutions (<a href="3/quizsolns.txt">TXT</a>)</p>
 </br>
+<h2 id="course22">Introduction to Programming in Java</h2>
+
+
+<table class="tablewidth75" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">TOPICS</th>
+<th scope="col">FILES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>Types, variables, operators</td>
+<td>(<a href="3/MIT6_092IAP10_lec01.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>More types, methods, conditionals</td>
+<td>(<a href="3/MIT6_092IAP10_lec02.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Loops and arrays</td>
+<td>(<a href="3/MIT6_092IAP10_lec03.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Objects and classes</td>
+<td>(<a href="3/MIT6_092IAP10_lec04.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Access control, class scope, packages, Java API</td>
+<td>(<a href="3/MIT6_092IAP10_lec05.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Design, debugging, interfaces</td>
+<td>(<a href="3/MIT6_092IAP10_lec06.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Inheritance, exceptions, file I/O</td>
+<td>(<a href="3/MIT6_092IAP10_lec07.pdf">PDF</a>)</td>
+</tr>
+</tbody>
+</table>
+</br>
+

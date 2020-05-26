@@ -22,7 +22,7 @@
 <li><a href="#course21">Building Programming Experience: A Lead-In to 6.001</a></li>
 <li><a href="#course22">Introduction to Programming in Java</a></li>
 <li><a href="#course23">Java Preparation for 6.170</a></li>
-<li><a href="#course24">Biological Engineering Design</a></li>
+<li><a href="#course24">Introduction to C++</a></li>
 <li><a href="#course25">Biological Chemistry I</a></li>
 <li><a href="#course26">Biological Chemistry II</a></li>
 <li><a href="#course27">Thermodynamics and Kinetics</a></li>
@@ -2898,6 +2898,58 @@
 </tr>
 <tr class="alt-row">
 <td>Interfaces, Abstract classes, Exceptions, Inner classes by Lucy Mendel (<a href="3/lecture4.pdf">PDF</a>)</td>
+</tr>
+</tbody>
+</table>
+</br>
+<h2 id="course24">Introduction to C++</h2>
+<table class="tablewidth50" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">TOPICS</th>
+<th scope="col">LECTURE NOTES</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td>Introduction</td>
+<td>(<a href="3/MIT6_096IAP11_lec01.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Flow of control</td>
+<td>(<a href="3/MIT6_096IAP11_lec02.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Functions</td>
+<td>(<a href="3/MIT6_096IAP11_lec03.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Arrays and strings</td>
+<td>(<a href="3/MIT6_096IAP11_lec04.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Pointers</td>
+<td>(<a href="3/MIT6_096IAP11_lec05.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Classes</td>
+<td>(<a href="3/MIT6_096IAP11_lec06.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Object-oriented programming</td>
+<td>(<a href="3/MIT6_096IAP11_lec07.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Memory management</td>
+<td>(<a href="3/MIT6_096IAP11_lec08.pdf">PDF</a>)</td>
+</tr>
+<tr class="row">
+<td>Advanced topics I</td>
+<td>(<a href="3/MIT6_096IAP11_lec09.pdf">PDF</a>)</td>
+</tr>
+<tr class="alt-row">
+<td>Advanced topics II</td>
+<td>(<a href="3/MIT6_096IAP11_lec10.pdf">PDF</a>)</td>
 </tr>
 </tbody>
 </table>

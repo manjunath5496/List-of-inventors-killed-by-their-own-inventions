@@ -13,7 +13,7 @@
 <li><a href="#course12">Probabilistic Systems Analysis and Applied Probability</a></li>
 <li><a href="#course13">Mathematics for Computer Science</a></li>
 <li><a href="#course14">Automata, Computability, and Complexity</a></li>
-<li><a href="#course15">Organic Structure Determination</a></li>
+<li><a href="#course15">Design and Analysis of Algorithms</a></li>
 <li><a href="#course16">Thermodynamics of Biomolecular Systems</a></li>
 <li><a href="#course17">Advanced Organic Chemistry</a></li>
 <li><a href="#course18">Introduction to Organic Synthesis Laboratory</a></li>
@@ -2010,3 +2010,117 @@
 </br>
 <p><strong>Cryptography Handout</strong></p>
 <p>Introduction to cryptography and RSA (<a href="MIT6_045JS11_rsa.pdf" data-smd-id="s128">PDF</a>)</p>
+</br>
+<h2 id="course15">Design and Analysis of Algorithms</h2>
+
+<table class="tablewidth100" summary="See table caption for summary.">
+<thead>
+<tr>
+<th scope="col">LECTURE&nbsp;NOTES</th>
+<th scope="col">LECTURE&nbsp;NOTES&nbsp;(HANDWRITTEN)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td><a href="MIT6_046JS15_lec01.pdf">Overview, Interval Scheduling (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec1.pdf">Overview, Interval Scheduling (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_lec02.pdf">Divide &amp; Conquer: Convex Hull, Median Finding (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec2.pdf">Divide &amp; Conquer: Convex Hull, Median Finding (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_046JS15_lec03.pdf">Divide &amp; Conquer: FFT (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec3.pdf">Divide &amp; Conquer: FFT (PDF - 4.8MB)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_lec04.pdf">Divide &amp; Conquer: Van Emde Boas Trees (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec4.pdf">Divide &amp; Conquer: Van Emde Boas Trees (PDF - 4.3MB)</a></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_046JS15_lec05.pdf">Amortization: Amortized Analysis (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec5.pdf">Amortization: Amortized Analysis (PDF - 6.2MB)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_lec06.pdf">Randomization: Matrix Multiply, Quicksort (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec6.pdf">Randomization: Matrix Multiply, Quicksort (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_046JS15_lec07.pdf">Randomization: Skip Lists (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec7.pdf">Randomization: Skip Lists (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_lec08.pdf">Randomization: Universal &amp; Perfect Hashing (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec8.pdf">Randomization: Universal &amp; Perfect Hashing (PDF - 5.2MB)</a></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_046JS15_lec09.pdf">Augmentation: Range Trees (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec9.pdf">Augmentation: Range Trees (PDF - 4.5MB)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_lec10.pdf">Dynamic Programming: Advanced DP (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec10.pdf">Dynamic Programming: Advanced DP (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_046JS15_lec11.pdf">Dynamic Programming: All-pairs Shortest Paths (PDF)</a></td>
+<td><span class="nobr"><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec11.pdf">Dynamic Programming: All-pairs Shortest Paths 11 (PDF - 5.6MB)</a></span></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_lec12.pdf">Greedy Algorithms: Minimum Spanning Tree (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec12.pdf">Greedy Algorithms: Minimum Spanning Tree (PDF - 5.1MB)</a></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_046JS15_lec13.pdf">Incremental Improvement: Max Flow, Min Cut (PDF)</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_lec14A.pdf">Incremental Improvement: Matching (PDF)</a>
+<p><a href="MIT6_046JS15_lec14B.pdf">Baseball Elimination Notes (PDF)</a></p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_046JS15_lec15.pdf">Linear Programming: LP, Reductions, Simplex (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec15.pdf">Linear Programming: LP, Reductions, Simplex 15 (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_lec16.pdf">Complexity: P, NP, NP-completeness, Reductions (PDF)</a></td>
+<td><span class="nobr"><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec16.pdf">Complexity: P, NP, NP-completeness, Reductions 16 (PDF - 8.1MB)</a></span></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_046JS15_lec17.pdf">Complexity: Approximation Algorithms (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec17.pdf">Complexity: Approximation Algorithms (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_lec18.pdf">Complexity: Fixed-parameter Algorithms (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec18.pdf">Complexity: Fixed-parameter Algorithms (PDF - 6.4MB)</a></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_046JS15_lec19.pdf">Synchronous Distributed Algorithms: Symmetry-breaking. Shortest-paths Spanning Trees (PDF)</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_lec20.pdf">Asynchronous Distributed Algorithms: Shortest-paths Spanning Trees (PDF)</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_046JS15_lec21.pdf">Cryptography: Hash Functions (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec21.pdf">Cryptography: Hash Functions (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_lec22.pdf">Cryptography: Encryption (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec22.pdf">Cryptography: Encryption (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="MIT6_046JS15_lec23.pdf">Cache-oblivious Algorithms: Medians &amp; Matrices (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec23.pdf">Cache-oblivious Algorithms: Medians &amp; Matrices 23 (PDF - 6.1MB)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="MIT6_046JS15_lec24.pdf">Cache-oblivious Algorithms: Searching &amp; Sorting (PDF)</a></td>
+<td><img src="inacessible.gif" alt="This resource may not render correctly in a screen reader." /><a href="MIT6_046JS15_writtenlec24.pdf">Cache-oblivious Algorithms: Searching &amp; Sorting (PDF - 5.4MB)</a></td>
+</tr>
+</tbody>
+</table>
+
+</br>
+

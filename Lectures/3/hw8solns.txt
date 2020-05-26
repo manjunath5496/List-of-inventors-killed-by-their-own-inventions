@@ -1,0 +1,76 @@
+6.090 IAP '05 - Homework 8 Solutions (MIT Munchkin)
+
+Problem 1:
+
+<Game playing here> - Sleeping through class increases sanity.
+
+Problem 2:
+
+change the won? procedure
+
+;has the student won?
+(define (won? student)
+  (>= (student-value student "clue") 20))
+
+Problem 3:
+
+change the play-game procedure 
+
+;play the game
+; deck is the deck of cards yet to be drawn.  when empty,
+; it reshuffles the discard list into the deck list.
+; stud1 is the student next to play.
+(define (play-game deck discard stud1 stud2)
+  (if (null? deck)
+      (play-game (randomize-list discard) nil stud1 stud2)
+      (if (< (length (student-value stud1 "hand")) 3)   ;; changed this line
+	  (play-game (cdr deck) (cons (car deck) discard)
+		     (add-card-to-hand stud1 (car deck)) stud2)
+	  (let ((newstud (turn stud1)))
+	    (if (won? newstud)
+		(format #t "~A wins!~%" (student-name newstud))
+		(if (lost? newstud)
+		    (format #t "~A loses~%" (student-name newstud))
+		    (play-game (cdr deck)
+			       (cons (car deck) discard)
+			       stud2
+			       newstud)))))))
+
+Problem 4:
+
+change the weapons-effect procedure
+
+;sums the utilities of the list of weapons
+(define (weapons-effect weapons)
+  (if (null? weapons)
+      0
+      (max (weapon-utility (car weapons))   ; change + to max
+	   (weapons-effect (cdr weapons)))))
+
+Problem 5:
+
+;;; chance cards
+
+(define chance-tag "chance")
+
+;constructor for chance cards - card name and change to student sanity
+(define (make-chance-card name sanitymod)
+  (list chance-tag name sanitymod))
+
+;selector for card name
+(define (chance-card-name card)
+  (second card))
+
+;selector for card sanity mod
+(define (chance-card-sanitymod card)
+  (third card))
+
+;procedure to perform effect of card - returns a new student
+; after applying effect
+(define (chance-proc card student)
+  (format #t "~%~A~%~A's sanity changes by ~A~%" (chance-card-name card)
+	  (student-name student) (chance-card-sanitymod card))
+  (student-update student "sanity"
+		  (+ (chance-card-sanitymod card)
+		     (student-value student "sanity"))))
+

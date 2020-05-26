@@ -1,0 +1,57 @@
+6.090 IAP '05 - Homework 1 Solutions
+
+Problem 1:
+
+42
+
+0
+
+"yar!"
+
+54
+
+"(+ 2 3)"
+
+;Hardware trap INT_DIVIDE_BY_ZERO
+
+unspec
+
+unspec
+
+1
+
+unspec
+
+unspec
+
+;The object 43 is not applicable
+
+37
+
+unspec
+
+;Value: #[compiled-procedure 9 ("arith" #x44) #xF #xE1F5C3]
+
+unspec
+
+3
+
+129
+
+;The object 3 is not applicable
+
+unspec
+
+;The object #[compiled-procedure 9 ("arith" #x44) #xF #xE1F5C3],
+ passed as the first argument to integer-zero?, is not the correct
+ type.
+
+4
+
+Problem 2:
+
+See Lecture 1 solutions
+
+Problem 3:
+
+See Lecture 1 solutions

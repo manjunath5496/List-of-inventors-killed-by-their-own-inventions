@@ -1,0 +1,58 @@
+6.090 IAP '05 - Homework 3 Solutions
+
+Problem 1
+
+1.
+(define with-tax
+  (lambda (x)
+    (* x 1.05)))
+
+2.
+(define num-digits
+  (lambda (n)
+    (if (< n 10)
+        1
+        (+ 1 (num-digits (quotient n 10))))))
+
+3.
+(define add-digit
+  (lambda (n digit)
+    (+ (* n 10) digit)))
+
+Problem 2 (Reasonable)
+
+1.
+(define divisible?
+  (lambda (x y)
+    (= (remainder x y) 0)))
+
+2.
+(define slow-add
+  (lambda (a b)
+    (if (= a 0)
+        b
+        (inc (slow-add (dec a) b)))))
+or
+(define slow-add
+  (lambda (a b)
+    (if (= a 0)
+        b
+        (slow-add (dec a) (inc b)))))
+
+Problem 3 (Sticky)
+
+1.
+(define smallest-factor
+  (lambda (n f)
+    (if (= n f)
+        #f       ; tested all possible factors!
+        (if (divisible? n f)
+            f    ; found a factor!
+            (smallest-factor n (+ f 1))))))
+
+2.
+(define prime?
+  (lambda (n)
+    (if (smallest-factor n 2)
+        #f
+        #t)))

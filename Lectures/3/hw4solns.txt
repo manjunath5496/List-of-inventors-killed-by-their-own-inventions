@@ -1,0 +1,141 @@
+6.090 IAP '05 - Homework 4 Solutions
+
+Problem 1:
+
+1.
+(define foo
+  (lambda (x)
+    (+ x 5)))
+
+((lambda (x) x) 1)
+
+((lambda (foo bar) (if foo bar #f))
+ (= x 1) 7)
+
+(define weird
+  (lambda (x y z)
+    (lambda (foo)
+      (+ x y z foo))))
+
+2.
+(define x 5)
+unspec
+
+(define (y) (+ 7 7))
+unspec
+
+(let ((x 3))
+  (+ x x))
+6
+
+(let ((x (y))
+      (y 7))
+  (if (> x 3)
+      7
+      y)
+7
+
+(let ((mit 12))
+  (let ((is (+ mit 1)))
+    (let ((hard (- is 7)))
+      (+ mit is hard))))
+31
+
+Problem 2:
+
+1.
+The (fact 10) evaluation becomes more indented as the computation
+proceeds.  At the end, it stops indenting more and sharply unindents
+as is computes a bunch of *n 's.
+
+The (remainder 30 3) evaluation stays at the same indentation the
+whole time.  The end doesn't look any different.
+
+(fact 10) is a recursive process, so it keeps deferring the *n
+operation.  Each time it has to remember to come back and do a *n it
+indents another 2 spaces.  At the end, it reaches the bottom of the
+recursion and is able to do all the *n's.  (remainder 30 3) is an
+iterative process.  It doesn't have any deferred operations and thus
+stays at the same indentation level the whole time.
+
+2.
+slow-add1 is a recursive process.  Deferred op (inc ...)
+slow-add2 is an iterative process.  No deferred ops
+
+3.
+
+(define (quotient x y)
+  (quotient-helper x y 0))
+
+(define (quotient-helper x y answer)
+  (if (< x y)
+      answer
+      (quotient-helper (- x y) y (+ 1 answer))))
+
+Problem 3:
+
+1.
++-+-+   +-+-+
+|.|.--->|.|\|
++|+-+   +|+-+
+ |       |
+ V       V
++-+-+    2
+|.|\|
++|+-+
+ |   
+ V   
+ 1   
+
++-+-+         +-+-+
+|.|.--------->|.|\|
++|+-+         +|+-+
+ |             |
+ V             V
++-+-+   +-+-+  3
+|.|.--->|.|\|
++|+-+   +|+-+
+ |       |
+ V       V
++-+-+    2
+|.|\|
++|+-+
+ |   
+ V   
+ 1   
+
+
++-+-+
+|\|\|
++-+-+
+
+
++-+-+   +-+-+   +-+-+
+|.|.--->|.|.--->|.|\|
++|+-+   +|+-+   +|+-+
+ |       |       |
+ V       V       V
+ 3       2       1
+
+2.
+(list 7)
+
+(list "this" "is" "yummy")
+
+(list (list nil))
+
+(list (list "apples" 3) (list "oranges 2))
+
+3.
+
+(define (sum-list lst)
+  (if (null? lst)
+      0
+      (+ (car lst) (sum-list (cdr lst)))))
+
+4.
+
+(define (seven-on-the-end lst)
+  (if (null? lst)
+      (list 7)
+      (cons (car lst) (seven-on-the-end (cdr lst)))))

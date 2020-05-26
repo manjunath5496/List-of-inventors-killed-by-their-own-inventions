@@ -1,0 +1,79 @@
+6.090 IAP '05 - Homework 2 Solutions
+
+Problem 1:
+
+#[compound-procedure 12]
+
+11
+
+4
+
+2
+
+;The object 5 is not applicable
+
+122
+
+10
+
+;Unbound variable: yummy
+
+Problem 2:
+
+1. See Lecture 2 Solutions.
+
+2.
+(define minutes->days
+  (lambda (mins)
+    (/ (/ mins minutes-per-hour) hours-per-day)))
+
+(define days->minutes
+  (lambda (days)
+    (* days hours-per-day minutes-per-hour)))
+
+3.
+(define pythagoras
+  (lambda (a b)
+    (sqrt (+ (square a) (square b)))))
+
+(define square
+  (lambda (x) (* x x)))
+
+4.
+(define xor
+  (lambda (x y) 
+    (if (boolean=? x y) 
+        #f 
+        #t)))
+
+5.
+(define censor
+  (lambda (s)
+    (if (substring? "scheme sucks" s)
+	"BEEP"
+	s)))
+
+
+Problem 3:
+
+1.
+
+Plan:  0 * y = 0
+       x * y = (x-1) * y + y
+
+(define slow-mul
+  (lambda (x y)
+    (if (= x 0)
+        0
+        (+ y (slow-mul (- x 1) y)))))
+
+2.
+
+Plan:  n < 2 -> n is even if n=0
+       even? n = even? n-2
+
+(define even?
+  (lambda (n)
+    (if (< n 2)
+        (= n 0)
+        (even? (- n 2)))))

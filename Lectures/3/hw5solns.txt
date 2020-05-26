@@ -1,0 +1,74 @@
+6.090 IAP '05 - Optional Homework 5 Solutions
+
+Problem 1:
+
+(define square-list
+  (lambda (lst)
+    (if (null? lst)
+	nil
+	(cons (* (car lst) (car lst))
+	      (square-list (cdr lst))))))
+
+Problem 2:
+
+(define stutter-list
+  (lambda (lst)
+    (if (null? lst)
+	nil
+	(cons (car lst)
+	      (cons (car lst)
+		    (stutter-list (cdr lst)))))))
+
+Problem 3:
+
+(define only-even
+  (lambda (lst)
+    (if (null? lst)
+	nil
+	(if (even? (car lst))
+	    (cons (car lst)
+		  (only-even (cdr lst)))
+	    (only-even (cdr lst))))))
+
+Problem 4:
+
+(define add-lists
+  (lambda (l1 l2)
+    (if (null? l1)
+	nil
+	(cons (+ (car l1) (car l2))
+	      (add-lists (cdr l1) (cdr l2))))))
+
+Problem 5:
+
+(define palindrome-list
+  (lambda (lst)
+    (append lst (reverse (cdr lst)))))
+
+or
+
+(define palindrome-list
+  (lambda (lst)
+    (if (or (null? lst) (null? (cdr lst)))
+	lst
+	(cons (car lst) (append (palindrome-list (cdr lst))
+				(list (car lst)))))))
+
+Problem 6:
+
+(define replace-elem
+  (lambda (lst f r)
+    (if (null? lst)
+	nil
+	(if (= (car lst) f)
+	    (cons r 
+		  (replace-elem (cdr lst) f r))
+	    (cons (car lst)
+		  (replace-elem (cdr lst) f r))))))
+
+Problem 7:
+
+(define list-average
+  (lambda (lst)
+    (/ (sum-list lst) (length lst))))
+

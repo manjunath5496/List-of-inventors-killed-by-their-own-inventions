@@ -1,0 +1,153 @@
+6.090 IAP '05 - Homework 6 Solutions (Nimrod)
+
+Problem 1:
+
+(define (make-piles a b)
+  (if (< a b)
+      (list a b)
+      (list b a)))
+
+(define (pile-a piles)
+  (first piles))
+
+(define (pile-b piles)
+  (second piles))
+
+or:
+
+(define (make-piles a b)
+  (list a b))
+
+(define (pile-a piles)
+  (if (< (first piles) (second piles))
+      (first piles)
+      (second piles)))
+
+(define (pile-b piles)
+  (if (< (first piles) (second piles))
+      (second piles)
+      (first piles)))
+
+Problem 2:
+
+(define (empty-piles? piles)
+  (and (= (pile-a piles) 0)
+       (= (pile-b piles) 0)))
+
+(define (valid-piles? piles)
+  (and (>= (pile-a piles) 0)
+       (>= (pile-b piles) 0)))
+
+
+Problem 3:
+
+(define (make-move amta amtb)
+  (list amta amtb))
+
+(define (move-amta move)
+  (first move))
+
+(define (move-amtb move)
+  (second move))
+
+Problem 4:
+
+(define (valid-move? move)
+  (and
+   (or (= (move-amta move) (move-amtb move))
+       (= (move-amta move) 0)
+       (= (move-amtb move) 0))
+   (>= (move-amta move) 0)
+   (>= (move-amtb move) 0)
+   (not
+    (and (= (move-amta move) 0)
+	 (= (move-amtb move) 0)))))
+
+Problem 5:
+
+(define (apply-move piles move)
+  (make-piles (- (pile-a piles) (move-amta move))
+	      (- (pile-b piles) (move-amtb move))))
+
+Problem 6:
+
+(play-nimrod "Ben" human-strat "Jen" human-strat (random-piles 1 15))
+
+Pile A: 5     Pile B: 9
+
+Ben takes 0 from pile A and 2 from pile B
+
+Pile A: 5     Pile B: 7
+
+Jen takes 2 from pile A and 2 from pile B
+
+Pile A: 3     Pile B: 5
+
+Ben takes 3 from pile A and 0 from pile B
+
+Pile A: 0     Pile B: 5
+
+Jen takes 0 from pile A and 5 from pile B
+
+Pile A: 0     Pile B: 0
+
+Jen wins! Ben loses!
+
+Problem 7:
+
+; try to reduce to 1-2 by taking from both piles
+(define (silly-strat name piles)
+  (if (and (> (pile-a piles) 1) (= (- (pile-b piles) (pile-a piles)) 1))
+      (make-move (- (pile-a piles) 1) (- (pile-a piles) 1))
+      (make-move 0 1)))
+
+; win from 0-X situations
+(define (zero-strat name piles)
+  (if (= (pile-a piles) 0)
+      (make-move 0 (pile-b piles))
+      (make-move 0 1)))
+
+Problem 8:
+
+(define (list-of-ints start end)
+  (if (= start end)
+      (list start)
+      (cons start (list-of-ints (+ start 1) end))))
+
+Problem 9:
+
+(define (without-n lst n)
+  (if (null? lst)
+      nil
+      (if (= (car lst) n)
+	  (cdr lst)
+	  (cons (car lst)
+		(without-n (cdr lst) n)))))
+
+Problem 10:
+
+(define (lose-position-helper ints i)
+  (if (null? ints)
+      nil
+      (cons (make-piles (car ints) (+ (car ints) i))
+	    (lose-position-helper
+	     (without-n (cdr ints) (+ (car ints) i))
+	     (+ i 1)))))
+
+Problem 11:
+
+(define (move-to piles objective-piles)
+  (let ((move (make-move (- (pile-a piles) (pile-a objective-piles))
+			 (- (pile-b piles) (pile-b objective-piles)))))
+    (if (valid-move? move)
+	move
+	(let ((move (make-move
+		     (- (pile-a piles) (pile-b objective-piles))
+		     (- (pile-b piles) (pile-a objective-piles)))))
+	  (if (valid-move? move)
+	      move
+	      #f)))))
+
+Problem 12:
+
+Glory and Success!

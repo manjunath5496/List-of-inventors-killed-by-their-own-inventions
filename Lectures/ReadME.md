@@ -3529,3 +3529,31 @@
 </table>
 </br>
 
+<table class="tablewidth75">
+<thead>
+<tr>
+<th>QUIZZES</th>
+<th>SOLUTIONS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row">
+<td><a href="4/MIT6_172F18_practicequiz1.pdf">Practice Quiz 1 (PDF)</a></td>
+<td><a href="4/MIT6_172F18_practicequiz1answers.pdf">Practice Quiz 1 Solutions (PDF)</a></td>
+</tr>
+<tr class="alt-row">
+<td><a href="4/MIT6_172F18_practicequiz2.pdf">Practice Quiz 2 (PDF)</a></td>
+<td><a href="4/MIT6_172F18_practicequiz2answers.pdf">Practice Quiz 2 Solutions (PDF)</a></td>
+</tr>
+<tr class="row">
+<td><a href="4/MIT6_172F18_practicequiz3.pdf">Practice Quiz 3 (PDF)</a></td>
+<td>No Solutions Provided</td>
+</tr>
+<tr class="alt-row">
+<td><a href="4/MIT6_172F18_practicequiz4.pdf">Practice Quiz 4 (PDF)</a></td>
+<td><a href="4/MIT6_172F18_practicequiz4answers.pdf">Practice Quiz 4 Solutions (PDF)</a></td>
+</tr>
+</tbody>
+</table>
+
+</br>
